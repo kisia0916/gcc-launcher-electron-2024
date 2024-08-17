@@ -1,0 +1,40 @@
+.mainScreen{
+    height: 100vh;
+    overflow-y: scroll;
+}
+.mainScreen::-webkit-scrollbar{
+    width: 0;
+}
+.gameSectionTop{
+    width: 97%;
+    height:50px;
+    margin: auto;
+    margin-top: 10px;
+    display: flex;
+}
+.gameSectionTopIcon{
+    width: 40px;
+    height: 40px;
+    margin-top: 4px;
+    margin-left: 2px;
+}
+.gameSectionTitle{
+    color: white;
+    font-family: "mainFont";
+    font-weight: 1000;
+    font-size: 200%;
+    margin-left: 15px;
+}
+.promoMain{
+    width: 100%;
+    display: flex;
+}
+.prmoMainContents{
+    width: 97%;
+    height: 400px;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    display: flex;
+    /* background-color: white; */
+}

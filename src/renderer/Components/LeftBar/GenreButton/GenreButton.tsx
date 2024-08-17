@@ -3,7 +3,7 @@ import "./GenreButton.css"
 
 function GenreButton(props:{icon:string,title:string,selected:boolean}) {
   return (
-    <div className="gameIcon">
+    <div className={`gameIcon ${props.selected?"selected":""}`}>
     <div className="gameIconMain">
         <img src={props.icon} alt="" className="gameIconImg"/>
         <div className="leftTitle">

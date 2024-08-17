@@ -1,0 +1,21 @@
+.promMainGameDiff{
+    display: flex;
+    margin-left: 10px;
+}
+.promMainGameDiffIcon{
+    width: 45px;
+    height: 45px;
+    /* margin-top: 10px; */
+}
+.promMainGameDiff{
+    color: #2ac670;
+    font-family: "mainFont";
+    font-weight: 1000;
+    font-size: 33px;
+}
+.promMainGameDiffText{
+    /* margin-top: 9px; */
+    line-height: 45px;
+    margin-left: 1px;
+
+}

@@ -1,0 +1,214 @@
+.prmoMainGame{
+    width: calc(100% - 440px);
+    height: 400px;
+    background-color: rgba(218, 218, 218, 0.144);
+    border-radius: 25px;
+    display: flex;
+    position: relative;
+}
+.prmoMainGame::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(45deg,#202636,#2f3a4d49,transparent);
+    border-radius: 25px;
+    z-index: 1;
+}
+.promGameImg{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+    position: relative;
+}
+.promRankNum{
+    width: 150px;
+    height: 40px;
+    background-color: rgb(36 40 52);
+    position: absolute;
+    border-radius: 50px;
+    margin-top: 7px;
+    margin-left: 7px;
+    z-index: 100;
+    display: flex;
+}
+.rank1{
+    border: solid 1px yellow;
+}
+.rank2{
+    border: solid 1px orange;
+}
+.rank3{
+    border: solid 1px rgb(51, 253, 51);
+}
+.promRankIcon{
+    width: 30px;
+    height: 30px;
+    margin-top: 5px;
+    margin-left: 7px;
+}
+.promRankText{
+    color: white;
+    font-family: "mainFont";
+    font-weight: 1000;
+    font-size: 120%;
+    margin-top: 4px;
+    margin-left: 8px;
+}
+.promMainGameTitle{
+    position: absolute;
+    margin-top: 190px;
+    margin-left: 30px;
+    z-index: 2;
+}
+.promMainGameTitleText{
+    color: white;
+    font-family: "mainFont";
+    font-weight: 1000;
+    font-size: 250%;
+    text-shadow: 0 0 8px #000;
+}
+.promMainGameProfile{
+    width: 45%;
+    height: 50px;
+    overflow-y: scroll;
+    color: white;
+    font-family: "mainFont";
+    font-weight: 1000;
+    margin-top: 12px;
+    overflow: hidden;
+}
+
+
+.prmoRankings{
+    width: 440px;
+    height: 100%;
+    margin-top: 1px;
+}
+.prmoRankingContents{
+    width: 396px;
+    height: 191px;
+    margin: auto;
+    background-color: rgba(218, 218, 218, 0.144);
+    border-radius: 25px;
+    margin-bottom: 20px;
+}
+.prmoRankingContents{
+    display: flex;
+}
+.prmoRankingContent{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    margin: auto;
+    position: relative;
+    border-radius: 25px;
+    overflow: hidden;
+    z-index: 2000;
+}
+.prmoRankingContent::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 25px;
+    z-index: 1;
+}
+.prmoRankingContentImg{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+    position: relative;
+    transform-origin: center center;
+    transition: transform 0.3s ease;
+    z-index: 1000;
+}
+.prmoRankingContentImg:hover{
+    transform: scale(1.2);
+}
+.prmoRankingContentTop{
+    width: 100%;
+    position: absolute;
+    display: flex;
+    /* justify-content: space-around; */
+    justify-content: space-between;
+}
+.promRankingContentRightNumber{
+    width: 110px;
+    height: 30px;
+    background-color: #242834;
+    margin-top: 7px;
+    border-radius: 50px;
+    z-index: 100;
+    display: flex;
+    margin-left: 8px;
+    z-index: 2000;
+}
+.promRankingContentRightNumber{
+    display: flex;
+}
+.promRankingContentRightNumberText{
+    color: white;
+    font-family: "mainFont";
+    font-weight: 1000;
+    margin: auto;
+    margin-left: 3px;
+}
+.promRankingContentRightNumberIcon{
+    width: 23px;
+    height: 23px;
+    margin: auto;
+    margin-right: 0px;
+    margin-left: 5px;
+}
+.promRankingContentRightNumberDiff{
+    display: flex;
+}
+.promRankingContentRightNumberDiff{
+    height: 32px;
+    margin-top: 7px;
+    display: flex;
+    color: #ff6252;
+    font-family: "mainFont";
+    font-weight: 1000;
+    font-size: 135%;
+    z-index: 10000;
+    text-shadow: 0 0 8px #000;
+    margin-right: 15px;
+}
+.diffNormal{
+    color: #2ac670;
+}
+.promRankingContentGameTitle{
+    position: absolute;
+    color: white;
+    font-family: "mainFont";
+    font-weight: 1000;
+    margin-top: 150px;
+    font-size: 150%;
+    text-shadow: 0 0 8px #000;
+    margin-left: 30px;
+    z-index: 10000;
+}
+.prmoMainContents{
+    width: 97%;
+    height: 400px;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    display: flex;
+    /* background-color: white; */
+}
+.promMainGameButtonMain{
+    display: flex;
+    margin-top: 100px;
+}
+.promMainGameProfile{
+    margin-bottom: 15px;
+}

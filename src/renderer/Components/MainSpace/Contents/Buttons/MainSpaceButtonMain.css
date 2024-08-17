@@ -1,0 +1,28 @@
+
+.promMainGameButton{
+    width: 130px;
+    height: 45px;
+    /* margin-top: 10px; */
+    border-radius: 50px;
+    background-color: #050917;
+    border: solid 1px #ff5024;
+    display: flex;
+}
+
+
+.promMainGameButtonText{
+    color: white;
+    font-family: "mainFont";
+    font-weight: 1000;
+    font-size: 28px;
+    margin-left: 5px;
+}
+.promMainGameButtonIcon{
+    width: 30px;
+    height: 30px;
+    margin-top: 5px;
+}
+.promMainGameButtonMain{
+    display: flex;
+    margin: auto;
+}

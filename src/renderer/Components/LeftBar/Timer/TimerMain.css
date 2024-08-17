@@ -1,0 +1,24 @@
+.leftBarBottomIcons{
+    display: flex;
+    margin-top: 50px;
+}
+.topBarTimer{
+    width: 100%;
+    /* background-color: rgba(0, 0, 0, 0.123); */
+    /* background-color: rgb(69, 255, 45); */
+    height: 80px;
+    margin: auto;
+    /* border-radius: 50px; */
+    display: flex;
+    border-top:solid 1px rgba(255, 255, 255, 0.377)
+}
+.topBarTimerText{
+    color: black;
+    color: white;
+    font-family: "mainFont";
+    margin: auto;
+    margin-top: 10px;
+    font-size: 170%;
+    /* font-weight: 1000; */
+    font-weight: 550;
+}

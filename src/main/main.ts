@@ -30,6 +30,15 @@ ipcMain.on('ipc-example', async (event, arg) => {
   console.log(msgTemplate(arg));
   event.reply('ipc-example', msgTemplate('pong'));
 });
+ipcMain.on('close-app',(event,arg)=>{
+  app.quit();
+})
+ipcMain.on('max-app',(event,arg)=>{
+  mainWindow?.maximize();
+})
+ipcMain.on('min-app',(event,arg)=>{
+  mainWindow?.minimize();
+})
 
 if (process.env.NODE_ENV === 'production') {
   const sourceMapSupport = require('source-map-support');
@@ -56,6 +65,7 @@ const installExtensions = async () => {
     .catch(console.log);
 };
 
+
 const createWindow = async () => {
   if (isDebug) {
     await installExtensions();
@@ -73,7 +83,12 @@ const createWindow = async () => {
     show: false,
     width: 1024,
     height: 728,
-    icon: getAssetPath('icon.png'),
+    minHeight:900,
+    minWidth:1530,
+    icon: getAssetPath('0b3ec145cce25a1a.png'),
+    frame:false,
+    titleBarStyle: "hidden",
+
     webPreferences: {
       preload: app.isPackaged
         ? path.join(__dirname, 'preload.js')
@@ -82,7 +97,7 @@ const createWindow = async () => {
   });
 
   mainWindow.loadURL(resolveHtmlPath('index.html'));
-
+  mainWindow.setFullScreen(false)
   mainWindow.on('ready-to-show', () => {
     if (!mainWindow) {
       throw new Error('"mainWindow" is not defined');

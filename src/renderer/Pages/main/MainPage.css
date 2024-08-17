@@ -6,9 +6,50 @@ body{
     background-color: #050917;
     margin: 0;
     padding: 0;
+    overflow-y: hidden;
 }
 .luncherMainSpace{
     width: 100vw;
     height: 100vh;
     display: flex;
+    position: relative;
+}
+.titleBar{
+    width: 100%;
+    height: 20px;
+    background-color: #050917;
+    background-color: black;
+    display: flex;
+    -webkit-app-region: drag;
+    justify-content: space-between;
+}
+body::-webkit-scrollbar{
+    width: 0px;
+}
+.titleBarTitle{
+    color: white;
+    font-family: "mainFont";
+    font-weight: 1000;
+    font-size: 65%;
+    margin-top: 2px;
+}
+.titleBarIcon{
+    width: 20px;
+    height: 20px;
+}
+.titleBarLeft{
+    display: flex;
+}
+.titleBarRight{
+    display: flex;
+    color: white;
+    -webkit-app-region: no-drag;
+}
+.titleBarNaviIcon{
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+    margin-top: 2px;
+}
+.titleBarNaviIcon{
 }
