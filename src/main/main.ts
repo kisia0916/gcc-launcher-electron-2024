@@ -14,6 +14,7 @@ import { autoUpdater } from 'electron-updater';
 import log from 'electron-log';
 import MenuBuilder from './menu';
 import { resolveHtmlPath } from './util';
+import { ipcModules } from './ipcModules/ipcMain';
 
 class AppUpdater {
   constructor() {
@@ -39,6 +40,7 @@ ipcMain.on('max-app',(event,arg)=>{
 ipcMain.on('min-app',(event,arg)=>{
   mainWindow?.minimize();
 })
+
 
 if (process.env.NODE_ENV === 'production') {
   const sourceMapSupport = require('source-map-support');
@@ -143,6 +145,7 @@ app.on('window-all-closed', () => {
 app
   .whenReady()
   .then(() => {
+    ipcModules(ipcMain)
     createWindow();
     app.on('activate', () => {
       // On macOS it's common to re-create a window in the app when the
