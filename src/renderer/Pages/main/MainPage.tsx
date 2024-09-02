@@ -30,7 +30,7 @@ function MainPage() {
           <div className='titleBar'>
             <div className='titleBarLeft'>
               <img src={icon} alt='' className='titleBarIcon'/>
-              <span className='titleBarTitle'>GCC Luncher 2024</span>
+              <span className='titleBarTitle'>GCC Launcher 2024</span>
             </div>
             <div className='titleBarRight'>
                 <img src={icon2} onClick={naviFunctions.min} className='titleBarNaviIcon' alt=''/>

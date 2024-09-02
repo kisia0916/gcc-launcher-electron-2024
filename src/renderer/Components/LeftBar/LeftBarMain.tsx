@@ -16,7 +16,7 @@ function LeftBarMain() {
             <img src={icon} alt="" className="mainIconImg"/>
             <div className="leftBarTitle">
                 <span className="leftBarTitleText">GCC</span><br/>
-                <span>Luncher</span>
+                <span>Launcher</span>
             </div>
         </div>
         <div className="leftBarIcons">
