@@ -1,21 +1,29 @@
 import { MemoryRouter as Router, Routes, Route } from 'react-router-dom';
 import MainPage from './Pages/main/MainPage';
-import { useEffect } from 'react';
+import { createContext, useEffect, useState } from 'react';
 
+export const GameListContext = createContext<{games:any,loadFlg:boolean}|string>("")
 export default function App() {
+  const [games,setGames] = useState("")
+  const [DoneFirstLoad,setDoneFirstLoad] = useState<boolean>(false)
   useEffect(()=>{
-    console.log("send")
     window.electron.ipcRenderer.sendMessage("load-games-data","")
     window.electron.ipcRenderer.on("load-games-data",(arg:any)=>{
       console.log(arg)
+      setGames(arg)
+      setDoneFirstLoad(true)
     })
-
   },[])
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<MainPage />} />
-      </Routes>
-    </Router>
+    <GameListContext.Provider value={{
+      games:games,
+      loadFlg:DoneFirstLoad
+    }}>
+      <Router>
+        <Routes>
+          <Route path="/" element={<MainPage />} />
+        </Routes>
+      </Router>
+    </GameListContext.Provider>
   );
 }

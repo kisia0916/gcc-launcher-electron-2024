@@ -36,8 +36,6 @@ function GenreSectionMain(props:{genreTitle:string}) {
               <GameMain img={game9} title='Minecraft'/>
               <GameMain img={game10} title='PUBG'/>
               <GameMain img={game11} title='LEAGUE of LEGENDS'/>
-
-
         </div>
     </>
   )

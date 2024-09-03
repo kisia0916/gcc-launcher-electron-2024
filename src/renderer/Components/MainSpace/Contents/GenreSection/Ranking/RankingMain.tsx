@@ -13,12 +13,14 @@ import icon5 from "../../../../../../../assets/img/bling_fill (3).svg"
 import MainSpaceButtonMain from '../../Buttons/MainSpaceButtonMain'
 import DifficultMain from '../../Difficult/DifficultMain'
 import { HopUpContext } from '../../../../../Pages/main/MainPage'
+import { GameListContext } from '../../../../../App'
 
 
 function RankingMain() {
   const setHopUpWindow:any = useContext(HopUpContext)
+  const dataContext = useContext<any>(GameListContext)
   return (
-    <div className="prmoMainContents">
+    dataContext.games?<div className="prmoMainContents">
         <div className="prmoMainGame">
             <img src={img1} className="promGameImg" alt=""/>
             <div className="promRankNum rank1">
@@ -70,7 +72,7 @@ function RankingMain() {
                 </div>
             </div>
         </div>
-    </div>
+    </div>:<></>
   )
 }
 
