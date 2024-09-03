@@ -43,7 +43,7 @@ function LeftBarMain() {
               }else if (i === "Command"){
                 return <GenreButton icon={genresIconList.command} title={i} selected={false}/>
               }else if (i === "Latest"){
-                return <GenreButton icon={genresIconList.latest} title={i} selected={false}/>
+                return <GenreButton icon={genresIconList.latest} title={i} selected={true}/>
               }else if (i === "Other"){
                 return <GenreButton icon={genresIconList.other} title={i} selected={false}/>
               }else if (i === "Shooting"){
