@@ -1,5 +1,5 @@
 .prmoMainGame{
-    width: calc(100% - 440px);
+    width: calc(100% - 35%);
     height: 400px;
     background-color: rgba(218, 218, 218, 0.144);
     border-radius: 25px;
@@ -88,18 +88,20 @@
 
 
 .prmoRankings{
-    width: 440px;
+    width: 35%;
     height: 100%;
     margin-top: 1px;
 }
 .prmoRankingContents{
-    width: 396px;
-    height: 191px;
+    aspect-ratio: 24/11.3;
+    width: 90%;
     margin: auto;
     background-color: rgba(218, 218, 218, 0.144);
     border-radius: 25px;
     margin-bottom: 20px;
     border: solid 1px #121f4e8a;
+    min-height: 188px;
+    max-height: 188px;
 }
 .prmoRankingContents{
     display: flex;
