@@ -7,7 +7,7 @@ import DifficultMain from '../MainSpace/Contents/Difficult/DifficultMain'
 import CloseButtonMain from './CloseButton/CloseButtonMain'
 import { HopUpContext } from '../../Pages/main/MainPage'
 
-function HopUpWindowMain(props:{title:string,img:string}) {
+function HopUpWindowMain(props:{title:string,img:string,profile:string}) {
   const [ishoverFlg,setIshoverFlg] = useState(false)
   const setHopUpWindow:any = useContext(HopUpContext)
   const closeHopUpWindow = ()=>{
@@ -26,7 +26,7 @@ function HopUpWindowMain(props:{title:string,img:string}) {
           <div className='hopUpWindowMainInfo'>
               <span className='hopUpWindowMainTitleText'>{props.title}</span><br/>
               <div className='hopUpWindowMainGameProfile'>
-                <span>フォートナイトは、100人が一つの島に降り立って、武器を拾ったり建築したりしながら、最後の一人を目指して戦うバトルロイヤルゲーム。派手なスキンやダンス、友達とチームを組んで遊ぶのも楽しい要素。建築とバトルの駆け引きが熱い人気タイトル！</span>
+                <span>{props.profile}</span>
               </div>
               <div className='hopUpWindowMainGameProfileButtons'>
                     <MainSpaceButtonMain/>

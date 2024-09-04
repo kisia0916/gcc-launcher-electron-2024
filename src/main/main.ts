@@ -90,11 +90,11 @@ const createWindow = async () => {
     icon: getAssetPath('0b3ec145cce25a1a.png'),
     frame:false,
     titleBarStyle: "hidden",
-
     webPreferences: {
       preload: app.isPackaged
         ? path.join(__dirname, 'preload.js')
         : path.join(__dirname, '../../.erb/dll/preload.js'),
+      webSecurity:false
     },
   });
 

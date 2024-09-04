@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import "./RankingMain.css"
 
 import img1 from "../../../../../../../assets/games/15br-bplaunch-egs-s3-2560x1440-2560x1440-687570387.jpg"
@@ -14,63 +14,21 @@ import MainSpaceButtonMain from '../../Buttons/MainSpaceButtonMain'
 import DifficultMain from '../../Difficult/DifficultMain'
 import { HopUpContext } from '../../../../../Pages/main/MainPage'
 import { GameListContext } from '../../../../../App'
+import OtherRankingMain from './Other/OtherRankingMain'
+import Rank1Main from './Rank1/Rank1Main'
 
 
-function RankingMain() {
+function RankingMain(props:{games:[rank1:any,rank2:any,rank3:any]}) {
   const setHopUpWindow:any = useContext(HopUpContext)
-  const dataContext = useContext<any>(GameListContext)
+  useEffect(()=>{
+    console.log(props.games)
+  },[props.games])
   return (
-    dataContext.games?<div className="prmoMainContents">
-        <div className="prmoMainGame">
-            <img src={img1} className="promGameImg" alt=""/>
-            <div className="promRankNum rank1">
-                <img src={icon1} className="promRankIcon" alt=""/>
-                <span className="promRankText">人気No.1</span>
-            </div>
-            <div className="promMainGameTitle">
-                <span className="promMainGameTitleText">Fortnite</span>
-                <div className="promMainGameProfile">
-                    <span>フォートナイトは、100人が一つの島に降り立って、武器を拾ったり建築したりしながら、最後の一人を目指して戦うバトルロイヤルゲーム。派手なスキンやダンス、友達とチームを組んで遊ぶのも楽しい要素。建築とバトルの駆け引きが熱い人気タイトル！</span>
-                </div>
-                <div className="promMainGameButtonMain">
-                    <MainSpaceButtonMain/>
-                    <DifficultMain/>
-                </div>
-            </div>
-        </div>
+    props.games.length>0?<div className="prmoMainContents">
+        <Rank1Main img1={props.games[0].thumbnail} icon1={icon1} title={props.games[0].title} profile={props.games[0].readme}/>
         <div className="prmoRankings">
-            <div className="prmoRankingContents" onClick={()=>setHopUpWindow({status:true,title:"Valorant",img:img2})}>
-                <div className="prmoRankingContent">
-                <img src={img2} alt="" className="prmoRankingContentImg"/>
-                <div className="prmoRankingContentTop">
-                    <div className="promRankingContentRightNumber rank2">
-                        <img src={icon4} className="promRankingContentRightNumberIcon" alt=""/>
-                        <span className="promRankingContentRightNumberText">人気No.2</span>
-                    </div>
-                    <div className="promRankingContentRightNumberDiff diffNormal">
-                        <img src={icon3} className="promRankingContentRightNumberDiffIcon" alt=""/>
-                        <span>Easy</span>
-                    </div>
-                </div>
-                <span className="promRankingContentGameTitle">Valorant</span>
-                </div>
-            </div>
-            <div className="prmoRankingContents" onClick={()=>setHopUpWindow({status:true,title:"Osu!",img:img3})}>
-                <div className="prmoRankingContent">
-                <img src={img3} alt="" className="prmoRankingContentImg"/>
-                <div className="prmoRankingContentTop">
-                    <div className="promRankingContentRightNumber rank3">
-                        <img src={icon5} className="promRankingContentRightNumberIcon" alt=""/>
-                        <span className="promRankingContentRightNumberText">人気No.3</span>
-                    </div>
-                    <div className="promRankingContentRightNumberDiff diffNormal">
-                        <img src={icon3} className="promRankingContentRightNumberDiffIcon" alt=""/>
-                        <span>Easy</span>
-                    </div>
-                </div>
-                <span className="promRankingContentGameTitle">Osu!</span>
-                </div>
-            </div>
+            <OtherRankingMain img1={props.games[1].thumbnail} icon1={icon4} icon2={props.games[1].icon2} title={props.games[1].title} profile={props.games[1].readme} rank={2}/>
+            <OtherRankingMain img1={props.games[2].thumbnail} icon1={icon5} icon2={props.games[2].icon2} title={props.games[2].title} profile={props.games[2].readme} rank={3}/>
         </div>
     </div>:<></>
   )

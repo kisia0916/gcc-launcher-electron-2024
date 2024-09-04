@@ -22,7 +22,7 @@ function MainPage() {
     }
   }
 
-  const [hopUpWindowFlg,setHopUpWindowFlg] = useState<{status:boolean,title:string,img:string}>({status:false,title:"",img:""})
+  const [hopUpWindowFlg,setHopUpWindowFlg] = useState<{status:boolean,title:string,img:string,profile:string}>({status:false,title:"",img:"",profile:""})
 
   return (
     <>
@@ -39,7 +39,7 @@ function MainPage() {
             </div>
           </div>
           <div className='luncherMainSpace'>
-            {hopUpWindowFlg.status?<HopUpWindowMain title={hopUpWindowFlg.title} img={hopUpWindowFlg.img} />:<></>}
+            {hopUpWindowFlg.status?<HopUpWindowMain title={hopUpWindowFlg.title} img={hopUpWindowFlg.img} profile={hopUpWindowFlg.profile}/>:<></>}
             <LeftBarMain />
             <MainSpace/>
           </div>

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import "./GenreSectionMain.css"
 import icon from "../../../../../../assets/img/game_2_fill.svg"
 import RankingMain from './Ranking/RankingMain'
@@ -17,7 +17,24 @@ import game11 from "../../../../../../assets/games/WS000059.jpg"
 
 
 
-function GenreSectionMain(props:{genreTitle:string}) {
+function GenreSectionMain(props:{genreTitle:string,genreGames:any}) {
+  const [rankGames,setRankGames] = useState<any>("")
+  const [allGames,setAllGames] = useState<any>("")
+  useEffect(()=>{
+    console.log(props.genreGames)
+    if (props.genreGames){
+      if (props.genreGames.length > 0){
+        let rankGameList:any[] = []
+        for (let i = 0;3>i;i++){
+          rankGameList = [...rankGameList,props.genreGames[i]]
+        }
+        console.log(rankGameList)
+        setRankGames(rankGameList)
+        setAllGames(props.genreGames)
+      }
+    }
+
+  },[props.genreGames])
   return (
     <>
         <div className="gameSectionTop">
@@ -25,17 +42,12 @@ function GenreSectionMain(props:{genreTitle:string}) {
             <span className="gameSectionTitle">{props.genreTitle}</span>
         </div>
         <div className="promoMain">
-            <RankingMain/>
+            <RankingMain games={rankGames}/>
         </div>
         <div className='gamesMain'>
-              <GameMain img={game3} title='APEX LEGENDS'/>
-              <GameMain img={game5} title='BATTLE FIELD 2042'/>
-              <GameMain img={game6} title='MONSTER HUNTER'/>
-              <GameMain img={game7} title='Krunker.io'/>
-              <GameMain img={game8} title='Genshin Impact'/>
-              <GameMain img={game9} title='Minecraft'/>
-              <GameMain img={game10} title='PUBG'/>
-              <GameMain img={game11} title='LEAGUE of LEGENDS'/>
+            {allGames?allGames.map((i:any)=>{
+              return <GameMain img={i.thumbnail} title={i.title} profile={i.readme}/>
+            }):<></>}
         </div>
     </>
   )

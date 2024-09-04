@@ -5,6 +5,8 @@
     border-radius: 25px;
     display: flex;
     position: relative;
+    border: solid 1px #121f4e8a;
+
 }
 .prmoMainGame::before{
     content: "";
@@ -62,6 +64,7 @@
     position: absolute;
     margin-top: 190px;
     margin-left: 30px;
+    width: 50%;
     z-index: 2;
 }
 .promMainGameTitleText{
@@ -72,13 +75,14 @@
     text-shadow: 0 0 8px #000;
 }
 .promMainGameProfile{
-    width: 45%;
+    width: 81%;
     height: 50px;
     overflow-y: scroll;
     color: white;
     font-family: "mainFont";
     font-weight: 1000;
     margin-top: 12px;
+    font-size: 110%;
     overflow: hidden;
 }
 
@@ -95,6 +99,7 @@
     background-color: rgba(218, 218, 218, 0.144);
     border-radius: 25px;
     margin-bottom: 20px;
+    border: solid 1px #121f4e8a;
 }
 .prmoRankingContents{
     display: flex;

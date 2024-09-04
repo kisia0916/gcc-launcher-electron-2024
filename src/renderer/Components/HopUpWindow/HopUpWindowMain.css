@@ -43,7 +43,7 @@
     margin-left: 40px;
 }
 .hopUpWindowMainGameProfile{
-    width: 45%;
+    width: 80%;
     height: 90px;
     overflow-y: scroll;
     margin-top: 15px;
@@ -85,4 +85,7 @@
     background-color: #292f439a;
     z-index: 10000;
     display: flex;
+}
+.hopUpWindowMainInfo{
+    width: 50%;
 }
