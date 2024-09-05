@@ -1,0 +1,23 @@
+.ViewIconMain{
+    width: 60px;
+    height: 28px;
+    background-color: #242834;
+    border-radius: 50px;
+    margin-top: 5px;
+    margin-left: 5px;
+    position: absolute;
+    z-index: 1;
+    border: solid 1px #2AC670;
+    display: flex;
+}
+.ViewIcon{
+    width: 25px;
+    margin-left: 4px;
+}
+.ViewNum{
+    color: white;
+    font-family: "mainFont";
+    font-weight: 1000;
+    margin-top: 3px;
+    margin-left: 4px;
+}

@@ -5,6 +5,7 @@
 .leftBar{
     width: 300px;
     width: 19%;
+    min-width: 243px;
     max-width: 243px;
     height: 100vh;
     border-right:solid 1px rgba(255, 255, 255, 0.377)
