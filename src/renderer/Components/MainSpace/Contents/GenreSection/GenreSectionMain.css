@@ -27,6 +27,7 @@
 }
 .promoMain{
     width: 100%;
+    aspect-ratio: 3/1;
     display: flex;
 }
 .prmoMainContents{
