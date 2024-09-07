@@ -6,7 +6,7 @@ function DifficultMain() {
   return (
     <div className="promMainGameDiff">
       <img src={icon3} className="promMainGameDiffIcon" alt=""/>
-      <span className="promMainGameDiffText">Easy</span>
+      {/* <span className="promMainGameDiffText">Easy</span> */}
     </div>
   )
 }

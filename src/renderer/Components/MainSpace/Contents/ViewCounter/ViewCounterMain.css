@@ -1,0 +1,15 @@
+.ViewCounterMain{
+    display: flex;
+    margin-left: 15px;
+}
+.ViewCounterIcon{
+    width: 48px;
+}
+.ViewCounterIconNum{
+    color: white;
+    font-family: "mainFont";
+    font-weight: 1000;
+    font-size: 180%;
+    margin-top: 2px;
+    margin-left: 5px;
+}

@@ -25,26 +25,26 @@ function MainPage() {
   const [hopUpWindowFlg,setHopUpWindowFlg] = useState<{status:boolean,title:string,img:string,profile:string}>({status:false,title:"",img:"",profile:""})
 
   return (
-    <>
       <HopUpContext.Provider value={setHopUpWindowFlg}>
           <div className='titleBar'>
             <div className='titleBarLeft'>
               <img src={icon} alt='' className='titleBarIcon'/>
-              <span className='titleBarTitle'>GCC Launcher 2024</span>
+              <span className='titleBarTitle'>GCC-Launcher-2024</span>
             </div>
             <div className='titleBarRight'>
                 <img src={icon2} onClick={naviFunctions.min} className='titleBarNaviIcon' alt=''/>
                 <img src={icon4} onClick={naviFunctions.max} className='titleBarNaviIcon' alt=''/>
-                <img src={icon3} onClick={naviFunctions.close} className='titleBarNaviIcon' alt=''/>
+                <img src={icon3} onClick={naviFunctions.close} className='titlBarNaviIcon' alt=''/>
             </div>
           </div>
-          <div className='luncherMainSpace'>
-            {hopUpWindowFlg.status?<HopUpWindowMain title={hopUpWindowFlg.title} img={hopUpWindowFlg.img} profile={hopUpWindowFlg.profile}/>:<></>}
-            <LeftBarMain />
-            <MainSpace/>
+          {hopUpWindowFlg.status?<HopUpWindowMain title={hopUpWindowFlg.title} img={hopUpWindowFlg.img} profile={hopUpWindowFlg.profile}/>:<></>}
+          <div className='mainSpace'>
+            <div className='luncherMainSpace'>
+              <LeftBarMain />
+              <MainSpace/>
+            </div>
           </div>
       </HopUpContext.Provider>
-    </>
   );
 }
 

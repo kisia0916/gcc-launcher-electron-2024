@@ -1,5 +1,5 @@
 .prmoMainGame{
-    width: calc(100% - 35%);
+    width: calc(100% - 32%);
     height: 400px;
     height: 100%;
     background-color: rgba(218, 218, 218, 0.144);
@@ -30,7 +30,7 @@
     width: 150px;
     height: 40px;
     background-color: rgb(36 40 52);
-    position: absolute;
+    /* position: absolute; */
     border-radius: 50px;
     margin-top: 7px;
     margin-left: 7px;
@@ -198,7 +198,7 @@
     color: white;
     font-family: "mainFont";
     font-weight: 1000;
-    margin-top: 150px;
+    margin-top: 140px;
     font-size: 150%;
     text-shadow: 0 0 8px #000;
     margin-left: 30px;
@@ -221,4 +221,15 @@
 }
 .promMainGameProfile{
     margin-bottom: 15px;
+}
+.promRankTop{
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+}
+.promMainGameTitleSpace{
+    width: 100%;
+    display: flex;
 }

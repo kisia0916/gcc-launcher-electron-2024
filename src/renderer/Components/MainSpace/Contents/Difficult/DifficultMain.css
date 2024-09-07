@@ -1,11 +1,11 @@
 .promMainGameDiff{
     display: flex;
-    margin-left: 10px;
 }
 .promMainGameDiffIcon{
     width: 45px;
     height: 45px;
-    /* margin-top: 10px; */
+    text-shadow: 0 0 8px #000;
+    /* margin-top:2px; */
 }
 .promMainGameDiff{
     color: #2ac670;
@@ -17,5 +17,6 @@
     /* margin-top: 9px; */
     line-height: 45px;
     margin-left: 1px;
+    text-shadow: 0 0 8px #000;
 
 }

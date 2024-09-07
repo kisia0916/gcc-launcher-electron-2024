@@ -8,6 +8,7 @@ export default function App() {
   const [DoneFirstLoad,setDoneFirstLoad] = useState<boolean>(false)
   useEffect(()=>{
     window.electron.ipcRenderer.sendMessage("load-games-data","")
+    window.electron.ipcRenderer.sendMessage("run_game","")
     window.electron.ipcRenderer.on("load-games-data",(arg:any)=>{
       console.log(arg)
       setGames(arg)

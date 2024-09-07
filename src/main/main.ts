@@ -94,7 +94,9 @@ const createWindow = async () => {
       preload: app.isPackaged
         ? path.join(__dirname, 'preload.js')
         : path.join(__dirname, '../../.erb/dll/preload.js'),
-      webSecurity:false
+      webSecurity:false,
+      nodeIntegration:true,
+      contextIsolation:true
     },
   });
 
@@ -146,7 +148,7 @@ app
   .whenReady()
   .then(() => {
     ipcModules(ipcMain)
-    createWindow();
+    createWindow()
     app.on('activate', () => {
       // On macOS it's common to re-create a window in the app when the
       // dock icon is clicked and there are no other windows open.
