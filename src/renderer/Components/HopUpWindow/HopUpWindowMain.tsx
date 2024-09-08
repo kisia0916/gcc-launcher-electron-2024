@@ -28,7 +28,7 @@ function HopUpWindowMain(props:{title:string,img:string,profile:string,place:str
           <div className='hopUpWindowMainInfo'>
               <div className='hopUpWindowMainTitle'>
                 <div className='hopUpWindowMainDiff'>
-                  <DifficultMain/>
+                  <DifficultMain diff={1}/>
                 </div>
                 <span className='hopUpWindowMainTitleText'>{props.title}</span><br/>
               </div>

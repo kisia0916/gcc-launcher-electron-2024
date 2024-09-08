@@ -8,6 +8,7 @@
 }
 .gameIconMain{
     display: flex;
+    cursor: pointer;
 }
 .gameIconImg{
     width: 39px;

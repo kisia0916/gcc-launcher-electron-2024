@@ -19,7 +19,7 @@ function Rank1Main(props:{img1:string,icon1:string,title:string,profile:string,p
       <div className="promMainGameTitle">
           <div className='promMainGameTitleSpace'>
             <div className='promMainDiffIconPlace'>
-              <DifficultMain/>
+              <DifficultMain diff={1}/>
             </div>
             <span className="promMainGameTitleText">{props.title}</span>
           </div>

@@ -38,7 +38,7 @@ function GenreSectionMain(props:{genreTitle:string,genreGames:any}) {
   return (
     <>
         <div className="gameSectionTop">
-            <img src={icon} alt="" className="gameSectionTopIcon"/>
+            <img src={icon} alt="" className={`gameSectionTopIcon ${props.genreTitle}`}/>
             <span className="gameSectionTitle">{props.genreTitle}</span>
         </div>
         <div className="promoMain">

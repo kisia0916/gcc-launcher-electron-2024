@@ -9,12 +9,13 @@
  * `./src/main.js` using webpack. This gives us some performance wins.
  */
 import path from 'path';
-import { app, BrowserWindow, shell, ipcMain, Menu } from 'electron';
+import { app, BrowserWindow, shell, ipcMain, Menu, screen } from 'electron';
 import { autoUpdater } from 'electron-updater';
 import log from 'electron-log';
 import MenuBuilder from './menu';
 import { resolveHtmlPath } from './util';
 import { ipcModules } from './ipcModules/ipcMain';
+import { generateGameJson } from './initModules/initGameInfo';
 
 class AppUpdater {
   constructor() {
@@ -47,7 +48,7 @@ if (process.env.NODE_ENV === 'production') {
   sourceMapSupport.install();
 }
 
-const isDebug = false
+const isDebug = true
   // process.env.NODE_ENV === 'development' || process.env.DEBUG_PROD === 'true';
 
 if (isDebug) {
@@ -80,16 +81,22 @@ const createWindow = async () => {
   const getAssetPath = (...paths: string[]): string => {
     return path.join(RESOURCES_PATH, ...paths);
   };
-
+  const { width, height } = screen.getPrimaryDisplay().workAreaSize
   mainWindow = new BrowserWindow({
     show: false,
-    width: 1024,
-    height: 728,
-    minHeight:900,
-    minWidth:1530,
+    // width: 1024,
+    // height: 728,
+    // minHeight:900,
+    // minWidth:1530,
+    width: width,
+    height: height,
+    minHeight:height,
+    minWidth:width,
     icon: getAssetPath('0b3ec145cce25a1a.png'),
     frame:false,
+    fullscreen: true,    
     titleBarStyle: "hidden",
+    type:"desktop",
     webPreferences: {
       preload: app.isPackaged
         ? path.join(__dirname, 'preload.js')
@@ -101,7 +108,6 @@ const createWindow = async () => {
   });
 
   mainWindow.loadURL(resolveHtmlPath('index.html'));
-  mainWindow.setFullScreen(false)
   mainWindow.on('ready-to-show', () => {
     if (!mainWindow) {
       throw new Error('"mainWindow" is not defined');
@@ -149,6 +155,8 @@ app
   .then(() => {
     ipcModules(ipcMain)
     createWindow()
+    // generateGameJson()
+    // mainWindow?.setAlwaysOnTop(true, 'screen-saver'); 
     app.on('activate', () => {
       // On macOS it's common to re-create a window in the app when the
       // dock icon is clicked and there are no other windows open.

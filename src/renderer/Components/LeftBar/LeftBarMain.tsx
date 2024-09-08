@@ -37,19 +37,19 @@ function LeftBarMain() {
         </div>
         <div className="leftBarIcons">
           {
-            dataContext.games.genres?dataContext.games.genres.map((i:"Latest"|"Action"|"Command"|"Shooting"|"Table"|"Other")=>{
-              if (i === "Action"){
-                return <GenreButton icon={genresIconList.action} title={i} selected={false}/>
-              }else if (i === "Command"){
-                return <GenreButton icon={genresIconList.command} title={i} selected={false}/>
-              }else if (i === "Latest"){
-                return <GenreButton icon={genresIconList.latest} title={i} selected={true}/>
-              }else if (i === "Other"){
-                return <GenreButton icon={genresIconList.other} title={i} selected={false}/>
-              }else if (i === "Shooting"){
-                return <GenreButton icon={genresIconList.shooting} title={i} selected={false}/>
-              }else if (i === "Table"){
-                return <GenreButton icon={genresIconList.table} title={i} selected={false}/>
+            dataContext.games.genres?dataContext.games.genres.map((i:"latest"|"action"|"command"|"shooting"|"table"|"other")=>{
+              if (i === "action"){
+                return <GenreButton icon={genresIconList.action} title={i[0].toUpperCase()+i.slice(1)} selected={true} />
+              }else if (i === "command"){
+                return <GenreButton icon={genresIconList.command} title={i[0].toUpperCase()+i.slice(1)} selected={false} />
+              }else if (i === "latest"){
+                return <GenreButton icon={genresIconList.latest} title={i[0].toUpperCase()+i.slice(1)} selected={true} />
+              }else if (i === "other"){
+                return <GenreButton icon={genresIconList.other} title={i[0].toUpperCase()+i.slice(1)} selected={false} />
+              }else if (i === "shooting"){
+                return <GenreButton icon={genresIconList.shooting} title={i[0].toUpperCase()+i.slice(1)} selected={false} />
+              }else if (i === "table"){
+                return <GenreButton icon={genresIconList.table} title={i[0].toUpperCase()+i.slice(1)} selected={false} />
               }
             }):<></>
           }

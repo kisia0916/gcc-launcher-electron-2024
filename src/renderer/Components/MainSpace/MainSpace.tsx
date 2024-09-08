@@ -7,15 +7,29 @@ function MainSpace() {
   const GameList = useContext<any>(GameListContext)
   const [genreList,setGenreList] = useState<any>([])
   useEffect(()=>{
-    console.log(GameList)
+    window.electron.ipcRenderer.on("select-genre",(arg:any)=>{
+      const scrollTarget = document.querySelector(`.${arg.genre}`)
+      scrollTarget?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    })
+  },[])
+  useEffect(()=>{
     if (GameList.games){
-      console.log("hello")
-      Object.entries(GameList.games).forEach(([key,value])=>{
+      let gamesList:any[] = []
+      Object.entries(GameList.games).forEach(([key,value]:[string,any])=>{
         if (key !== "genres"){
-          const genre = key[0].toUpperCase()+key.slice(1)
-          setGenreList((genreList:any)=>[...genreList,<GenreSectionMain genreTitle={genre} genreGames={value}/>])
+          const targetIndex = gamesList.findIndex((i)=>i === key)
+          if (targetIndex !== -1){
+            const genre = key[0].toUpperCase()+key.slice(1)
+            gamesList[targetIndex] = <GenreSectionMain genreTitle={genre} genreGames={value}/>
+            // setGenreList((genreList:any)=>[...genreList,<GenreSectionMain genreTitle={genre} genreGames={value}/>])
+          }
+        }else{
+          value.forEach((i:string)=>{
+            gamesList = [...gamesList,i]
+          })
         }
       })
+      setGenreList(gamesList)
     }
   },[GameList.games])
   return (
