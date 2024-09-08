@@ -3,7 +3,7 @@ import MainSpaceButtonMain from '../../../Buttons/MainSpaceButtonMain'
 import DifficultMain from '../../../Difficult/DifficultMain'
 import ViewCounterMain from '../../../ViewCounter/ViewCounterMain'
 
-function Rank1Main(props:{img1:string,icon1:string,title:string,profile:string}) {
+function Rank1Main(props:{img1:string,icon1:string,title:string,profile:string,place:string}) {
   useEffect(()=>{
     // alert(props.img1)
   },[props])
@@ -28,7 +28,7 @@ function Rank1Main(props:{img1:string,icon1:string,title:string,profile:string})
               {/* <span>フォートナイトは、100人が一つの島に降り立って、武器を拾ったり建築したりしながら、最後の一人を目指して戦うバトルロイヤルゲーム。派手なスキンやダンス、友達とチームを組んで遊ぶのも楽しい要素。建築とバトルの駆け引きが熱い人気タイトル！</span> */}
           </div>
           <div className="promMainGameButtonMain">
-              <MainSpaceButtonMain/>
+              <MainSpaceButtonMain game_path={props.place}/>
               <ViewCounterMain/>
               {/* <DifficultMain/> */}
           </div>

@@ -6,10 +6,10 @@ import ViewIconMain from './ViewIcon/ViewIconMain'
 
 import diffIcon from "../../../../../../assets/img/XRP_line4.svg"
 
-function GameMain(props:{img:string,title:string,profile:string}) {
+function GameMain(props:{img:string,title:string,profile:string,place:string}) {
     const setHopUpWindow:any = useContext(HopUpContext)
     return (
-    <div className="gameMainContentMain" onClick={()=>setHopUpWindow({status:true,title:props.title,img:props.img,profile:props.profile})}>
+    <div className="gameMainContentMain" onClick={()=>setHopUpWindow({status:true,title:props.title,img:props.img,profile:props.profile,place:props.place})}>
         <div className="gameMainContent">
             <div className='gameMainContentSpace'>
                 <ViewIconMain/>

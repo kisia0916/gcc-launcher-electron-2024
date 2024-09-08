@@ -12,6 +12,20 @@
     display: flex;
     border-top:solid 1px rgba(255, 255, 255, 0.377)
 }
+@media (min-width:1600px) {
+    .topBarTimer{
+        width: 80%;
+        height: 50px;
+        margin: auto;
+        display: flex;
+        border:solid 1px rgba(255, 255, 255, 0.377);
+        border-radius: 50px;
+    }
+    .topBarTimerText{
+        margin-top: 5px !important;
+    }
+}
+
 .topBarTimerText{
     color: black;
     color: white;

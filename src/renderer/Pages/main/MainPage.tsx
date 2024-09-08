@@ -22,7 +22,7 @@ function MainPage() {
     }
   }
 
-  const [hopUpWindowFlg,setHopUpWindowFlg] = useState<{status:boolean,title:string,img:string,profile:string}>({status:false,title:"",img:"",profile:""})
+  const [hopUpWindowFlg,setHopUpWindowFlg] = useState<{status:boolean,title:string,img:string,profile:string,place:string}>({status:false,title:"",img:"",profile:"",place:""})
 
   return (
       <HopUpContext.Provider value={setHopUpWindowFlg}>
@@ -37,7 +37,7 @@ function MainPage() {
                 <img src={icon3} onClick={naviFunctions.close} className='titlBarNaviIcon' alt=''/>
             </div>
           </div>
-          {hopUpWindowFlg.status?<HopUpWindowMain title={hopUpWindowFlg.title} img={hopUpWindowFlg.img} profile={hopUpWindowFlg.profile}/>:<></>}
+          {hopUpWindowFlg.status?<HopUpWindowMain title={hopUpWindowFlg.title} img={hopUpWindowFlg.img} profile={hopUpWindowFlg.profile} place={hopUpWindowFlg.place}/>:<></>}
           <div className='mainSpace'>
             <div className='luncherMainSpace'>
               <LeftBarMain />
