@@ -94,7 +94,7 @@ const createWindow = async () => {
     minWidth:width,
     icon: getAssetPath('0b3ec145cce25a1a.png'),
     frame:false,
-    fullscreen: true,    
+    fullscreen: false,    
     titleBarStyle: "hidden",
     type:"desktop",
     webPreferences: {
@@ -155,7 +155,7 @@ app
   .then(() => {
     ipcModules(ipcMain)
     createWindow()
-    // generateGameJson()
+    generateGameJson()
     // mainWindow?.setAlwaysOnTop(true, 'screen-saver'); 
     app.on('activate', () => {
       // On macOS it's common to re-create a window in the app when the

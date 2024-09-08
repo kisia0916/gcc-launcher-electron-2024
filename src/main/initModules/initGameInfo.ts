@@ -4,7 +4,7 @@ const main = ()=>{
     const path = `${process.cwd().replaceAll("\\","/")}/launcher-game/games`
     const dirs= fs.readdirSync(path)
     fs.appendFileSync("./game_info.json","{")
-    fs.appendFileSync("./game_info.json",`"genres":["Latest","Action","Command","Shooting","Table","Other"],`)
+    fs.appendFileSync("./game_info.json",`"genres":["action","command","shooting","table","other"],`)
     dirs.forEach((i,index)=>{
         const GenreName = i
         const games = fs.readdirSync(`${path}/${i}`)
@@ -20,7 +20,12 @@ const main = ()=>{
                     }
                 })
                 const metaSplitList = launcher_meta.split("\r\n")
-                const gameTitle = metaSplitList[0]
+                let gameTitle:string = ""
+                if (metaSplitList[0]){
+                    gameTitle = metaSplitList[0]
+                }else{
+                    gameTitle = k
+                }
                 const mainFilePlace = `${path}/${i}/${k}/${metaSplitList[1]}`
                 let readme = ""
                 metaSplitList.forEach((i,index)=>{

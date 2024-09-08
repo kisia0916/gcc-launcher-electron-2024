@@ -26,7 +26,7 @@ function MainPage() {
 
   return (
       <HopUpContext.Provider value={setHopUpWindowFlg}>
-          <div className='titleBar'>
+          {/* <div className='titleBar'>
             <div className='titleBarLeft'>
               <img src={icon} alt='' className='titleBarIcon'/>
               <span className='titleBarTitle'>GCC-Launcher-2024</span>
@@ -36,7 +36,7 @@ function MainPage() {
                 <img src={icon4} onClick={naviFunctions.max} className='titleBarNaviIcon' alt=''/>
                 <img src={icon3} onClick={naviFunctions.close} className='titlBarNaviIcon' alt=''/>
             </div>
-          </div>
+          </div> */}
           {hopUpWindowFlg.status?<HopUpWindowMain title={hopUpWindowFlg.title} img={hopUpWindowFlg.img} profile={hopUpWindowFlg.profile} place={hopUpWindowFlg.place}/>:<></>}
           <div className='mainSpace'>
             <div className='luncherMainSpace'>
