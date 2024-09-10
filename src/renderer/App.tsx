@@ -13,6 +13,11 @@ export default function App() {
       setGames(arg)
       setDoneFirstLoad(true)
     })
+
+    window.electron.ipcRenderer.sendMessage("get-genre-ranking-request",{genres:["action","command","shooting","table","other"]})
+    window.electron.ipcRenderer.on("get-genre-ranking-response",(arg:any)=>{
+      console.log(arg)
+    })
   },[])
   return (
     <GameListContext.Provider value={{

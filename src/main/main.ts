@@ -16,6 +16,8 @@ import MenuBuilder from './menu';
 import { resolveHtmlPath } from './util';
 import { ipcModules } from './ipcModules/ipcMain';
 import { generateGameJson } from './initModules/initGameInfo';
+import { apiRequestMain } from './networkModules/apiRequestsMain';
+
 
 class AppUpdater {
   constructor() {
@@ -94,7 +96,7 @@ const createWindow = async () => {
     minWidth:width,
     icon: getAssetPath('0b3ec145cce25a1a.png'),
     frame:false,
-    fullscreen: false,    
+    fullscreen: true,    
     titleBarStyle: "hidden",
     type:"desktop",
     webPreferences: {
@@ -154,6 +156,7 @@ app
   .whenReady()
   .then(() => {
     ipcModules(ipcMain)
+    apiRequestMain(ipcMain)
     createWindow()
     generateGameJson()
     // mainWindow?.setAlwaysOnTop(true, 'screen-saver'); 

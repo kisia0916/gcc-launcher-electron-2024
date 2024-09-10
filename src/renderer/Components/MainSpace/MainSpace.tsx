@@ -21,7 +21,6 @@ function MainSpace() {
           if (targetIndex !== -1){
             const genre = key[0].toUpperCase()+key.slice(1)
             gamesList[targetIndex] = <GenreSectionMain genreTitle={genre} genreGames={value}/>
-            // setGenreList((genreList:any)=>[...genreList,<GenreSectionMain genreTitle={genre} genreGames={value}/>])
           }
         }else{
           value.forEach((i:string)=>{
