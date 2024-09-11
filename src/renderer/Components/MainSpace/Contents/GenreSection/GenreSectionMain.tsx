@@ -17,11 +17,12 @@ import game11 from "../../../../../../assets/games/WS000059.jpg"
 
 
 
-function GenreSectionMain(props:{genreTitle:string,genreGames:any}) {
+function GenreSectionMain(props:{genreTitle:string,genreGames:any,ranking:any}) {
   const [rankGames,setRankGames] = useState<any>("")
   const [allGames,setAllGames] = useState<any>("")
   useEffect(()=>{
     console.log(props.genreGames)
+    console.log(props.ranking)
     if (props.genreGames){
       if (props.genreGames.length > 0){
         let rankGameList:any[] = []
@@ -29,7 +30,7 @@ function GenreSectionMain(props:{genreTitle:string,genreGames:any}) {
           rankGameList = [...rankGameList,props.genreGames[i]]
         }
         console.log(rankGameList)
-        setRankGames(rankGameList)
+        setRankGames(props.ranking)
         setAllGames(props.genreGames)
       }
     }

@@ -13,7 +13,7 @@ export const apiRequestMain = (ipcMain:any)=>{
     ipcMain.on("get-genre-ranking-request",(event:any,arg:any)=>{
         console.log(`${networkInfoFile.server_address}/ranking/get-genre-ranking`)
         axios.post(`${networkInfoFile.server_address}/ranking/get-genre-ranking`,{
-            genres:["action","command"]
+            genres:arg.genres
         }).then((res:AxiosResponse)=>{
             event.sender.send("get-genre-ranking-response",{data:res.data})
         }).catch((error)=>{

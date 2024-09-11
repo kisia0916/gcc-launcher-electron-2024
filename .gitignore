@@ -1,5 +1,5 @@
 .game_info.json
-.launcher-game/
+launcher-game
 # Logs
 logs
 *.log
