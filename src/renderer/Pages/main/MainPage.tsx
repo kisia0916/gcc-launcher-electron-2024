@@ -22,11 +22,11 @@ function MainPage() {
     }
   }
 
-  const [hopUpWindowFlg,setHopUpWindowFlg] = useState<{status:boolean,title:string,img:string,profile:string,place:string}>({status:false,title:"",img:"",profile:"",place:""})
+  const [hopUpWindowFlg,setHopUpWindowFlg] = useState<{status:boolean,title:string,img:string,profile:string,place:string,view:number}>({status:false,title:"",img:"",profile:"",place:"",view:0})
 
   return (
       <HopUpContext.Provider value={setHopUpWindowFlg}>
-          {hopUpWindowFlg.status?<HopUpWindowMain title={hopUpWindowFlg.title} img={hopUpWindowFlg.img} profile={hopUpWindowFlg.profile} place={hopUpWindowFlg.place}/>:<></>}
+          {hopUpWindowFlg.status?<HopUpWindowMain title={hopUpWindowFlg.title} img={hopUpWindowFlg.img} profile={hopUpWindowFlg.profile} place={hopUpWindowFlg.place} view={hopUpWindowFlg.view}/>:<></>}
           <div className='mainSpace'>
             <div className='luncherMainSpace'>
               <LeftBarMain />

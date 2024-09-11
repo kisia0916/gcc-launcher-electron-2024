@@ -8,26 +8,36 @@ const axios = axiosMain.create({
         password:networkInfoFile.basic_auth_pass
     }
 })
+
+export const add_view_counter = (title:string,ipcMain:any)=>{
+    axios.post(`${networkInfoFile.server_address}/game/add-view-counter`,{
+        title:title
+    }).then((res:AxiosResponse)=>{
+        ipcMain.sender.send("add-view-counter-response",{data:res.data})
+    }).catch((error)=>{
+        ipcMain.sender.send("add-view-counter-response",{data:"server-error"})
+    })
+}
+
 export const apiRequestMain = (ipcMain:any)=>{
     // const gameInfo = JSON.parse(fs.readFileSync(`"${process.cwd()}/game_info.json"`,"utf-8"))
-    ipcMain.on("get-genre-ranking-request",(event:any,arg:any)=>{
+    ipcMain.on("send-init-request",async(event:any,arg:any)=>{
         console.log(`${networkInfoFile.server_address}/ranking/get-genre-ranking`)
-        axios.post(`${networkInfoFile.server_address}/ranking/get-genre-ranking`,{
+        const rankingData = await axios.post(`${networkInfoFile.server_address}/ranking/get-genre-ranking`,{
             genres:arg.genres
-        }).then((res:AxiosResponse)=>{
-            event.sender.send("get-genre-ranking-response",{data:res.data})
-        }).catch((error)=>{
-            console.log(error)
-            event.sender.send("get-genre-ranking-response",{data:"server-error"})
         })
-    })
-    ipcMain.on("get-all-view-counter-request",(event:any,arg:any)=>{
-        axios.post(`${networkInfoFile.server_address}/game/get-all-view-counter`,{
+        const viewData = await axios.post(`${networkInfoFile.server_address}/game/get-all-view-counter`,{
             genres:arg.genres
+        })
+        event.sender.send("send-init-response",{ranking:rankingData.data,view:viewData.data})
+    })
+    ipcMain.on("add-view-counter-request",(event:any,arg:any)=>{
+        axios.put(`${networkInfoFile.server_address}/game/add-view-counter`,{
+            title:arg.title
         }).then((res:AxiosResponse)=>{
-            event.sender.send("get-all-view-counter-response",{data:res.data})
+            event.sender.send("add-view-counter-response",{data:res.data})
         }).catch((error)=>{
-            event.sender.send("get-all-view-counter-response",{data:"server-error"})
+            event.sender.send("add-view-counter-response",{data:"server-error"})
         })
     })
     ipcMain.on("set-visitor-request",(event:any,arg:any)=>{

@@ -1,6 +1,8 @@
 import { BrowserWindow, ipcMain ,screen} from "electron";
 import fs from "fs"
 import child_process from "child_process"
+import axios from "axios";
+import { add_view_counter } from "../networkModules/apiRequestsMain";
 
 const GAME_INFO_PATH = "./game_info.json"
 interface processInterface  {id:string,process:any}

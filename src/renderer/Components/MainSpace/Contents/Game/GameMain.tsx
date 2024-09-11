@@ -1,18 +1,17 @@
 import React, { useContext, useRef } from 'react'
 import "./GameMain.css"
 import { HopUpContext } from '../../../../Pages/main/MainPage'
-import HopUpWindowMain from '../../../HopUpWindow/HopUpWindowMain'
 import ViewIconMain from './ViewIcon/ViewIconMain'
 
 import diffIcon from "../../../../../../assets/img/XRP_line4.svg"
 
-function GameMain(props:{img:string,title:string,profile:string,place:string}) {
+function GameMain(props:{img:string,title:string,profile:string,place:string,view:number}) {
     const setHopUpWindow:any = useContext(HopUpContext)
     return (
-    <div className="gameMainContentMain" onClick={()=>setHopUpWindow({status:true,title:props.title,img:props.img,profile:props.profile,place:props.place})}>
+    <div className="gameMainContentMain" onClick={()=>setHopUpWindow({status:true,title:props.title,img:props.img,profile:props.profile,place:props.place,view:props.view})}>
         <div className="gameMainContent">
             <div className='gameMainContentSpace'>
-                <ViewIconMain/>
+                <ViewIconMain view={props.view}/>
                 <img src={props.img} className="gameMainContentImg" alt=""/>
             </div>
             {/* <span className="gameMainContentTitle">{props.title}</span> */}

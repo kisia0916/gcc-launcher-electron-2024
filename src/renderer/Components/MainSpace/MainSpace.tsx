@@ -21,7 +21,7 @@ const sortGame = (list:any,target:any)=>{
 function MainSpace() {
   const GameList = useContext<any>(GameListContext)
   const [genreList,setGenreList] = useState<any>([])
-  const genreContentList:string[] = ["action","command","shooting","table","other"]
+  const genreContentList:string[] = GameList.games.genres
   useEffect(()=>{
     window.electron.ipcRenderer.on("select-genre",(arg:any)=>{
       const scrollTarget = document.querySelector(`.${arg.genre}`)
@@ -31,22 +31,27 @@ function MainSpace() {
   useEffect(()=>{
     if (GameList.games){
       let gamesList:any[] = []
-      window.electron.ipcRenderer.sendMessage("get-genre-ranking-request",{genres:["action","command","shooting","table","other"]})
-      window.electron.ipcRenderer.on("get-genre-ranking-response",async(arg:any)=>{
-        console.log(arg.data.data)
-        const mainTargetList = sortGame(GameList.games,["action","command","shooting","table","other"])
-        console.log(mainTargetList)
+      window.electron.ipcRenderer.sendMessage("send-init-request",{genres:genreContentList})
+      window.electron.ipcRenderer.on("send-init-response",async(arg:any)=>{
+        console.log(arg)
+        const mainTargetList = sortGame(GameList.games,genreContentList)
         gamesList = genreContentList.map((i:any)=>{
             return ""
         })
         mainTargetList.forEach((i:any,index:number)=>{
             const genre = genreContentList[index][0].toUpperCase()+genreContentList[index].slice(1)
-            const rankingGames = arg.data.data[index].map((k:any)=>{
-              console.log(k)
-              return i.find((m:any)=>m.title === k.title)
+            const rankingGames = arg.ranking.data[index].map((k:any)=>{
+              let returnData = i.find((m:any)=>m.title === k.title)
+              returnData.view = k.counter
+              return returnData
             })
-            console.log(rankingGames)
-            gamesList[index] = <GenreSectionMain genreTitle={genre} genreGames={i} ranking={rankingGames}/>
+            let returnGames = arg.view.data[index].map((k:any)=>{
+              let returnData = i.find((m:any)=>m.title === k.title)
+              returnData.view = k.counter
+              return returnData
+            })
+            returnGames.sort((a:any,b:any)=>b.view-a.view)
+            gamesList[index] = <GenreSectionMain genreTitle={genre} genreGames={returnGames} ranking={rankingGames}/>
         })
         setGenreList(gamesList)
       })

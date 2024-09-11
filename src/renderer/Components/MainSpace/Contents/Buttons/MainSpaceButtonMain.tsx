@@ -5,7 +5,7 @@ import icon3 from "../../../../../../assets/img/run_line.svg"
 const { v4: uuidv4 } = require('uuid')
 
 
-function MainSpaceButtonMain(props:{game_path:string}) {
+function MainSpaceButtonMain(props:{game_path:string,title:string}) {
   const [buttonText,setButtonText] = useState<string>("Play")
   const [isRunning,setIsRunning] = useState<boolean>(false)
   const [processId,setProcessId] = useState<string>("")
@@ -16,6 +16,7 @@ function MainSpaceButtonMain(props:{game_path:string}) {
     if (!isRunning){
       setButtonText("Running...")
       setIsRunning(true)
+      window.electron.ipcRenderer.sendMessage("add-view-counter-request",{title:props.title})      
       window.electron.ipcRenderer.sendMessage("run_game",{game_path:path,processId:processId})
       window.electron.ipcRenderer.on("close-game-process",(arg:any)=>{
         console.log(arg)
