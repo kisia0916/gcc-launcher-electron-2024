@@ -1,0 +1,23 @@
+.LauncherViewCloseButtonMain{
+    width: 40px;
+    height: 40px;
+    background-color: #050917;
+    margin-top: 10px;
+    margin-right: 10px;
+    border-radius: 50px;
+    border: solid 2px #ff5024;
+    display: flex;
+    z-index: 10000000;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+}
+.LauncherViewCloseButtonMain:hover{
+    background-color: #080f26b7;
+}
+.LauncherViewCloseButtonIcon{
+    margin: auto;
+    width: 30px;
+    height: 30px;
+}

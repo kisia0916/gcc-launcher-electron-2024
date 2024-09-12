@@ -3,6 +3,7 @@ import fs from "fs"
 const main = ()=>{
     const path = `${process.cwd().replaceAll("\\","/")}/launcher-game/games`
     const dirs= fs.readdirSync(path)
+    const launcherMetaInfoIndex = 2
     fs.appendFileSync("./game_info.json","{")
     fs.appendFileSync("./game_info.json",`"genres":["action","command","shooting","table","other"],`)
     dirs.forEach((i,index)=>{
@@ -27,9 +28,10 @@ const main = ()=>{
                     gameTitle = k
                 }
                 const mainFilePlace = `${path}/${i}/${k}/${metaSplitList[1]}`
+                const projectType = metaSplitList[2]
                 let readme = ""
                 metaSplitList.forEach((i,index)=>{
-                    if (index > 1){
+                    if (index > launcherMetaInfoIndex){
                         readme+=`${i}\r\n`
                     }
                 })
@@ -38,7 +40,8 @@ const main = ()=>{
                     title:gameTitle,
                     place:mainFilePlace,
                     thumbnail:thumbnailImg,
-                    readme:readme
+                    readme:readme,
+                    project_type:projectType
                 }
                 console.log(writeData)
                 index2 == games.length-1 ?fs.appendFileSync("./game_info.json",`${JSON.stringify(writeData)}\n`):fs.appendFileSync("./game_info.json",`${JSON.stringify(writeData)},\n`)

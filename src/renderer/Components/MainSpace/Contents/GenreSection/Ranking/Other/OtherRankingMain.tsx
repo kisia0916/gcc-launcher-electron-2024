@@ -3,10 +3,10 @@ import MainSpaceButtonMain from '../../../Buttons/MainSpaceButtonMain'
 import DifficultMain from '../../../Difficult/DifficultMain'
 import { HopUpContext } from '../../../../../../Pages/main/MainPage'
 
-function OtherRankingMain(props:{img1:string,icon1:string,icon2:string,title:string,profile:string,rank:2|3,place:string,view:number}) {
+function OtherRankingMain(props:{img1:string,icon1:string,icon2:string,title:string,profile:string,rank:2|3,place:string,view:number,project_type:string}) {
   const setHopUpWindow:any = useContext(HopUpContext)
   return (
-    <div className="prmoRankingContents" onClick={()=>setHopUpWindow({status:true,title:props.title,img:props.img1,profile:props.profile,place:props.place,view:props.view})}>
+    <div className="prmoRankingContents" onClick={()=>setHopUpWindow({status:true,title:props.title,img:props.img1,profile:props.profile,place:props.place,view:props.view,project_type:props.project_type})}>
         <div className="prmoRankingContent">
         <img src={props.img1} alt="" className="prmoRankingContentImg"/>
         <div className="prmoRankingContentTop">

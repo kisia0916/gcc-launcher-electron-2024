@@ -9,7 +9,7 @@ const sortGame = (list:any,target:any)=>{
     return ""
   })
   Object.entries(list).forEach(([key,value]:[string,any],index:number)=>{
-    if (index>0){
+    if (key !== "genres"){
       const targetIndex = target.findIndex((i:string)=>i === key)
       if (targetIndex !== -1){
         returnData[targetIndex] = value
@@ -22,7 +22,6 @@ const sortGame = (list:any,target:any)=>{
 function MainSpace() {
   const GameList = useContext<any>(GameListContext)
   const [genreList,setGenreList] = useState<any>([])
-  const genreContentList:string[] = GameList.games.genres
   useEffect(()=>{
     window.electron.ipcRenderer.on("select-genre",(arg:any)=>{
       const scrollTarget = document.querySelector(`.${arg.genre}`)
@@ -31,11 +30,12 @@ function MainSpace() {
   },[])
   useEffect(()=>{
     if (GameList.games){
+      const genreContentList:string[] = GameList.games.genres
       let gamesList:any[] = []
       window.electron.ipcRenderer.sendMessage("send-init-request",{genres:genreContentList})
       window.electron.ipcRenderer.on("send-init-response",async(arg:any)=>{
-        console.log(arg)
         const mainTargetList = sortGame(GameList.games,genreContentList)
+        console.log(mainTargetList)
         gamesList = genreContentList.map((i:any)=>{
             return ""
         })
@@ -48,9 +48,14 @@ function MainSpace() {
             })
             let returnGames = arg.view.data[index].map((k:any)=>{
               let returnData = i.find((m:any)=>m.title === k.title)
-              returnData.view = k.counter
+              console.log(returnData)
+              if (returnData){
+                returnData.view = k.counter
+              }else{
+                return null
+              }
               return returnData
-            })
+            }).filter((content:any)=>content !== null)
             returnGames.sort((a:any,b:any)=>b.view-a.view)
             gamesList[index] = <GenreSectionMain genreTitle={genre} genreGames={returnGames} ranking={rankingGames}/>
         })

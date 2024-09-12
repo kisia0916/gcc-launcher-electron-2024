@@ -21,12 +21,15 @@ export const ipcModules = (ipcMain:any)=>{
         const new_process = child_process.spawn(cmd)
         running_process_list = [...running_process_list,{id:processId as string,process:new_process}]
         new_process.on("close",()=>{
-            event.sender.send("close-game-process",{processId:processId})
+            event.sender.send("close-game-process",{processId:processId,project_type:"exe"})
             const targetIndex = running_process_list.findIndex((i:processInterface)=>i.id === processId)
             if (targetIndex !== -1){
                 running_process_list.splice(targetIndex,1)
             }
         })
+    })
+    ipcMain.on("close-game-process",(event:any,arg:any)=>{
+        event.sender.send("close-game-process",{processId:"",project_type:arg.project_type})
     })
     ipcMain.on("select-genre",(event:any,arg:any)=>{
         event.sender.send("select-genre",{genre:arg.genre})

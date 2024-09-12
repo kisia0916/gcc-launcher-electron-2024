@@ -9,7 +9,7 @@ import { HopUpContext } from '../../Pages/main/MainPage'
 import ViewIconMain from '../MainSpace/Contents/Game/ViewIcon/ViewIconMain'
 import ViewCounterMain from '../MainSpace/Contents/ViewCounter/ViewCounterMain'
 
-function HopUpWindowMain(props:{title:string,img:string,profile:string,place:string,view:number}) {
+function HopUpWindowMain(props:{title:string,img:string,profile:string,place:string,view:number,project_type:string}) {
   const [ishoverFlg,setIshoverFlg] = useState(false)
   const setHopUpWindow:any = useContext(HopUpContext)
   const closeHopUpWindow = ()=>{
@@ -37,7 +37,7 @@ function HopUpWindowMain(props:{title:string,img:string,profile:string,place:str
               </div>
               <div className='hopUpWindowMainGameProfileButtons'>
                     <div className='hopUpWindowMainGameProfileButtonsPlay'>
-                      <MainSpaceButtonMain game_path={props.place} title={props.title}/>
+                      <MainSpaceButtonMain game_path={props.place} title={props.title} project_type={props.project_type}/>
                     </div>
                     <ViewCounterMain view={props.view}/>
               </div>
