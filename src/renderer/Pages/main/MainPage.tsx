@@ -7,6 +7,7 @@ import icon2 from "../../../../assets/img/fullscreen_exit_line.svg"
 import icon3 from "../../../../assets/img/close_line.svg"
 import icon4 from "../../../../assets/img/hexagon_line.svg"
 import HopUpWindowMain from '../../Components/HopUpWindow/HopUpWindowMain';
+import ScratchRunnerMain from '../../Components/LauncherViewer/Scratch/ScratchRunnerMain';
 
 export const HopUpContext:any = createContext("")
 function MainPage() {
@@ -26,6 +27,7 @@ function MainPage() {
 
   return (
       <HopUpContext.Provider value={setHopUpWindowFlg}>
+          <ScratchRunnerMain page_path=''/>
           {hopUpWindowFlg.status?<HopUpWindowMain title={hopUpWindowFlg.title} img={hopUpWindowFlg.img} profile={hopUpWindowFlg.profile} place={hopUpWindowFlg.place} view={hopUpWindowFlg.view}/>:<></>}
           <div className='mainSpace'>
             <div className='luncherMainSpace'>

@@ -2,6 +2,7 @@ import React, { useContext, useEffect, useState } from 'react';
 import "./MainSpace.css"
 import GenreSectionMain from './Contents/GenreSection/GenreSectionMain';
 import { GameListContext } from '../../App';
+import ScratchRunnerMain from '../LauncherViewer/Scratch/ScratchRunnerMain';
 
 const sortGame = (list:any,target:any)=>{
   let returnData = target.map((i:any)=>{
