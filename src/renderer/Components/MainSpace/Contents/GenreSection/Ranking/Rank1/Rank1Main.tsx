@@ -25,7 +25,6 @@ function Rank1Main(props:{img1:string,icon1:string,title:string,profile:string,p
           </div>
           <div className="promMainGameProfile">
               <span>{props.profile}</span>
-              {/* <span>フォートナイトは、100人が一つの島に降り立って、武器を拾ったり建築したりしながら、最後の一人を目指して戦うバトルロイヤルゲーム。派手なスキンやダンス、友達とチームを組んで遊ぶのも楽しい要素。建築とバトルの駆け引きが熱い人気タイトル！</span> */}
           </div>
           <div className="promMainGameButtonMain">
               <MainSpaceButtonMain game_path={props.place} title={props.title} project_type={props.project_type}/>

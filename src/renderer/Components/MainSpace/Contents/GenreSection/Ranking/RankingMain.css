@@ -78,16 +78,18 @@
 }
 .promMainGameProfile{
     width: 81%;
-    height: 50px;
+    height: 60px;
     overflow-y: scroll;
     color: white;
     font-family: "mainFont";
     font-weight: 1000;
     margin-top: 12px;
     font-size: 110%;
-    overflow: hidden;
+    overflow: auto;
 }
-
+.promMainGameProfile::-webkit-scrollbar{
+    width: 0;
+}
 
 .prmoRankings{
     width: 35%;

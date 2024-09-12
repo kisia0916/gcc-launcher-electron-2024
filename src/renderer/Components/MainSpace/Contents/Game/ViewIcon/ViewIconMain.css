@@ -1,5 +1,5 @@
 .ViewIconMain{
-    width: 60px;
+    min-width: 60px;
     height: 28px;
     background-color: #242834;
     border-radius: 50px;
@@ -19,5 +19,6 @@
     font-family: "mainFont";
     font-weight: 1000;
     margin-top: 3px;
-    margin-left: 4px;
+    margin-left: 5px;
+    margin-right: 7px;
 }
