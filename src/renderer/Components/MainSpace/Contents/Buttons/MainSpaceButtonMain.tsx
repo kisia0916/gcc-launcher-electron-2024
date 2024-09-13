@@ -38,6 +38,9 @@ function MainSpaceButtonMain(props:{game_path:string,title:string,project_type:s
         }else if (arg.project_type === "scratch"){
           setIsRunning(false)
           setButtonText("Play")
+        }else if (arg.project_type === "movie"){
+          setIsRunning(false)
+          setButtonText("Play")
         }
       })
     }

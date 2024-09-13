@@ -33,6 +33,7 @@ function MainPage() {
   return (
       <ScratchRunnerContext.Provider value={setScratchRunnerFlg}>
       <HopUpContext.Provider value={setHopUpWindowFlg}>
+      <MovieViewerContext.Provider value={setMovieViewerFlg}>
           {scratchRunnerFlg.state?<ScratchRunnerMain page_path={scratchRunnerFlg.path}/>:<></>}
           {movieViewerFlg.state?<MovieViewerMain page_path={movieViewerFlg.path}/>:<></>}
           {hopUpWindowFlg.status?<HopUpWindowMain title={hopUpWindowFlg.title} img={hopUpWindowFlg.img} profile={hopUpWindowFlg.profile} place={hopUpWindowFlg.place} view={hopUpWindowFlg.view} project_type={hopUpWindowFlg.project_type} />:<></>}
@@ -42,6 +43,7 @@ function MainPage() {
               <MainSpace/>
             </div>
           </div>
+      </MovieViewerContext.Provider>
       </HopUpContext.Provider>
       </ScratchRunnerContext.Provider>
   );
