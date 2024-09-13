@@ -38,3 +38,13 @@
     border: solid 1px rgba(70, 70, 70, 0.178);
     border-radius: 10px;
 }
+
+@media (max-width:1500px){
+    .leftTitleText{
+        display: none;
+    }
+    .gameIconImg{
+        display: flex;
+        margin-left: 39%;
+    }
+}
