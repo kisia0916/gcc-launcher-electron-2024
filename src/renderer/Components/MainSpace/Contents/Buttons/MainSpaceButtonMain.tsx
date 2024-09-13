@@ -2,12 +2,13 @@ import React, { useContext, useDebugValue, useEffect, useState } from 'react'
 import "./MainSpaceButtonMain.css"
 import icon2 from "../../../../../../assets/img/play_fill (1).svg"
 import icon3 from "../../../../../../assets/img/run_line.svg"
-import { ScratchRunnerContext } from '../../../../Pages/main/MainPage'
+import { MovieViewerContext, ScratchRunnerContext } from '../../../../Pages/main/MainPage'
 const { v4: uuidv4 } = require('uuid')
 
 
 function MainSpaceButtonMain(props:{game_path:string,title:string,project_type:string}) {
   const scratchRunner:any = useContext(ScratchRunnerContext)
+  const movieViewer:any = useContext(MovieViewerContext)
   const [buttonText,setButtonText] = useState<string>("Play")
   const [isRunning,setIsRunning] = useState<boolean>(false)
   const [processId,setProcessId] = useState<string>("")
@@ -25,7 +26,7 @@ function MainSpaceButtonMain(props:{game_path:string,title:string,project_type:s
       }else if (project_type === "scratch"){
         scratchRunner({state:true,path:props.game_path})
       }else if (project_type === "movie"){
-
+        movieViewer({state:true,path:props.game_path})
       }
       window.electron.ipcRenderer.on("close-game-process",(arg:any)=>{
         console.log(arg)
