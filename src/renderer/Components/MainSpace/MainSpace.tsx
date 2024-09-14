@@ -43,9 +43,15 @@ function MainSpace() {
             const genre = genreContentList[index][0].toUpperCase()+genreContentList[index].slice(1)
             const rankingGames = arg.ranking.data[index].map((k:any)=>{
               let returnData = i.find((m:any)=>m.title === k.title)
-              returnData.view = k.counter
+              if (returnData){
+                returnData.view = k.counter
+              }else{
+                returnData = k
+                returnData.view = 0
+              }
               return returnData
             })
+            console.log(arg)
             let returnGames = arg.view.data[index].map((k:any)=>{
               let returnData = i.find((m:any)=>m.title === k.title)
               console.log(returnData)
