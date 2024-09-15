@@ -13,3 +13,10 @@
     margin-top: 2px;
     margin-left: 5px;
 }
+.ViewCounterIconNumMini{
+    color: white;
+    font-family: "mainFont";
+    font-weight: 1000;
+    font-size: 100%;
+    margin-right: 5px;
+}

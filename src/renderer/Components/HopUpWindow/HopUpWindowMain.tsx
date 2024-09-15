@@ -9,7 +9,7 @@ import { HopUpContext } from '../../Pages/main/MainPage'
 import ViewIconMain from '../MainSpace/Contents/Game/ViewIcon/ViewIconMain'
 import ViewCounterMain from '../MainSpace/Contents/ViewCounter/ViewCounterMain'
 
-function HopUpWindowMain(props:{title:string,img:string,profile:string,place:string,view:number,project_type:string}) {
+function HopUpWindowMain(props:{title:string,img:string,profile:string,place:string,view:number,project_type:string,diff:"easy"|"normal"|"hard"}) {
   const [ishoverFlg,setIshoverFlg] = useState(false)
   const setHopUpWindow:any = useContext(HopUpContext)
   const closeHopUpWindow = ()=>{
@@ -28,7 +28,7 @@ function HopUpWindowMain(props:{title:string,img:string,profile:string,place:str
           <div className='hopUpWindowMainInfo'>
               <div className='hopUpWindowMainTitle'>
                 <div className='hopUpWindowMainDiff'>
-                  <DifficultMain diff={1}/>
+                  <DifficultMain diff={props.diff} size={1}/>
                 </div>
                 <span className='hopUpWindowMainTitleText'>{props.title}</span><br/>
               </div>
@@ -39,7 +39,7 @@ function HopUpWindowMain(props:{title:string,img:string,profile:string,place:str
                     <div className='hopUpWindowMainGameProfileButtonsPlay'>
                       <MainSpaceButtonMain game_path={props.place} title={props.title} project_type={props.project_type}/>
                     </div>
-                    <ViewCounterMain view={props.view}/>
+                    <ViewCounterMain view={props.view} size={1}/>
               </div>
           </div>
       </div>

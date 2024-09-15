@@ -25,10 +25,10 @@ function RankingMain(props:{games:[rank1:any,rank2:any,rank3:any]}) {
   },[props.games])
   return (
     props.games.length>0?<div className="prmoMainContents">
-        <Rank1Main img1={props.games[0].thumbnail} icon1={icon1} title={props.games[0].title} profile={props.games[0].readme} place={props.games[0].place} view={props.games[0].view} project_type={props.games[0].project_type}/>
+        <Rank1Main img1={props.games[0].thumbnail} icon1={icon1} title={props.games[0].title} profile={props.games[0].readme} place={props.games[0].place} view={props.games[0].view} project_type={props.games[0].project_type} diff={props.games[0].diff}/>
         <div className="prmoRankings">
-            <OtherRankingMain img1={props.games[1].thumbnail} icon1={icon4} icon2={props.games[1].icon2} title={props.games[1].title} profile={props.games[1].readme} rank={2} place={props.games[1].place} view={props.games[1].view} project_type={props.games[1].project_type}/>
-            <OtherRankingMain img1={props.games[2].thumbnail} icon1={icon5} icon2={props.games[2].icon2} title={props.games[2].title} profile={props.games[2].readme} rank={3} place={props.games[2].place} view={props.games[2].view} project_type={props.games[2].project_type}/>
+            <OtherRankingMain img1={props.games[1].thumbnail} icon1={icon4} icon2={props.games[1].icon2} title={props.games[1].title} profile={props.games[1].readme} rank={2} place={props.games[1].place} view={props.games[1].view} project_type={props.games[1].project_type} diff={props.games[1].diff}/>
+            <OtherRankingMain img1={props.games[2].thumbnail} icon1={icon5} icon2={props.games[2].icon2} title={props.games[2].title} profile={props.games[2].readme} rank={3} place={props.games[2].place} view={props.games[2].view} project_type={props.games[2].project_type}  diff={props.games[2].diff}/>
         </div>
     </div>:<></>
   )

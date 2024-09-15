@@ -9,10 +9,12 @@ import icon4 from "../../../../assets/img/hexagon_line.svg"
 import HopUpWindowMain from '../../Components/HopUpWindow/HopUpWindowMain';
 import ScratchRunnerMain from '../../Components/LauncherViewer/Scratch/ScratchRunnerMain';
 import MovieViewerMain from '../../Components/LauncherViewer/Movie/MovieViewerMain';
+import LoadingScreenMain from '../../Components/LoadingScreen/LoadingScreenMain';
 
 export const HopUpContext:any = createContext("")
 export const ScratchRunnerContext:any = createContext("")
 export const MovieViewerContext:any = createContext("")
+export const LoadingScreenContext:any = createContext("")
 function MainPage() {
   const naviFunctions = {
     close:()=>{
@@ -26,17 +28,19 @@ function MainPage() {
     }
   }
 
-  const [hopUpWindowFlg,setHopUpWindowFlg] = useState<{status:boolean,title:string,img:string,profile:string,place:string,view:number,project_type:string}>({status:false,title:"",img:"",profile:"",place:"",view:0,project_type:""})
+  const [loadingScreenFlg,setLoadingScreenFlg] = useState<boolean>(true)
+  const [hopUpWindowFlg,setHopUpWindowFlg] = useState<{status:boolean,title:string,img:string,profile:string,place:string,view:number,project_type:string,diff:"easy"|"normal"|"hard"}>({status:false,title:"",img:"",profile:"",place:"",view:0,project_type:"",diff:"easy"})
   const [scratchRunnerFlg,setScratchRunnerFlg] = useState<{state:boolean,path:string}>({state:false,path:""})
   const [movieViewerFlg,setMovieViewerFlg] = useState<{state:boolean,path:string}>({state:false,path:""})
-
   return (
+      <LoadingScreenContext.Provider value={setLoadingScreenFlg}>
       <ScratchRunnerContext.Provider value={setScratchRunnerFlg}>
       <HopUpContext.Provider value={setHopUpWindowFlg}>
       <MovieViewerContext.Provider value={setMovieViewerFlg}>
+          {loadingScreenFlg?<LoadingScreenMain/>:<></>}
           {scratchRunnerFlg.state?<ScratchRunnerMain page_path={scratchRunnerFlg.path}/>:<></>}
           {movieViewerFlg.state?<MovieViewerMain page_path={movieViewerFlg.path}/>:<></>}
-          {hopUpWindowFlg.status?<HopUpWindowMain title={hopUpWindowFlg.title} img={hopUpWindowFlg.img} profile={hopUpWindowFlg.profile} place={hopUpWindowFlg.place} view={hopUpWindowFlg.view} project_type={hopUpWindowFlg.project_type} />:<></>}
+          {hopUpWindowFlg.status?<HopUpWindowMain title={hopUpWindowFlg.title} img={hopUpWindowFlg.img} profile={hopUpWindowFlg.profile} place={hopUpWindowFlg.place} view={hopUpWindowFlg.view} project_type={hopUpWindowFlg.project_type} diff={hopUpWindowFlg.diff}/>:<></>}
           <div className='mainSpace'>
             <div className='luncherMainSpace'>
               <LeftBarMain />
@@ -46,6 +50,7 @@ function MainPage() {
       </MovieViewerContext.Provider>
       </HopUpContext.Provider>
       </ScratchRunnerContext.Provider>
+      </LoadingScreenContext.Provider>
   );
 }
 

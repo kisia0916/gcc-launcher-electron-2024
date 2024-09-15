@@ -41,7 +41,8 @@ function MainSpace() {
         })
         mainTargetList.forEach((i:any,index:number)=>{
             const genre = genreContentList[index][0].toUpperCase()+genreContentList[index].slice(1)
-            const rankingGames = arg.ranking.data[index].map((k:any)=>{
+            console.log(arg)
+            const rankingGames = arg.ranking?arg.ranking.data[index].map((k:any)=>{
               let returnData = i.find((m:any)=>m.title === k.title)
               if (returnData){
                 returnData.view = k.counter
@@ -50,9 +51,18 @@ function MainSpace() {
                 returnData.view = 0
               }
               return returnData
-            })
+            }):i.map((k:any,index:number)=>{
+              let returnData = k
+              returnData.view = 0
+              if (index < 3){
+                console.log(returnData)
+                return returnData
+              }else{
+                return null
+              }
+            }).filter((content:any)=>content !== null)
             console.log(arg)
-            let returnGames = arg.view.data[index].map((k:any)=>{
+            let returnGames = arg.view?arg.view.data[index].map((k:any)=>{
               let returnData = i.find((m:any)=>m.title === k.title)
               console.log(returnData)
               if (returnData){
@@ -61,7 +71,12 @@ function MainSpace() {
                 return null
               }
               return returnData
-            }).filter((content:any)=>content !== null)
+            }).filter((content:any)=>content !== null):i.map((k:any)=>{
+              const returnData = k
+              returnData.view = 0
+              console.log(returnData)
+              return returnData
+            })
             returnGames.sort((a:any,b:any)=>b.view-a.view)
             gamesList[index] = <GenreSectionMain genreTitle={genre} genreGames={returnGames} ranking={rankingGames}/>
         })

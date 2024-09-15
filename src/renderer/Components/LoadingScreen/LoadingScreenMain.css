@@ -1,0 +1,45 @@
+.LoadingScreenMain{
+    width: 100vw;
+    height: 100vh;
+    background-color: #050917;
+    display: flex;
+    position: relative;
+}
+.LoadingScreenMain {
+    opacity: 1;
+    transition: opacity 1s ease-out;
+  }
+  
+.LoadingScreenMain.hidden {
+    opacity: 0;
+}
+.LoadingScreenLogoIcon{
+    display: flex;
+    margin: auto;
+    width: 90px;
+    height: 90px;
+    margin-right: 20px;
+}
+.LoadingScreenContent{
+    width: 30%;
+    height: 30%;
+    display: flex;
+    margin: auto;
+}
+.LoadingScreenLoadText{
+    color: white;
+    font-family: "mainFont";
+    font-weight: 1000;
+    font-size: 150%;
+    display: flex;
+    margin: auto;
+    margin-left: 20px;
+}
+.LoadingScreenCredit{
+    color: rgba(255, 255, 255, 0.357);
+    font-family: "mainFont";
+    font-weight: 1000;
+    position: absolute;
+    bottom: 0;
+    margin: auto;
+}

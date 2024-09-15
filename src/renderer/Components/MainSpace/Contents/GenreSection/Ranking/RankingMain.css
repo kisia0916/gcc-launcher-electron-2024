@@ -205,8 +205,13 @@
     margin-top: 140px;
     font-size: 150%;
     text-shadow: 0 0 8px #000;
-    margin-left: 30px;
+    margin-left: 20px;
     z-index: 10000;
+    display: flex;
+}
+.promRankingContentGameDiffIcon{
+    margin-top: 4px;
+    margin-right: 3px;
 }
 .prmoMainContents{
     width: 96.6%;

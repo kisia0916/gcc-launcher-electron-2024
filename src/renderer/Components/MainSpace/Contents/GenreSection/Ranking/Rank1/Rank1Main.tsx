@@ -3,7 +3,7 @@ import MainSpaceButtonMain from '../../../Buttons/MainSpaceButtonMain'
 import DifficultMain from '../../../Difficult/DifficultMain'
 import ViewCounterMain from '../../../ViewCounter/ViewCounterMain'
 
-function Rank1Main(props:{img1:string,icon1:string,title:string,profile:string,place:string,view:number,project_type:string}) {
+function Rank1Main(props:{img1:string,icon1:string,title:string,profile:string,place:string,view:number,project_type:string,diff:"easy"|"normal"|"hard"}) {
   useEffect(()=>{
     // alert(props.img1)
   },[props])
@@ -19,7 +19,7 @@ function Rank1Main(props:{img1:string,icon1:string,title:string,profile:string,p
       <div className="promMainGameTitle">
           <div className='promMainGameTitleSpace'>
             <div className='promMainDiffIconPlace'>
-              <DifficultMain diff={1}/>
+              <DifficultMain diff={props.diff} size={1}/>
             </div>
             <span className="promMainGameTitleText">{props.title}</span>
           </div>
@@ -28,7 +28,7 @@ function Rank1Main(props:{img1:string,icon1:string,title:string,profile:string,p
           </div>
           <div className="promMainGameButtonMain">
               <MainSpaceButtonMain game_path={props.place} title={props.title} project_type={props.project_type}/>
-              <ViewCounterMain view={props.view}/>
+              <ViewCounterMain view={props.view} size={1}/>
               {/* <DifficultMain/> */}
           </div>
       </div>

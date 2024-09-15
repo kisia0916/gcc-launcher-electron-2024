@@ -23,13 +23,19 @@ export const apiRequestMain = (ipcMain:any)=>{
     // const gameInfo = JSON.parse(fs.readFileSync(`"${process.cwd()}/game_info.json"`,"utf-8"))
     ipcMain.on("send-init-request",async(event:any,arg:any)=>{
         console.log(`${networkInfoFile.server_address}/ranking/get-genre-ranking`)
-        const rankingData = await axios.post(`${networkInfoFile.server_address}/ranking/get-genre-ranking`,{
-            genres:arg.genres
-        })
-        const viewData = await axios.post(`${networkInfoFile.server_address}/game/get-all-view-counter`,{
-            genres:arg.genres
-        })
-        event.sender.send("send-init-response",{ranking:rankingData.data,view:viewData.data})
+        let rankingData = undefined
+        let viewData = undefined
+        try{
+            rankingData = await axios.post(`${networkInfoFile.server_address}/ranking/get-genre-ranking`,{
+                genres:arg.genres
+            },{timeout:5000})
+            viewData = await axios.post(`${networkInfoFile.server_address}/game/get-all-view-counter`,{
+                genres:arg.genres
+            },{timeout:5000})
+        }catch{
+            console.log("axios timeout")
+        }
+        event.sender.send("send-init-response",{ranking:rankingData?.data,view:viewData?.data})
     })
     ipcMain.on("add-view-counter-request",(event:any,arg:any)=>{
         axios.put(`${networkInfoFile.server_address}/game/add-view-counter`,{
@@ -43,9 +49,11 @@ export const apiRequestMain = (ipcMain:any)=>{
     ipcMain.on("set-visitor-request",(event:any,arg:any)=>{
         axios.post(`${networkInfoFile.server_address}/game/get-all-view-counter`,{
             genres:arg.genres
-        }).then((res:AxiosResponse)=>{
-            event.sender.send("get-all-view-counter-response",{data:res.data})
+        },{timeout:5000}).then((res:AxiosResponse)=>{
+           event.sender.send("get-all-view-counter-response",{data:res.data})
         }).catch((error)=>{
+            const nowOfflineVisitor = fs.readFileSync("./visitor.txt","utf-8")
+            const nextNumber = nowOfflineVisitor as unknown as number + 1
             event.sender.send("get-all-view-counter-response",{data:"server-error"})
         })
     })

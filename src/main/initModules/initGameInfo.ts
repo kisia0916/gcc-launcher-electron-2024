@@ -41,7 +41,8 @@ const main = ()=>{
                     place:mainFilePlace,
                     thumbnail:thumbnailImg,
                     readme:readme,
-                    project_type:projectType
+                    project_type:projectType,
+                    diff:"hard"
                 }
                 console.log(writeData)
                 index2 == games.length-1 ?fs.appendFileSync("./game_info.json",`${JSON.stringify(writeData)}\n`):fs.appendFileSync("./game_info.json",`${JSON.stringify(writeData)},\n`)

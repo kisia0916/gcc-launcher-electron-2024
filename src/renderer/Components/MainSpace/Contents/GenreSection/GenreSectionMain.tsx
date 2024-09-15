@@ -47,7 +47,7 @@ function GenreSectionMain(props:{genreTitle:string,genreGames:any,ranking:any}) 
         </div>
         <div className='gamesMain'>
             {allGames?allGames.map((i:any)=>{
-              return <GameMain img={i.thumbnail} title={i.title} profile={i.readme} place={i.place} view={i.view} project_type={i.project_type}/>
+              return <GameMain img={i.thumbnail} title={i.title} profile={i.readme} place={i.place} view={i.view} project_type={i.project_type} diff={i.diff}/>
             }):<></>}
         </div>
     </>

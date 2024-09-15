@@ -15,15 +15,15 @@ export default function App() {
     })
   },[])
   return (
-    <GameListContext.Provider value={{
-      games:games,
-      loadFlg:DoneFirstLoad
-    }}>
-      <Router>
-        <Routes>
-          <Route path="/" element={<MainPage />} />
-        </Routes>
-      </Router>
-    </GameListContext.Provider>
+      <GameListContext.Provider value={{
+        games:games,
+        loadFlg:DoneFirstLoad
+      }}>
+        <Router>
+          <Routes>
+            <Route path="/" element={<MainPage />} />
+          </Routes>
+        </Router>
+      </GameListContext.Provider>
   );
 }

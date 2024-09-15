@@ -5,21 +5,22 @@ import icon2 from "../../../../../../assets/img/XRP_line.svg"
 import icon3 from "../../../../../../assets/img/XRP_line_red.svg"
 
 
-function DifficultMain(props:{diff:number}) {
+function DifficultMain(props:{diff:"easy"|"normal"|"hard",size:1|2}) {
   const [icon,setIcon] = useState<any>()
+  const [iconSize,setIconSize] = useState<1|2>(props.size)
   useEffect(()=>{
-    if (props.diff === 1){
+    if (props.diff === "easy"){
       setIcon(icon1)
-    }else if (props.diff === 2){
+    }else if (props.diff === "normal"){
       setIcon(icon2)
-    }else if (props.diff === 3){
+    }else if (props.diff === "hard"){
       setIcon(icon3)
     }
   },[])
 
   return (
     <div className="promMainGameDiff">
-      <img src={icon} className="promMainGameDiffIcon" alt=""/>
+      <img src={icon} className={iconSize === 1?"promMainGameDiffIcon":"promMainGameDiffIconMini"} alt=""/>
       {/* <span className="promMainGameDiffText">Easy</span> */}
     </div>
   )
