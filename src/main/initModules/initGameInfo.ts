@@ -3,7 +3,7 @@ import fs from "fs"
 const main = ()=>{
     const path = `${process.cwd().replaceAll("\\","/")}/launcher-game/games`
     const dirs= fs.readdirSync(path)
-    const launcherMetaInfoIndex = 2
+    const launcherMetaInfoIndex = 3
     fs.appendFileSync("./game_info.json","{")
     fs.appendFileSync("./game_info.json",`"genres":["action","command","shooting","table","other"],`)
     dirs.forEach((i,index)=>{
@@ -42,7 +42,7 @@ const main = ()=>{
                     thumbnail:thumbnailImg,
                     readme:readme,
                     project_type:projectType,
-                    diff:"hard"
+                    diff:metaSplitList[3]
                 }
                 console.log(writeData)
                 index2 == games.length-1 ?fs.appendFileSync("./game_info.json",`${JSON.stringify(writeData)}\n`):fs.appendFileSync("./game_info.json",`${JSON.stringify(writeData)},\n`)

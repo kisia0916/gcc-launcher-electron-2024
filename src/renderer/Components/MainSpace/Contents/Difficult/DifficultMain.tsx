@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import "./DifficultMain.css"
 import icon1 from "../../../../../../assets/img/XRP_line (1).svg"
-import icon2 from "../../../../../../assets/img/XRP_line.svg"
+import icon2 from "../../../../../../assets/img/XRP_line_yellow.svg"
 import icon3 from "../../../../../../assets/img/XRP_line_red.svg"
 
 
@@ -21,7 +21,6 @@ function DifficultMain(props:{diff:"easy"|"normal"|"hard",size:1|2}) {
   return (
     <div className="promMainGameDiff">
       <img src={icon} className={iconSize === 1?"promMainGameDiffIcon":"promMainGameDiffIconMini"} alt=""/>
-      {/* <span className="promMainGameDiffText">Easy</span> */}
     </div>
   )
 }
