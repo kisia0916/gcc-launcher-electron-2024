@@ -10,7 +10,7 @@ function LoadingScreenMain() {
         window.electron.ipcRenderer.on("send-init-response",(arg:any)=>{
                 setTestFlg(false)
                 setTimeout(()=>{
-                    loadingScreenProvider(false)
+                    loadingScreenProvider.set(false)
                 },1000)
         })
     },[])

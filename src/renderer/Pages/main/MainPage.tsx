@@ -33,7 +33,7 @@ function MainPage() {
   const [scratchRunnerFlg,setScratchRunnerFlg] = useState<{state:boolean,path:string}>({state:false,path:""})
   const [movieViewerFlg,setMovieViewerFlg] = useState<{state:boolean,path:string}>({state:false,path:""})
   return (
-      <LoadingScreenContext.Provider value={setLoadingScreenFlg}>
+      <LoadingScreenContext.Provider value={{set:setLoadingScreenFlg,get:loadingScreenFlg}}>
       <ScratchRunnerContext.Provider value={setScratchRunnerFlg}>
       <HopUpContext.Provider value={setHopUpWindowFlg}>
       <MovieViewerContext.Provider value={setMovieViewerFlg}>
