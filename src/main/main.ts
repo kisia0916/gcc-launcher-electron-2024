@@ -17,6 +17,7 @@ import { resolveHtmlPath } from './util';
 import { ipcModules } from './ipcModules/ipcMain';
 import { generateGameJson } from './initModules/initGameInfo';
 import { apiRequestMain } from './networkModules/apiRequestsMain';
+import { get_timer_info } from './timer/timerMain';
 
 
 class AppUpdater {
@@ -157,6 +158,7 @@ app
   .then(() => {
     ipcModules(ipcMain)
     apiRequestMain(ipcMain)
+    get_timer_info(ipcMain)
     createWindow()
     generateGameJson()
     // mainWindow?.setAlwaysOnTop(true, 'screen-saver'); 

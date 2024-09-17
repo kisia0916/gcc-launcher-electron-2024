@@ -1,7 +1,7 @@
 import axiosMain, { AxiosResponse } from "axios"
 import fs from "fs"
 
-const networkInfoFile:{server_address:string,basic_auth_user:string,basic_auth_pass:string} = JSON.parse(fs.readFileSync("./network_info.json","utf-8"))
+const networkInfoFile:{server_address:string,basic_auth_user:string,basic_auth_pass:string} = JSON.parse(fs.readFileSync("./launcher-settings.json","utf-8")).network_info
 const axios = axiosMain.create({
     auth:{
         username:networkInfoFile.basic_auth_user,
