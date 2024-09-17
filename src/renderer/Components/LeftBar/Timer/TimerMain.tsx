@@ -38,7 +38,6 @@ function TimerMain() {
       return [frist,rast]
     })
     if (nowTime < 0){
-      alert("end")
     }
   },[loadingContext.get,nowTime])
   return (
