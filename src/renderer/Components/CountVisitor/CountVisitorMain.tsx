@@ -1,5 +1,6 @@
 import React from 'react'
 import "./CountVisitorMain.css"
+import CountVisitorButtonMain from './CountVisitorButton/CountVisitorButtonMain'
 
 function CountVisitorMain() {
   return (
@@ -11,11 +12,11 @@ function CountVisitorMain() {
             </div>
             <div className='CountVisitorSelectButtons'>
               <div className='CountVisitorSelectButtonMain'>
-                  <button className='CountVisitorSelectButton blue'>1</button>
-                  <button className='CountVisitorSelectButton green'>2</button>
-                  <button className='CountVisitorSelectButton yellow'>3</button>
-                  <button className='CountVisitorSelectButton orange'>4</button>
-                  <button className='CountVisitorSelectButton red'>5</button>
+                <CountVisitorButtonMain/>
+                <CountVisitorButtonMain/>
+                <CountVisitorButtonMain/>
+                <CountVisitorButtonMain/>
+                <CountVisitorButtonMain/>
               </div>
             </div>
           </div>
