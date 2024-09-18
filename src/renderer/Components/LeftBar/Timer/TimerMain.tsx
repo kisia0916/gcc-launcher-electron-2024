@@ -1,19 +1,27 @@
 import React, { useContext, useEffect, useState } from 'react'
 import "./TimerMain.css"
-import { LoadingScreenContext } from '../../../Pages/main/MainPage'
+import { CountVisitorContext, LoadingScreenContext } from '../../../Pages/main/MainPage'
+import { Navigate } from 'react-router-dom'
 
 function TimerMain() {
   const loadingContext:any = useContext(LoadingScreenContext)
+  const countVisitorProvider:any = useContext(CountVisitorContext)
   const [nowTime,setNowTime] = useState<number|-1>(-1)
   const [timerStartFlg,setTimerStartFlg] = useState<boolean>(false)
   const [timerNums,setTimerNums] = useState<any>([0,0])
-  const startTime = ()=>{
+  const [isEnd,setIsEnd] = useState<boolean>(false)
+  const startTimer = ()=>{
     const mainLoop = setInterval(()=>{
       if (nowTime !== -1){
         if (nowTime > 0){
-          setNowTime((now)=>{return now-1})
-        }else{
-          clearInterval(mainLoop)
+          setNowTime((now)=>{
+            if (now > 0){
+              return now-1
+            }else{
+              clearInterval(mainLoop)
+              return now
+            }
+          })
         }
       }
     },1000)
@@ -25,9 +33,12 @@ function TimerMain() {
     })
   },[])
   useEffect(()=>{
-    if (!loadingContext.get && nowTime !== -1 && !timerStartFlg){
+    console.log(loadingContext.get)
+    console.log(countVisitorProvider.get)
+    if (!loadingContext.get && nowTime !== -1 && !timerStartFlg && !countVisitorProvider.get){
+      console.log("testestestest")
       setTimerStartFlg(true)
-      startTime()
+      startTimer()
     }
     setTimerNums(()=>{
       const frist = Math.floor(nowTime/60)
@@ -37,14 +48,17 @@ function TimerMain() {
       }
       return [frist,rast]
     })
-    if (nowTime < 0){
+    if (nowTime <= 0 && nowTime !== -1){
+      setIsEnd(true)
     }
-  },[loadingContext.get,nowTime])
+  },[loadingContext.get,nowTime,countVisitorProvider.get])
+
   return (
     <div className="leftBarBottomIcons">
     <div className="topBarTimer">
         <span className="topBarTimerText">{timerNums[0]}:{timerNums[1]}</span>
     </div>
+    {isEnd?<Navigate to="/end"/>:<></>}
 </div>
   )
 }

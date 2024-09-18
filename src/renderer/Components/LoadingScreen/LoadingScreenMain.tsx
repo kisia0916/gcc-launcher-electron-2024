@@ -12,7 +12,7 @@ function LoadingScreenMain() {
                 setTestFlg(false)
                 setTimeout(()=>{
                     loadingScreenProvider.set(false)
-                    countVisitorProvider({state:true})
+                    countVisitorProvider.set({state:true})
                 },1000)
         })
     },[])

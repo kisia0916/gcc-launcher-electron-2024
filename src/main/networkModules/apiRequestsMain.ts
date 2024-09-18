@@ -47,14 +47,15 @@ export const apiRequestMain = (ipcMain:any)=>{
         })
     })
     ipcMain.on("set-visitor-request",(event:any,arg:any)=>{
-        axios.post(`${networkInfoFile.server_address}/game/get-all-view-counter`,{
-            genres:arg.genres
+        axios.put(`${networkInfoFile.server_address}/visitor/add-visitor`,{
+            title:"main",
+            add:arg.num as number
         },{timeout:5000}).then((res:AxiosResponse)=>{
-           event.sender.send("get-all-view-counter-response",{data:res.data})
+           event.sender.send("set-visitor-response",{data:res.data})
         }).catch((error)=>{
             const nowOfflineVisitor = fs.readFileSync("./visitor.txt","utf-8")
             const nextNumber = nowOfflineVisitor as unknown as number + 1
-            event.sender.send("get-all-view-counter-response",{data:"server-error"})
+            event.sender.send("set-visitor-response",{data:"server-error"})
         })
     })
 }

@@ -1,6 +1,7 @@
 import { MemoryRouter as Router, Routes, Route } from 'react-router-dom';
 import MainPage from './Pages/main/MainPage';
 import { createContext, useEffect, useState } from 'react';
+import EndPageMain from './Pages/endPage/EndPageMain';
 
 export const GameListContext = createContext<{games:any,loadFlg:boolean}|string>("")
 export default function App() {
@@ -22,6 +23,7 @@ export default function App() {
         <Router>
           <Routes>
             <Route path="/" element={<MainPage />} />
+            <Route path="/end" element={<EndPageMain/>} />
           </Routes>
         </Router>
       </GameListContext.Provider>

@@ -40,7 +40,7 @@ function MainPage() {
       <ScratchRunnerContext.Provider value={setScratchRunnerFlg}>
       <HopUpContext.Provider value={setHopUpWindowFlg}>
       <MovieViewerContext.Provider value={setMovieViewerFlg}>
-      <CountVisitorContext.Provider value={setCountVisitorFlg}>
+      <CountVisitorContext.Provider value={{set:setCountVisitorFlg,get:CountVisitorFlg.state}}>
           {CountVisitorFlg.state?<CountVisitorMain/>:<></>}
           {loadingScreenFlg?<LoadingScreenMain/>:<></>}
           {scratchRunnerFlg.state?<ScratchRunnerMain page_path={scratchRunnerFlg.path}/>:<></>}
