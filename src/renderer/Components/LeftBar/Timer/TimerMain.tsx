@@ -36,7 +36,6 @@ function TimerMain() {
     console.log(loadingContext.get)
     console.log(countVisitorProvider.get)
     if (!loadingContext.get && nowTime !== -1 && !timerStartFlg && !countVisitorProvider.get){
-      console.log("testestestest")
       setTimerStartFlg(true)
       startTimer()
     }

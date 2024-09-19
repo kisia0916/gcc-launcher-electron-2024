@@ -1,18 +1,22 @@
 import React from 'react'
 import "./EndPageMain.css"
+import qr from "../../../../assets/img/site_qr.png"
 
 function EndPageMain() {
   return (
-    <div className={`CountVisitorMain`}>
-        <div className='CountVisitorContents'>
-          <div className='CountVisitorContentsCover'>
-            <div className='CountVisitorCounterTitle'>
-              <span className='CountVisitorTitleText'>体験時間が終了しました</span>
+    <div className={`EndPageMain`}>
+        <div className='EndPageContents'>
+          <div className='EndPageContentsCover'>
+            <div className='EndPageCounterTitle'>
+              <span className='EndPageTitleText'>体験時間が終了しました</span>
             </div>
-            <div className='CountVisitorSelectButtons'>
-              <div className='CountVisitorSelectButtonMain'>
-
+            <div className='EndPageSelectButtons'>
+              <div className='EndPageSelectButtonMain'>
+                <img src={qr} className='EndPageSiteQr'/>
               </div>
+            </div>
+            <div className='EndPageCounterTitle'>
+              <span className='EndPageTitleText'>公式サイトからゲームをダウンロードできます</span>
             </div>
           </div>
         </div>
