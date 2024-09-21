@@ -1,0 +1,31 @@
+.CountVisitorButtonMains{
+    width: 80px;
+    height: 80px;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    font-family: "mainFont";
+    font-weight: 1000;
+    font-size: 150%;
+    cursor: pointer;
+}
+
+.blue{
+    background-color: rgb(66, 66, 255);
+}
+
+.green{
+    background-color: rgb(66, 255, 66);
+}
+
+.yellow{
+    background-color: rgb(255, 255, 66);
+}
+
+.orange{
+    background-color: rgb(255, 189, 66);
+}
+
+.red{
+    background-color: rgb(255, 66, 66);
+}

@@ -2,7 +2,7 @@
 /* eslint no-unused-vars: off */
 import { contextBridge, ipcRenderer, IpcRendererEvent } from 'electron';
 
-export type Channels = 'ipc-example'|'close-app'|'max-app'|'min-app'|'load-games-data'|'run_game'|'close-game-process'|'close_process'|'select-genre'|'send-init-request'|'send-init-response'|'add-view-counter-request'|'add-view-counter-response'
+export type Channels = 'ipc-example'|'close-app'|'max-app'|'min-app'|'load-games-data'|'run_game'|'close-game-process'|'close_process'|'select-genre'|'send-init-request'|'send-init-response'|'add-view-counter-request'|'add-view-counter-response'|'get-timer-info'|'set-visitor-request'|'set-visitor-response'
 
 const electronHandler = {
   ipcRenderer: {

@@ -110,6 +110,7 @@
 }
 .prmoRankingContents{
     display: flex;
+    cursor: pointer;
 }
 .prmoRankingContent{
     height: 100%;

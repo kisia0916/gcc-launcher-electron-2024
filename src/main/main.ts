@@ -9,7 +9,7 @@
  * `./src/main.js` using webpack. This gives us some performance wins.
  */
 import path from 'path';
-import { app, BrowserWindow, shell, ipcMain, Menu, screen } from 'electron';
+import { app, BrowserWindow, shell, ipcMain, Menu, screen, globalShortcut } from 'electron';
 import { autoUpdater } from 'electron-updater';
 import log from 'electron-log';
 import MenuBuilder from './menu';
@@ -17,6 +17,7 @@ import { resolveHtmlPath } from './util';
 import { ipcModules } from './ipcModules/ipcMain';
 import { generateGameJson } from './initModules/initGameInfo';
 import { apiRequestMain } from './networkModules/apiRequestsMain';
+import { get_timer_info } from './timer/timerMain';
 
 
 class AppUpdater {
@@ -110,6 +111,11 @@ const createWindow = async () => {
   });
 
   mainWindow.loadURL(resolveHtmlPath('index.html'));
+  globalShortcut.register('F8', () => {
+    if (mainWindow) {
+        mainWindow.reload();
+    }
+});
   mainWindow.on('ready-to-show', () => {
     if (!mainWindow) {
       throw new Error('"mainWindow" is not defined');
@@ -157,6 +163,7 @@ app
   .then(() => {
     ipcModules(ipcMain)
     apiRequestMain(ipcMain)
+    get_timer_info(ipcMain)
     createWindow()
     generateGameJson()
     // mainWindow?.setAlwaysOnTop(true, 'screen-saver'); 

@@ -1,0 +1,8 @@
+{
+    "network_info":{
+        "server_address":"http://172.16.202.101:80",
+        "basic_auth_user":"fumi20080916",
+        "basic_auth_pass":"20080916"
+    },
+    "timer":360
+}

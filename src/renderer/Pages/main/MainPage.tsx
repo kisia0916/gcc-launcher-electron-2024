@@ -10,11 +10,13 @@ import HopUpWindowMain from '../../Components/HopUpWindow/HopUpWindowMain';
 import ScratchRunnerMain from '../../Components/LauncherViewer/Scratch/ScratchRunnerMain';
 import MovieViewerMain from '../../Components/LauncherViewer/Movie/MovieViewerMain';
 import LoadingScreenMain from '../../Components/LoadingScreen/LoadingScreenMain';
+import CountVisitorMain from '../../Components/CountVisitor/CountVisitorMain';
 
 export const HopUpContext:any = createContext("")
 export const ScratchRunnerContext:any = createContext("")
 export const MovieViewerContext:any = createContext("")
 export const LoadingScreenContext:any = createContext("")
+export const CountVisitorContext:any = createContext("")
 function MainPage() {
   const naviFunctions = {
     close:()=>{
@@ -32,11 +34,14 @@ function MainPage() {
   const [hopUpWindowFlg,setHopUpWindowFlg] = useState<{status:boolean,title:string,img:string,profile:string,place:string,view:number,project_type:string,diff:"easy"|"normal"|"hard"}>({status:false,title:"",img:"",profile:"",place:"",view:0,project_type:"",diff:"easy"})
   const [scratchRunnerFlg,setScratchRunnerFlg] = useState<{state:boolean,path:string}>({state:false,path:""})
   const [movieViewerFlg,setMovieViewerFlg] = useState<{state:boolean,path:string}>({state:false,path:""})
+  const [CountVisitorFlg,setCountVisitorFlg] = useState<{state:boolean}>({state:false})
   return (
-      <LoadingScreenContext.Provider value={setLoadingScreenFlg}>
+      <LoadingScreenContext.Provider value={{set:setLoadingScreenFlg,get:loadingScreenFlg}}>
       <ScratchRunnerContext.Provider value={setScratchRunnerFlg}>
       <HopUpContext.Provider value={setHopUpWindowFlg}>
       <MovieViewerContext.Provider value={setMovieViewerFlg}>
+      <CountVisitorContext.Provider value={{set:setCountVisitorFlg,get:CountVisitorFlg.state}}>
+          {CountVisitorFlg.state?<CountVisitorMain/>:<></>}
           {loadingScreenFlg?<LoadingScreenMain/>:<></>}
           {scratchRunnerFlg.state?<ScratchRunnerMain page_path={scratchRunnerFlg.path}/>:<></>}
           {movieViewerFlg.state?<MovieViewerMain page_path={movieViewerFlg.path}/>:<></>}
@@ -47,6 +52,7 @@ function MainPage() {
               <MainSpace/>
             </div>
           </div>
+      </CountVisitorContext.Provider>
       </MovieViewerContext.Provider>
       </HopUpContext.Provider>
       </ScratchRunnerContext.Provider>
