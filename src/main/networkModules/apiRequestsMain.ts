@@ -1,5 +1,5 @@
 import axiosMain, { AxiosResponse } from "axios"
-import fs from "fs"
+import fs, { write } from "fs"
 
 const networkInfoFile:{server_address:string,basic_auth_user:string,basic_auth_pass:string} = JSON.parse(fs.readFileSync("./launcher-settings.json","utf-8")).network_info
 const axios = axiosMain.create({
@@ -53,8 +53,11 @@ export const apiRequestMain = (ipcMain:any)=>{
         },{timeout:5000}).then((res:AxiosResponse)=>{
            event.sender.send("set-visitor-response",{data:res.data})
         }).catch((error)=>{
-            const nowOfflineVisitor = fs.readFileSync("./visitor.txt","utf-8")
-            const nextNumber = nowOfflineVisitor as unknown as number + 1
+            const nowOfflineVisitor:string = fs.readFileSync("./visitor.txt","utf-8").toString()
+            console.log(nowOfflineVisitor)
+            const nextNumber:string = (nowOfflineVisitor as unknown as string)
+            const data2:number = Number(nextNumber)
+            fs.writeFileSync("./visitor.txt",String(data2+arg.num))
             event.sender.send("set-visitor-response",{data:"server-error"})
         })
     })
