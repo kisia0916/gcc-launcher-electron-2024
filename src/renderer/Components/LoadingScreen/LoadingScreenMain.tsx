@@ -8,13 +8,18 @@ function LoadingScreenMain() {
   const loadingScreenProvider:any = useContext(LoadingScreenContext)
   const countVisitorProvider:any = useContext(CountVisitorContext)
     useEffect(()=>{
-        window.electron.ipcRenderer.on("send-init-response",(arg:any)=>{
+        let transitionTimer: ReturnType<typeof setTimeout> | undefined
+        const removeListener = window.electron.ipcRenderer.on("send-init-response",()=>{
                 setTestFlg(false)
-                setTimeout(()=>{
+                transitionTimer = setTimeout(()=>{
                     loadingScreenProvider.set(false)
                     countVisitorProvider.set({state:true})
                 },1000)
         })
+        return ()=>{
+          removeListener()
+          if (transitionTimer) clearTimeout(transitionTimer)
+        }
     },[])
   return (
     <div className={`LoadingScreenMain ${!testFlg?"hidden":""}`}>

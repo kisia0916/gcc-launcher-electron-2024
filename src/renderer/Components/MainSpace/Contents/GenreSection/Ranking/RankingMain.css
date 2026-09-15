@@ -80,6 +80,7 @@
     width: 81%;
     height: 60px;
     overflow-y: scroll;
+    white-space: pre-wrap;
     color: white;
     font-family: "mainFont";
     font-weight: 1000;

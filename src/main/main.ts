@@ -10,25 +10,60 @@
  */
 import path from 'path';
 import { app, BrowserWindow, shell, ipcMain, Menu, screen, globalShortcut } from 'electron';
-import { autoUpdater } from 'electron-updater';
-import log from 'electron-log';
 import MenuBuilder from './menu';
 import { resolveHtmlPath } from './util';
-import { ipcModules } from './ipcModules/ipcMain';
+import { ipcModules, stopAllGames } from './ipcModules/ipcMain';
 import { generateGameJson } from './initModules/initGameInfo';
 import { apiRequestMain } from './networkModules/apiRequestsMain';
 import { get_timer_info } from './timer/timerMain';
 
 
-class AppUpdater {
-  constructor() {
-    log.transports.file.level = 'info';
-    autoUpdater.logger = log;
-    autoUpdater.checkForUpdatesAndNotify();
-  }
-}
-
 let mainWindow: BrowserWindow | null = null;
+let overlayWindow: BrowserWindow | null = null;
+let overlayState = {
+  gameRunning: false,
+  gameTitle: '',
+  remainingSeconds: null as number | null,
+  expired: false,
+};
+
+const sendOverlayState = () => {
+  if (overlayWindow && !overlayWindow.isDestroyed()) {
+    overlayWindow.webContents.send('overlay-state', overlayState);
+  }
+};
+
+const showGameOverlay = (gameTitle: string) => {
+  overlayState = { ...overlayState, gameRunning: true, gameTitle };
+  mainWindow?.setIgnoreMouseEvents(true);
+  sendOverlayState();
+  overlayWindow?.showInactive();
+};
+
+const restoreLauncherInteraction = () => {
+  overlayState = { ...overlayState, gameRunning: false, gameTitle: '' };
+  overlayWindow?.hide();
+  mainWindow?.setIgnoreMouseEvents(false);
+  mainWindow?.focus();
+};
+
+ipcMain.on('session-timer-update', (_event, arg: { remainingSeconds?: unknown }) => {
+  if (Number.isInteger(arg?.remainingSeconds) && (arg.remainingSeconds as number) >= 0) {
+    const remainingSeconds = arg.remainingSeconds as number;
+    overlayState = {
+      ...overlayState,
+      remainingSeconds,
+      expired: remainingSeconds === 0,
+    };
+    sendOverlayState();
+  }
+});
+
+ipcMain.on('session-expired', () => {
+  overlayState = { ...overlayState, remainingSeconds: 0, expired: true };
+  sendOverlayState();
+  if (overlayState.gameRunning) overlayWindow?.showInactive();
+});
 
 ipcMain.on('ipc-example', async (event, arg) => {
   const msgTemplate = (pingPong: string) => `IPC test: ${pingPong}`;
@@ -51,8 +86,8 @@ if (process.env.NODE_ENV === 'production') {
   sourceMapSupport.install();
 }
 
-const isDebug = true
-  // process.env.NODE_ENV === 'development' || process.env.DEBUG_PROD === 'true';
+const isDebug =
+  process.env.NODE_ENV === 'development' || process.env.DEBUG_PROD === 'true';
 
 if (isDebug) {
   require('electron-debug')();
@@ -110,6 +145,37 @@ const createWindow = async () => {
     },
   });
 
+  const overlayUrl = new URL(resolveHtmlPath('index.html'));
+  overlayUrl.searchParams.set('overlay', '1');
+  const workArea = screen.getPrimaryDisplay().workArea;
+  overlayWindow = new BrowserWindow({
+    show: false,
+    width: 280,
+    height: 82,
+    x: workArea.x + workArea.width - 292,
+    y: workArea.y + 12,
+    frame: false,
+    transparent: true,
+    resizable: false,
+    maximizable: false,
+    minimizable: false,
+    fullscreenable: false,
+    skipTaskbar: true,
+    alwaysOnTop: true,
+    webPreferences: {
+      preload: app.isPackaged
+        ? path.join(__dirname, 'preload.js')
+        : path.join(__dirname, '../../.erb/dll/preload.js'),
+      contextIsolation: true,
+    },
+  });
+  overlayWindow.setAlwaysOnTop(true, 'screen-saver');
+  overlayWindow.loadURL(overlayUrl.href);
+  overlayWindow.webContents.on('did-finish-load', sendOverlayState);
+  overlayWindow.on('closed', () => {
+    overlayWindow = null;
+  });
+
   mainWindow.loadURL(resolveHtmlPath('index.html'));
   globalShortcut.register('F8', () => {
     if (mainWindow) {
@@ -140,10 +206,7 @@ const createWindow = async () => {
     return { action: 'deny' };
   });
 
-  // Remove this if your app does not use auto updates
-  // eslint-disable-next-line
   Menu.setApplicationMenu(null)
-  new AppUpdater();
 };
 
 /**
@@ -158,14 +221,27 @@ app.on('window-all-closed', () => {
   }
 });
 
+app.on('before-quit', () => {
+  stopAllGames();
+  globalShortcut.unregisterAll();
+});
+
 app
   .whenReady()
   .then(() => {
-    ipcModules(ipcMain)
-    apiRequestMain(ipcMain)
-    get_timer_info(ipcMain)
-    createWindow()
-    generateGameJson()
+    try {
+      const result = generateGameJson();
+      result.warnings.forEach((warning) => console.warn(`[catalog] ${warning}`));
+    } catch (error) {
+      console.error('Failed to generate game catalog at startup', error);
+    }
+    ipcModules(ipcMain, {
+      onGameStarted: showGameOverlay,
+      onAllGamesStopped: restoreLauncherInteraction,
+    });
+    apiRequestMain(ipcMain);
+    get_timer_info(ipcMain);
+    createWindow();
     // mainWindow?.setAlwaysOnTop(true, 'screen-saver'); 
     app.on('activate', () => {
       // On macOS it's common to re-create a window in the app when the

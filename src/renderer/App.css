@@ -1,0 +1,21 @@
+.appErrorNotice {
+  position: fixed;
+  z-index: 10000;
+  right: 24px;
+  bottom: 24px;
+  display: flex;
+  max-width: min(620px, calc(100vw - 48px));
+  flex-direction: column;
+  gap: 4px;
+  padding: 14px 18px;
+  color: #fff;
+  text-align: left;
+  background: #9d2020;
+  border: 2px solid #ffb3b3;
+  border-radius: 10px;
+  box-shadow: 0 6px 24px rgb(0 0 0 / 35%);
+}
+
+.appErrorNotice small {
+  color: #ffdada;
+}

@@ -167,7 +167,7 @@
     "webpack-merge": "^5.9.0"
   },
   "build": {
-    "productName": "GCC-Launcher-2024",
+    "productName": "GCC-Launcher-2026",
     "appId": "com.fumiapp",
     "asar": true,
     "asarUnpack": "**\\*.{node,dll}",
@@ -207,6 +207,7 @@
       ]
     },
     "win": {
+      "signAndEditExecutable": false,
       "target": [
         "nsis"
       ]
@@ -234,7 +235,7 @@
   "collective": {
     "url": "https://opencollective.com/electron-react-boilerplate-594"
   },
-  "devEngines": {
+  "engines": {
     "node": ">=14.x",
     "npm": ">=7.x"
   },

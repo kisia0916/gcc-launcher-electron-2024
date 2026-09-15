@@ -1,44 +1,524 @@
-{"genres":["action","command","shooting","table","other"],"action":[{"genre":"action","title":"animation","place":"C:/gcc-launcher-display/gcc-launcher-electron-2024/launcher-game/games/action/animation/video.mp4","thumbnail":"C:/gcc-launcher-display/gcc-launcher-electron-2024/launcher-game/games/action/animation/thumbnail.png","readme":"Scratchで作成したアニメーション作品です。\r\n旗押すだけ。\r\nフルHD24FPSで動画化したものもあります\r\n","project_type":"movie","diff":"easy"},
-{"genre":"action","title":"Babadom","place":"C:/gcc-launcher-display/gcc-launcher-electron-2024/launcher-game/games/action/Babadom/Babadom.exe","thumbnail":"C:/gcc-launcher-display/gcc-launcher-electron-2024/launcher-game/games/action/Babadom/thumbnail.png","readme":"\r\n部に古くから伝わる名作です。\r\n","project_type":"exe","diff":"easy"},
-{"genre":"action","title":"Block BINGO!","place":"C:/gcc-launcher-display/gcc-launcher-electron-2024/launcher-game/games/action/Block BINGO!/hsptmp.exe","thumbnail":"C:/gcc-launcher-display/gcc-launcher-electron-2024/launcher-game/games/action/Block BINGO!/thumbnail.png","readme":"Block BINGO!\r\nバージョン:1.1\r\n制作者:小島 遼護\r\n製作日:2018/7/19\r\n動作OS:windows\r\n\r\n\r\n\r\n[---------------このゲームについて---------------]\r\nこのゲームは、2018年輝玉祭で製作したものです。\r\nデータのコピーなどはご自由にどうぞ。(但し、商的使用は不可)\r\n\r\n\r\n\r\n[---------------ルール説明---------------]\r\n基本的なルールはブロック崩しと同じですが、縦、横、ななめ一列のブロックを全て崩すと、その列のブロックが復活します。\r\nブロックを1つ崩すと1ポイント、一列崩すと5ポイント加算されます。\r\n画面左上の白抜きの数字がスコアです。\r\nスペースキー+矢印キーでバーが超速移動します。\r\nボールが落ちそうになると、スローモーションになり、ボールが拾い易くなります。\r\nボールが落ちて画面外に出ると、ゲームオーバーです。\r\n\r\n\r\n\r\n[---------------操作説明---------------]\r\nEnterキー:ゲームスタート\r\nスペースキー:超速移動、ゲーム再開\r\n←キー:バーを左に移動\r\n→キー:バーを右に移動\r\nCtrlキー:ポーズ\r\nキー設定は出来ません。ご了承ください。\r\n\r\n\r\n\r\n[---------------「設定」について---------------]\r\nPCのスペック等の理由で、ボールやバーの動きが速すぎる、又は遅すぎるときに使ってください。\r\nタイトル画面から「設定」をクリックすると、ボール,バー速度の設定画面が出てきます。\r\n←キーを押すとボール,バー速度が遅くなり、→キーを押すと速くなります。\r\n尚、ボール,バーの個別の速度設定はできません。\r\nボール,バーの速度が丁度良くなったら、Enterキーを押してゲームスタートしてください。\r\n\r\n\r\n\r\n[---------------難易度---------------]\r\n初心者でも楽しめるよう......にしたつもりです。\r\n「難しすぎる!」というクレームは受け付けません。\r\n\r\n\r\n\r\n----------------------------------------------------------------------------------------------------------------\r\n\r\n\r\n\r\nそれでは、どうぞお楽しみください！\r\n","project_type":"exe","diff":"normal"},
-{"genre":"action","title":"IW talk with the eilian","place":"C:/gcc-launcher-display/gcc-launcher-electron-2024/launcher-game/games/action/i wanna be the engine konishi edition ver2.2/I wanna talk with the eilian.exe","thumbnail":"C:/gcc-launcher-display/gcc-launcher-electron-2024/launcher-game/games/action/i wanna be the engine konishi edition ver2.2/thumbnail.png","readme":"Shiftキーを押すと、\r\nセーブデータ選択画面に行けます。\r\n好きなセーブデータを選び、\r\nShiftキーを押すと、難易度設定画面にいけます。\r\nNOR ノーマル\r\nHAR ハード\r\nVH ベリーハード\r\nIMP 不可能\r\n","project_type":"exe","diff":"hard"},
-{"genre":"action","title":"I Wanna Be The COMB 2  Ver 1.00","place":"C:/gcc-launcher-display/gcc-launcher-electron-2024/launcher-game/games/action/IWBTC2/IWBTC2.exe","thumbnail":"C:/gcc-launcher-display/gcc-launcher-electron-2024/launcher-game/games/action/IWBTC2/thumbnail.png","readme":"I Wanna Be The COMB 2  Ver 1.00\r\n\r\n製作者：らゆ\r\n動作OS：WindowsXP以上 他は未確認\r\n動作環境：解像度800*608以上　表示色32bit\r\n使用ソフト：GameMaker 8.0 Pro + I Wanna Be The Engine YuutuEdition \r\n\r\n\r\n■はじめに\r\nこの度はこの作品のインストール誠に有難うございます。\r\nこのゲームは2016年輝玉祭でコンピュータ部が制作した、I wanna be the guyの派生作品となっております。\r\n尚、このソフトウェアを使用して発生した損害などについては\r\n作者は一切責任を負う事が出来ません。\r\nまた、このソフトウェアを無断で二次配布や販売をしないで下さい。\r\n\r\n\r\n■操作法\r\nShift・・ジャンプ\r\nZ・・ショット\r\nR・・リトライ\r\n←→・・左右移動\r\nF2・・タイトル画面に戻る\r\nF9・・スクリーンショット\r\n\r\n※Shift + Dを押しながらタイトルのSTART GAMEを右クリックすることでデータを初期化できます\r\n\r\n■難易度\r\nゲーム中の説明をご覧ください。\r\n\r\n■更新履歴\r\nVer.1.00　2016年9月14日\r\n\r\n\r\n","project_type":"exe","diff":"hard"},
-{"genre":"action","title":"Sheep","place":"C:/gcc-launcher-display/gcc-launcher-electron-2024/launcher-game/games/action/Sheep/Sheep.exe","thumbnail":"C:/gcc-launcher-display/gcc-launcher-electron-2024/launcher-game/games/action/Sheep/thumbnail.png","readme":"羊\r\n\r\n古くから伝わるアクションゲームです\r\n","project_type":"exe","diff":"normal"},
-{"genre":"action","title":"スパイダマ","place":"C:/gcc-launcher-display/gcc-launcher-electron-2024/launcher-game/games/action/Spidama/Spidama.exe","thumbnail":"C:/gcc-launcher-display/gcc-launcher-electron-2024/launcher-game/games/action/Spidama/thumbnail.png","readme":"Spidama スパイダマ\r\n\r\nいわゆるイライラ棒です。\r\n古くより伝わる作品。\r\n","project_type":"exe","diff":"hard"},
-{"genre":"action","title":"すすめロケット","place":"C:/gcc-launcher-display/gcc-launcher-electron-2024/launcher-game/games/action/すすめロケット/hsptmp.exe","thumbnail":"C:/gcc-launcher-display/gcc-launcher-electron-2024/launcher-game/games/action/すすめロケット/thumbnail.png","readme":"バージョン:1.0\r\n制作者:小島 遼護\r\n製作日:2019/9/10\r\n動作OS:windows\r\n\r\n\r\n\r\n[---------------このゲームについて---------------]\r\nこのゲームは、2019年輝玉祭で製作したものです。\r\nデータのコピーなどはご自由にどうぞ。(但し、商的使用は不可)\r\n\r\n\r\n\r\n[---------------ルール説明---------------]\r\nZキーでジェット噴射(加速)\r\nカーソルキーでロケットの向きを変える\r\n隕石に当たるか画面外まで落ちるとゲームオーバー\r\n\r\n\r\n\r\n[---------------難易度---------------]\r\n中、上級者向けです\r\n「難しすぎる!」というクレームは受け付けません。\r\n\r\n\r\n\r\n----------------------------------------------------------------------------------------------------------------\r\n\r\n\r\n\r\nそれでは、どうぞお楽しみください！\r\n","project_type":"exe","diff":"normal"},
-{"genre":"action","title":"たぴたぴ棒","place":"C:/gcc-launcher-display/gcc-launcher-electron-2024/launcher-game/games/action/たぴたぴ棒/たぴたぴ棒.exe","thumbnail":"C:/gcc-launcher-display/gcc-launcher-electron-2024/launcher-game/games/action/たぴたぴ棒/thumbnail.png","readme":"当たったら負け The Final\r\n-たぴたぴ棒-\r\n\r\nそうさ：プレイ中に説明があります\r\n\r\nイライラ棒風アクションゲームの3作目かつ最終作。\r\n\r\n一昨年、去年に続き制作しました。\r\n\r\nぜひお楽しみください！\r\n\r\n制作:2019年度部長\r\n","project_type":"exe","diff":"hard"},
-{"genre":"action","title":"もぐらたたき","place":"C:/gcc-launcher-display/gcc-launcher-electron-2024/launcher-game/games/action/もぐらたたき/hsptmp.exe","thumbnail":"C:/gcc-launcher-display/gcc-launcher-electron-2024/launcher-game/games/action/もぐらたたき/thumbnail.png","readme":"もぐらたたき\r\n制作者:小島 遼護\r\n製作日:2018/10/27\r\n動作OS:windows\r\n\r\n\r\n\r\n\r\n[---------------ルール説明---------------]\r\n制限時間内に緑色の四角をクリックするとポイントが入り、四角が移動します。\r\n四角をクリックするまでの時間が短いほど多くのポイントが入ります。\r\n制限時間内に四角をクリック出来なかったり、四角以外をクリックしてしまうとゲームオーバーです。\r\n\r\n\r\n\r\n[---------------操作説明---------------]\r\n操作は全てクリックで行います。\r\n\r\n\r\n\r\n\r\n[---------------難易度---------------]\r\n人によって簡単にも難しくもなるゲームです。\r\n「難しすぎる!」というクレームは受け付けません。\r\n\r\n\r\n\r\n----------------------------------------------------------------------------------------------------------------\r\n\r\n\r\n\r\nそれでは、どうぞお楽しみください！\r\n","project_type":"exe","diff":"easy"},
-{"genre":"action","title":"イライラ棒","place":"C:/gcc-launcher-display/gcc-launcher-electron-2024/launcher-game/games/action/やはり当たったら負け/イライラ棒.exe","thumbnail":"C:/gcc-launcher-display/gcc-launcher-electron-2024/launcher-game/games/action/やはり当たったら負け/thumbnail.png","readme":"昨年発表した、「触ったら負け」の続編です。\r\n\r\n赤のブロックを動かし、様々なギミックを乗り越えてゴールを目指すゲームです。\r\n","project_type":"exe","diff":"hard"},
-{"genre":"action","title":"ゴキ潰し","place":"C:/gcc-launcher-display/gcc-launcher-electron-2024/launcher-game/games/action/ゴキ潰し/ゴキ潰し.exe","thumbnail":"C:/gcc-launcher-display/gcc-launcher-electron-2024/launcher-game/games/action/ゴキ潰し/thumbnail.png","readme":"2022年作成のゲームです。\r\n矢印キーで操作し、スペースキーでジャンプします。\r\n自分のボールにゴキブリが触らないよう避けながらジャンプで潰しましょう\r\n","project_type":"exe","diff":"easy"},
-{"genre":"action","title":"ボールロール","place":"C:/gcc-launcher-display/gcc-launcher-electron-2024/launcher-game/games/action/ボールロール/ball_roll.exe","thumbnail":"C:/gcc-launcher-display/gcc-launcher-electron-2024/launcher-game/games/action/ボールロール/thumbnail.png","readme":"十字キーで操作しながら、\r\n黄色い立方体をすべて集めてください。\r\n","project_type":"exe","diff":"easy"},
-{"genre":"action","title":"棒人間ラン","place":"C:/gcc-launcher-display/gcc-launcher-electron-2024/launcher-game/games/action/棒人間ラン/棒人間ラン.html","thumbnail":"C:/gcc-launcher-display/gcc-launcher-electron-2024/launcher-game/games/action/棒人間ラン/thumbnail.png","readme":"操作方法\r\n\r\nスペースキーでジャンプ\r\n↓キーでスライディング\r\n\r\n障害物\r\n\r\nボックス：当たったら爆死、ジャンプで回避する\r\nアロー：当たったら爆死、スライディングで回避する\r\nトラップボックス：↑が書いてあるボックス、当たったら爆死、スライディングで回避する\r\n\r\n白ボックス：当たっても何も起こらない、ただのフェイク\r\n白アロー：当たっても何も起こらない、ただのフェイク\r\n","project_type":"scratch","diff":"hard"},
-{"genre":"action","title":"殺虫ゲーム","place":"C:/gcc-launcher-display/gcc-launcher-electron-2024/launcher-game/games/action/殺虫ゲーム/殺虫ゲーム.exe","thumbnail":"C:/gcc-launcher-display/gcc-launcher-electron-2024/launcher-game/games/action/殺虫ゲーム/thumbnail.png","readme":"殺虫ゲームです。あなたは業者になり、依頼をこなしてください。\r\n\r\n黒い点は殺すべき虫です。クリックすると、つぶすことができます。\r\n緑の点は小人です。小人は家の守り神なのでつぶしてはいけません。\r\n\r\nそのほかに突然変異を起こした虫なども出てきます。\r\n\r\n～注意事項～\r\n計算をするのが非常に重くなり、画面がちらついてしまいます。\r\n\r\nまた、お店を実装することができませんでした。\r\n来年、実装した状態で出したいと思います。\r\n","project_type":"exe","diff":"easy"},
-{"genre":"action","title":"的シューティング 2018","place":"C:/gcc-launcher-display/gcc-launcher-electron-2024/launcher-game/games/action/的シューティング 2018/的シューティング　2018 完成2.exe","thumbnail":"C:/gcc-launcher-display/gcc-launcher-electron-2024/launcher-game/games/action/的シューティング 2018/thumbnail.png","readme":"unityを使って作った的あてゲームです。\r\n\r\n三十秒間で何枚の的に当てられるかな？\r\n","project_type":"exe","diff":"normal"},
-{"genre":"action","title":"筒走り","place":"C:/gcc-launcher-display/gcc-launcher-electron-2024/launcher-game/games/action/筒走り/筒走り.exe","thumbnail":"C:/gcc-launcher-display/gcc-launcher-electron-2024/launcher-game/games/action/筒走り/thumbnail.png","readme":"説明\r\n　～概要～\r\n筒を回転させて女の子をゴールまで導くゲームです☆\r\n筒から落ちたり、障害物に衝突しないようにしてあげましょう\r\n\r\n　～起動方法～\r\n・Game.exe\r\n上記のファイルを起動すると、ゲームが始まります\r\n\r\n　～操作方法～\r\n左右カーソルキーで筒を回転\r\n\r\n　～動作環境～\r\n不明、作成はcore-i3\r\n\r\n　～素材～\r\nHSPオフィシャル３Ｄ素材\"珠音\"\r\nhttp://hsp.tv/make/tamane3d.html\r\n\r\n　～一言～\r\nタイトルとゲームオーバー画面にまで手が回らなかったのは反省\r\n突貫作業は…やめようね！\r\n","project_type":"exe","diff":"hard"},
-{"genre":"action","title":"触ったら負け","place":"C:/gcc-launcher-display/gcc-launcher-electron-2024/launcher-game/games/action/触ったら負け/触ったら負け.exe","thumbnail":"C:/gcc-launcher-display/gcc-launcher-electron-2024/launcher-game/games/action/触ったら負け/thumbnail.png","readme":"緑のブロックを動かし、様々なギミックを乗り越えてゴールを目指すゲームです。\r\n※いわゆるイライラ棒のようなものです\r\n初心者にも楽しめる難易度となっております！\r\n音が大きいため、家で遊ぶ際は音量を下げていただくと\r\n快適なプレイをお楽しみいただけます(^ω^)\r\n\r\n製作者：37R 柴田\r\n\r\n使わせていただいた音楽：http://amachamusic.chagasi.com/index.html\r\n　　　　　　　　　　　　http://maoudamashii.jokersounds.com/\r\n　　　　　　　　　　　　http://musmus.main.jp/se.html\r\n","project_type":"exe","diff":"hard"}
-],"command":[{"genre":"command","title":"RPS","place":"C:/gcc-launcher-display/gcc-launcher-electron-2024/launcher-game/games/command/RPS/RPS.exe","thumbnail":"C:/gcc-launcher-display/gcc-launcher-electron-2024/launcher-game/games/command/RPS/thumbnail.png","readme":" RPS ver.1.0\r\n\r\n  RPS　とは、\tRock　＝グー\r\n                Paper　＝パー\r\n                Scissors　＝チョキ\r\n                          の頭文字で、英語における\r\n　　”じゃんけん”の手を表しています。\r\n\r\n　仕様\r\n　　　　power : ステータスの初期値が高いですが強化で上がる量が少ないです。\r\n　　　　technique :　ステータスの初期値こそ低いものの強化で大きく上昇します。\r\n　　　　balance　: 文字通り上記２キャラの中間にあたります。\r\n\r\n　　　　攻撃強化　:　選んだ手（スキル選択時左上に書いてある手）のダメージ量を上げます。\r\n　　　　体力強化　：　キャラの体力を上げます。\r\n　　　　必殺強化　：キャラの必殺技（バトル画面で赤字で表示されるわざ）のダメージ量を上げます。\r\n　　　　回復　：　一定条件下で回復します。\r\n　　　　あいこ無効　：　一定条件をクリアするとそのバトル中あいこによるダメージを受けなくなります。\r\n\r\nver. 1.0 ここまで\r\n\r\n　　　　このたびは私の作ったゲームで遊んでいただきありがとうございます。\r\n　　　　ver. 1.0 はこのゲームの核の部分で遊べるようになっております。\r\n　　　　今後、コンピューター部のホームページ等でバージョンアップまたはその情報を\r\n　　　　お届けすることがあるかもしれません。ご覧になっていただければ幸いです。\r\n　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　\r\n　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　北村太一\t\r\n","project_type":"exe","diff":"normal"},
-{"genre":"command","title":"VSタピオカミルクティー","place":"C:/gcc-launcher-display/gcc-launcher-electron-2024/launcher-game/games/command/VSタピオカミルクティー/VSタピオカミルクティー.exe","thumbnail":"C:/gcc-launcher-display/gcc-launcher-electron-2024/launcher-game/games/command/VSタピオカミルクティー/thumbnail.png","readme":" この度は、\r\nVSタピオカミルクティー\r\nをご利用いただきまして、誠に有難うございます(違う)\r\n\r\n[操作]\r\nクリックのみ。以上です。\r\n\r\n[概要]\r\nタピオカミルクティーを倒したら勝ちの\r\n\r\nクソゲー\r\n\r\nです。\r\n\r\n[詳しくは]\r\n「遊び方」を見てください。\r\n\r\n[スタッフロール的な何か]\r\n制作：天ぷらの天ぷら(I wanna be the COMB 2016!もどうぞ)\r\n\r\n※製作者以外1発でクリアしました(　；∀；)\r\n","project_type":"exe","diff":"normal"},
-{"genre":"command","title":"バトル？","place":"C:/gcc-launcher-display/gcc-launcher-electron-2024/launcher-game/games/command/バトル？/バトル？.exe","thumbnail":"C:/gcc-launcher-display/gcc-launcher-electron-2024/launcher-game/games/command/バトル？/thumbnail.png","readme":"バトル？\r\n\r\nコマンド戦闘系です。\r\n","project_type":"exe","diff":"normal"}
-],"other":[{"genre":"other","title":"ClickWars","place":"C:/gcc-launcher-display/gcc-launcher-electron-2024/launcher-game/games/other/ClickWars/ClickWars.exe","thumbnail":"C:/gcc-launcher-display/gcc-launcher-electron-2024/launcher-game/games/other/ClickWars/thumbnail.png","readme":"STARTと書いてあるスライム（？）をクリックでゲームスタートです。\r\nスタート後、スライムをたたくと攻撃出来ます。\r\n手抜きゲーなのでよろしく( ´∀｀ )\r\n\r\n制作者より\r\n","project_type":"exe","diff":"normal"},
-{"genre":"other","title":"combOS","place":"C:/gcc-launcher-display/gcc-launcher-electron-2024/launcher-game/games/other/combOS/combOS.exe","thumbnail":"C:/gcc-launcher-display/gcc-launcher-electron-2024/launcher-game/games/other/combOS/thumbnail.png","readme":"HSPでOSもどきを作ってみました。\r\n\r\nゲームではありませんが、遊んでいってください\r\n","project_type":"exe","diff":"easy"},
-{"genre":"other","title":"combOS2","place":"C:/gcc-launcher-display/gcc-launcher-electron-2024/launcher-game/games/other/combOS_2.1.4.3/BIOS(これを起動してください).exe","thumbnail":"C:/gcc-launcher-display/gcc-launcher-electron-2024/launcher-game/games/other/combOS_2.1.4.3/thumbnail.png","readme":"HSPで作られたOSもどきです。\r\nゲームではありませんが...自分で改造したいという方にお勧めです。\r\n\r\n改造方法につきましては別途改造方法.txtをご覧ください(このファイルと同じフォルダにあります)\r\n\r\n絶対パスを使用している場所があります。\r\n実行中にcombOSの含まれるフォルダ等を移動しないでください\r\n","project_type":"exe","diff":"easy"},
-{"genre":"other","title":"THE SHOOT!!","place":"C:/gcc-launcher-display/gcc-launcher-electron-2024/launcher-game/games/other/THE SHOOT!!/THE SHOOT!!.exe","thumbnail":"C:/gcc-launcher-display/gcc-launcher-electron-2024/launcher-game/games/other/THE SHOOT!!/thumbnail.png","readme":"連打ゲーム　\r\nTHE SHOOT!!\r\n説明書\r\n\r\nルール\r\n\r\n・難易度...クリック上手い人は余裕かも\r\n　　　　　　でも、初心者にはつらい\r\n　　　　　　\r\n・制限時間...20秒\r\n\r\n・使うボタン...左クリックのみ\r\n\r\n・操作方法...画面内の\"押しまくれ！\"ボタンを左クリックでひたすら連打！\r\n　　　　　　　ボタンから外れた所で連打しても無駄なので気をつけてください。\r\n\r\n・ダンジョン内容\r\n　1F　スライム　Lv.1 (HP...50)\r\n　　　こいつは10秒ぐらいで倒さないと\r\n\r\n　2F　スケルトン　Lv.55 (HP...70)\r\n　　  こいつまでは余裕だと思います。\r\n\r\n　3F　ボス　Lv.99 (HP...100)\r\n      こいつは作った自分も難しいと思います。\r\n　　　クリアできたらすごいです！！\r\n\r\n作成者...25R 佐藤\r\n\r\n使ったソフト...HSP(ホットスーププロセッサー)\r\n\r\nプレイして頂いてありがとうございます。\r\n今はつまらないゲームですが、今後は難易度別にダンジョンを作るなど改良していきたいと思います！\r\nまた、違うジャンルのゲームなども作りたいと思っているので来年もよろしくお願いします！\r\n\r\n                                                                                                    以上\r\n","project_type":"exe","diff":"normal"},
-{"genre":"other","title":"○○を言っちゃいけないゲーム","place":"C:/gcc-launcher-display/gcc-launcher-electron-2024/launcher-game/games/other/○○を言っちゃいけないゲーム/○○を言っちゃいけないゲーム.exe","thumbnail":"C:/gcc-launcher-display/gcc-launcher-electron-2024/launcher-game/games/other/○○を言っちゃいけないゲーム/thumbnail.png","readme":"ある数字を言ってはいけないという、私が小学生の時にはやったゲームです。\r\n\r\n～ルール～\r\n\r\nルールは単純です。\r\n0から順々に数を言っていきます。\r\n必ず1つは数えなくてはいけません。\r\n1ターンで数えられる数字は3つまでです。（例えば10で回ってきたら、13まで）\r\n言ってはいけない数字を相手に言わせたら勝ちです。\r\n\r\n～一人プレイ～\r\nCPと戦ってもらいます。\r\n1，2，3のどれかを足せます。\r\n21を言うと負けです。\r\n\r\n～二人以上のプレイ（作成検討中）～\r\nまず、参加する人数を入力してください。\r\n次に、言ってはいけない数を入力してください。\r\nあとは、一人の時と同じです。\r\n","project_type":"exe","diff":"normal"},
-{"genre":"other","title":"すばやく見分けろ","place":"C:/gcc-launcher-display/gcc-launcher-electron-2024/launcher-game/games/other/すばやく見分けろ(2019展示）/すばやく見分けろ.exe","thumbnail":"C:/gcc-launcher-display/gcc-launcher-electron-2024/launcher-game/games/other/すばやく見分けろ(2019展示）/thumbnail.png","readme":"説明はゲーム内に入っています\r\n","project_type":"exe","diff":"normal"},
-{"genre":"other","title":"クリック連打","place":"C:/gcc-launcher-display/gcc-launcher-electron-2024/launcher-game/games/other/クリック連打/クリック連打.exe","thumbnail":"C:/gcc-launcher-display/gcc-launcher-electron-2024/launcher-game/games/other/クリック連打/thumbnail.png","readme":"//////////////////////////\r\nクリック連打\r\n\r\n【概要】クリック連打ゲームです。\r\n\r\n【製作】SPD\r\n","project_type":"exe","diff":"easy"},
-{"genre":"other","title":"宝探し","place":"C:/gcc-launcher-display/gcc-launcher-electron-2024/launcher-game/games/other/宝探し/宝探し.exe","thumbnail":"C:/gcc-launcher-display/gcc-launcher-electron-2024/launcher-game/games/other/宝探し/thumbnail.png","readme":"あなたはトレジャーハンターです\r\n地面に埋まったお宝を掘り出しましょう\r\nクリア地点をクリックしたらクリアです。\r\n\r\n～注意事項～\r\n・レベルごとに設定された回数でクリアしてください\r\n・たまにダブルクリックがされた判定になることがあります\r\n　その場合、運が悪いと思ってください\r\n・クリックした場所からクリア地点までの距離によって\r\n　違う色の四角が表示されます\r\n\r\n制作：攻玉社コンピューター部、部員「酸素分子成人」\r\n使用ソフト：HSPスクリプトエディタ\r\n","project_type":"exe","diff":"normal"},
-{"genre":"other","title":"間違い探し","place":"C:/gcc-launcher-display/gcc-launcher-electron-2024/launcher-game/games/other/間違い探し/間違い探し.exe","thumbnail":"C:/gcc-launcher-display/gcc-launcher-electron-2024/launcher-game/games/other/間違い探し/thumbnail.png","readme":"[操作]\r\nすべてクリック操作\r\n\r\n[ルール]\r\n画面に大量に表示される文字の中から\r\n1つだけ違う文字を探してね！\r\n\r\nゲームを終わるには、タイトル画面から「おわる」を\r\n選んでね！\r\n\r\n[難易度]\r\nEASY：時間制限20秒\r\nNORMAL：10秒\r\nHARD：5秒\r\n\r\n[制作]\r\n製作者：佐波・澤田\r\n","project_type":"exe","diff":"hard"}
-],"shooting":[{"genre":"shooting","title":"G-TYPE","place":"C:/gcc-launcher-display/gcc-launcher-electron-2024/launcher-game/games/shooting/G-TYPE/G-TYPE.exe","thumbnail":"C:/gcc-launcher-display/gcc-launcher-electron-2024/launcher-game/games/shooting/G-TYPE/thumbnail.png","readme":"G-TYPE\r\n\r\n古くから収録されているSTGです。\r\n","project_type":"exe","diff":"normal"},
-{"genre":"shooting","title":"LastQuarter1.1","place":"C:/gcc-launcher-display/gcc-launcher-electron-2024/launcher-game/games/shooting/LastQuarter1.1/lastquarter.exe","thumbnail":"C:/gcc-launcher-display/gcc-launcher-electron-2024/launcher-game/games/shooting/LastQuarter1.1/thumbnail.png","readme":"///////////////////////////////////////////////\r\n\r\n ScoreAtacck STG\r\n LAST Quarter Ver.1.1\r\n 操作説明書\r\n\r\n【概要】\r\n\r\n この作品は2015年に発表したSTGのマイナーチェンジバージョンです。\r\n 遊びやすくなるようにいくつかの改良を施しています。\r\n\r\n【操作方法】\r\n\r\n ・十字キー \t自機の移動\r\n ・Zキー\t自機ショット(攻撃)\r\n ・Xキー\tシールド(使用回数に制限があります)\r\n\r\n【遊び方】\r\n\r\n ・タイトル画面でZキーを押すとゲーム開始です\r\n ・プレイヤー機が撃墜されないように、敵の弾を避け敵を倒しつつ先へ進んでください。\r\n ・危ないところでシールドをうまく使うことが、攻略のカギです。\r\n\r\n ・一度クリアができたら、ハイスコアを目指してみましょう。\r\n ・敵に近づいて撃破すると最大で3倍のスコアが入ります。積極的に近づいて倒しましょう。\r\n ・ゲーム中にはより多くのスコアを稼げるギミックがいくつか隠されています。探してみましょう。\r\n ・目指せ 40万点!!\r\n\r\n ・この説明書の一番下にスコア稼ぎのコツ(ネタバレ)が書いてあります。\r\n\r\n///////////////////////////////////////////////\r\n\r\n ScoreAtacck STG\r\n LAST Quarter Ver.1.1\r\n 説明書\r\n\r\n 【カテゴリ】\tスコアアタックシューティングゲーム\r\n 【動作環境】\tWindowsXP以降,DirectX9.0c以上\r\n\t　　 \t(必ずしも動作を保証するものではございません)\r\n\r\n 【開発環境】\tShooting Game Builder ver 0.99.77(β)\r\n\r\n 【スタッフ】  \tプログラマー:SPD\r\n\t\tグラフィック:NSB/AJI\r\n\t\tBGMは 魔王魂 さんからお借りしました。\r\n\r\n 【更新情報】\tVer1.0(2015/09/??) 完成版リリース\r\n\t\tVer1.1(2016/09/14) ゲーム性の微調整\r\n\r\n\r\n 【詳細な操作方法】\r\n\r\n ==タイトル画面==\r\n\r\n\t・Zキー \tゲーム開始\r\n\t・Cキー \tランキング表示画面へ\r\n\r\n ==ランキング表示画面==\r\n\r\n\t・Zキー \t選択中のデータのリプレイを再生\r\n\t・Cキー \tタイトル画面に戻る\r\n\r\n ==プレイ中==\r\n\r\n\t・十字キー \t自機の移動\r\n \t・Zキー\t\t自機ショット(攻撃)\r\n \t・Xキー\t\tシールド(使用回数に制限があります)\r\n\r\n ※常にEnterキーで全画面表示、ウィンドウ表示を切替可能です\r\n　 常にESCキーでゲームを終了できます。\r\n\r\n\r\n本ソフトはフリーウェアです。無断での二次配布はおやめください。\r\n\r\n\r\n\r\n\r\n【スコア稼ぎのコツ(ネタバレ)】\r\n\r\n・茶色の雑魚戦闘機の点数は意外と大きいです。しっかり近づいて3倍のスコアをゲットしましょう。\r\n・ミサイルを撃ってくる中型機は一定体力以下にしてしばらく待つと発狂モードになります。この時大量に発射されるミサイルを壊すことで得点アップを狙えます。\r\n・上の方で回転するように弾をばらまく中型機は普通に下から打ち込んでいると倒せません。スコアの大きい敵なので近づいてシールドを当てて倒しましょう。\r\n・上から下に勢いよく飛んで来て爆弾を残していく大型機は位置を覚えないと倒せません。全部倒すと大きなスコアになるので全機破壊しましょう。爆弾もたくさん壊すとよいです。\r\n・シールドで弾を消すと点数が入ります。弾が出る場所にシールドを設置して大量に弾を消すとスコアアップが狙えます。\r\n・真ラスボスにショットを撃ち込むと点数が入ります。シールド等を駆使して近づき、より多くのショットを打ち込みましょう。\r\n\r\n・ここまでのことをすべて実践すれば55万点くらいまでは行けると思います。\r\n","project_type":"exe","diff":"hard"},
-{"genre":"shooting","title":"STG(仮)","place":"C:/gcc-launcher-display/gcc-launcher-electron-2024/launcher-game/games/shooting/STG(仮)/STG(仮).exe","thumbnail":"C:/gcc-launcher-display/gcc-launcher-electron-2024/launcher-game/games/shooting/STG(仮)/thumbnail.png","readme":"STG(仮)　Ver1.3\r\n\r\n 製作: SPD\r\n 旧作です。続編にLastQuarterがあります。\r\n\r\n Ver. 1.0   一応の完成\r\n Ver. 1.1   ショットの変更、自機スピードの変更、自機狙い弾の正確度上昇\r\n Ver. 1.2   ゲームスピードの調整、ショット威力の調整、敵弾速度の調整\r\n Ver. 1.2.1 編隊の追加。ゲームスピードの再調整\r\n Ver. 1.3   全画面表示、難易度の追加。\r\n","project_type":"exe","diff":"normal"},
-{"genre":"shooting","title":"よけげ","place":"C:/gcc-launcher-display/gcc-launcher-electron-2024/launcher-game/games/shooting/よけげ/hsptmp.exe","thumbnail":"C:/gcc-launcher-display/gcc-launcher-electron-2024/launcher-game/games/shooting/よけげ/thumbnail.png","readme":"よけげ\r\nバージョン:1.0\r\n制作者:小島 遼護\r\n製作日:2019/9/10\r\n動作OS:windows\r\n\r\n\r\n\r\n[---------------このゲームについて---------------]\r\nこのゲームは、2019年輝玉祭で製作したものです。\r\nデータのコピーなどはご自由にどうぞ。(但し、商的使用は不可)\r\n\r\n\r\n\r\n[---------------ルール説明---------------]\r\n2人で遊ぶ対戦型シューティングゲームです\r\n-ルール-\r\n・移動ボタンとジャンプボタンでプレイヤー(プレイヤー1(以下、P1)は赤、プレイヤー2(以下、P2)は緑)を動かし、ショットボタンで弾を撃つ\r\n・画面上に出せる弾は各プレイヤー1つまで\r\n-勝敗-\r\n・相手の弾がプレイヤーに当たると、そのプレイヤーの負け\r\n\r\n\r\n\r\n[---------------操作説明---------------]\r\nEnterキー:ゲームスタート\r\n-P1の操作>\r\n移動ボタン:カーソルキーの←→\r\nジャンプボタン:カーソルキーの↑\r\nショットボタン:カーソルキーの↓\r\n-P2の操作-\r\n移動ボタン:J(左)、L(右)\r\nジャンプボタン:I\r\nショットボタン:K\r\n\r\n\r\n\r\n[---------------難易度---------------]\r\n中、上級者向けのゲームです\r\n「難しすぎる!」というクレームは受け付けません。\r\n\r\n\r\n\r\n----------------------------------------------------------------------------------------------------------------\r\n\r\n\r\n\r\nそれでは、どうぞお楽しみください！\r\n","project_type":"exe","diff":"normal"},
-{"genre":"shooting","title":"よけげ2(バグ多め)","place":"C:/gcc-launcher-display/gcc-launcher-electron-2024/launcher-game/games/shooting/よけげ2/hsptmp.exe","thumbnail":"C:/gcc-launcher-display/gcc-launcher-electron-2024/launcher-game/games/shooting/よけげ2/thumbnail.png","readme":"よけげ2\r\nバージョン:1.0\r\n制作者:小島 遼護\r\n製作日:2019/9/10\r\n動作OS:windows\r\n\r\n\r\n\r\n[---------------このゲームについて---------------]\r\nこのゲームは、2019年輝玉祭で製作したものです。\r\nデータのコピーなどはご自由にどうぞ。(但し、商的使用は不可)\r\n\r\n\r\n\r\n[---------------ルール説明---------------]\r\n2人で遊ぶ対戦型シューティングゲームの第2弾です\r\n-ルール-\r\n・移動ボタンとジャンプボタンでプレイヤー(プレイヤー1(以下、P1)は橙、プレイヤー2(以下、P2)は青)を動かし、ショットボタンで弾を撃つ\r\n・しゃがみボタンでしゃがむ、空中だと急降下\r\n・ダッシュボタン+移動ボタン\r\n・画面上に出せる弾は各プレイヤー5つまで\r\n-勝敗-\r\n・相手の弾がプレイヤーに当たると、そのプレイヤーの負け\r\n\r\n\r\n\r\n[---------------操作説明---------------]\r\nEnterキー:ゲームスタート\r\n-P1の操作-\r\n移動ボタン:カーソルキーの←→\r\nジャンプボタン:カーソルキーの↑\r\nショットボタン:カーソルキーの↓\r\n-P2の操作-\r\n移動ボタン:J(左)、L(右)\r\nジャンプボタン:I\r\nショットボタン:K\r\n\r\n\r\n\r\n[---------------難易度---------------]\r\n中、上級者向けのゲームです\r\n「難しすぎる!」というクレームは受け付けません。\r\n\r\n\r\n\r\n----------------------------------------------------------------------------------------------------------------\r\n\r\n\r\n\r\nそれでは、どうぞお楽しみください！\r\n","project_type":"exe","diff":"normal"},
-{"genre":"shooting","title":"星間戦争 Ver2.3","place":"C:/gcc-launcher-display/gcc-launcher-electron-2024/launcher-game/games/shooting/星間戦争 Ver2.3/星間戦争 Ver2.3.exe","thumbnail":"C:/gcc-launcher-display/gcc-launcher-electron-2024/launcher-game/games/shooting/星間戦争 Ver2.3/thumbnail.png","readme":"　星間戦争 Ver2.3 (2016/08/30)\r\n\r\n\r\n　[ゲーム説明]\r\n\r\n\tこの作品は対戦シューティングゲームです。\r\n\tCPUと戦う一人用モード(1P PLAY)とプレイヤー同士で戦う二人用モード(2P PLAY)を実装しています。\r\n\r\n\t一人用モードのCPUには EASY(易しい)、NOMAL(普通)、HARD(難しい)の３つの強さが存在します。\r\n\tそれぞれの難易度に関して最速タイムが\"saves.dat\"に記録されます。\r\n\tタイトル画面で数字キー0とEnterキーを同時押しすることにより記録をリセットできます。(二度とデータは元に戻せないので注意!!)\r\n\r\n\t二人用モードには制限時間があり、制限時間が０になると強制的にゲームが終了します。\r\n\t制限時間が０になり終了したときは、体力のより多いほうが勝利となります。\r\n\r\n　[操作説明]\r\n\r\n\tWキー=プレイヤー１上移動\r\n\tSキー=プレイヤー１下移動\r\n\tZキー=プレイヤー１対地ショット\r\n\tXキー=プレイヤー１対人ショット\r\n\t↑キー=プレイヤー２上移動\r\n\t↓キー=プレイヤー２下移動\r\n\tNキー=プレイヤー２対地ショット\r\n\tMキー=プレイヤー２対人ショット\r\n\r\n　[ゲームルール説明]\r\n\r\n\tこのゲームは対戦シューティングゲームです。\r\n\tプレイヤーは互いに2種類の弾を撃ち合い、相手のHPを0にしたほうが勝ちです。\r\n\t対地ショット(赤)は相手の後ろ側(陣地)に打ち込むことで相手のHPを減らすことができます。\r\n\t相手の対地ショット(赤)は自機で受け止めることにより防ぐことができます。\r\n\t対人ショット(黒)は相手に直接当てることによりHPを減らすことができます\r\n\t対人ショット(黒)は陣地に当たってもHPが減ることはありません。\r\n\t対地で陣地を攻撃するとHP-1,対人で相手に攻撃するとHP-2です。\r\n\tアイテム(緑)を撃つとPowerが上がり、弾速が上昇します。Powerが8になると…?\r\n\r\n\t簡単に言えば、弾を撃ちながら赤弾を拾い、黒弾を避ければいいのです。\r\n\r\n　[更新履歴]\r\n\r\n\tVer1.0(2016/07/19)\tとりあえずの完成\r\n\tVer1.1(2016/07/19)\tゲームバランスの調整\r\n\r\n\tVer2.0(2016/07/21)\tCPUの追加、一部表記の修正\r\n\tVer2.1(2016/07/21)\tCPU難易度選択、1P PLAY撃破タイム記録、2P PLAY制限時間追加\r\n\tVer2.2(2016/08/29)\tアイテム・パワーシステム追加、セーブファイル自動生成機能追加\r\n\tVer2.3(2016/08/30)\t弾が貫通する不具合を修正、Power8以上の時の仕様を変更。CPU戦被ダメ時にペナルティ追加\r\n\t\t\t\tフルスクリーン機能追加、Windows10で終了時にエラーが出た不具合を修正\r\n\r\n　[ソフトウェア情報]\r\n\r\n\t本ソフトはフリーウェアです。無断での二次配布は禁じます。\r\n\r\n\tHSP for Windows 3.31 使用\r\n\r\n\t製作:SPD\r\n\tCOMBSOFT 2016\r\n","project_type":"exe","diff":"hard"},
-{"genre":"shooting","title":"避けろ","place":"C:/gcc-launcher-display/gcc-launcher-electron-2024/launcher-game/games/shooting/避けろ/避けろver3.exe","thumbnail":"C:/gcc-launcher-display/gcc-launcher-electron-2024/launcher-game/games/shooting/避けろ/thumbnail.png","readme":"たまにぶつからないように上下左右キーで\r\n操作してください。\r\n","project_type":"exe","diff":"normal"}
-],"table":[{"genre":"table","title":"blackjack","place":"C:/gcc-launcher-display/gcc-launcher-electron-2024/launcher-game/games/table/blackjack/blackjack.exe","thumbnail":"C:/gcc-launcher-display/gcc-launcher-electron-2024/launcher-game/games/table/blackjack/thumbnail.png","readme":"blackjack\r\n\r\nブラックジャックです。\r\n","project_type":"exe","diff":"hard"},
-{"genre":"table","title":"poker","place":"C:/gcc-launcher-display/gcc-launcher-electron-2024/launcher-game/games/table/poker/poker.exe","thumbnail":"C:/gcc-launcher-display/gcc-launcher-electron-2024/launcher-game/games/table/poker/thumbnail.png","readme":"Poker\r\n\r\nポーカーです。\r\n","project_type":"exe","diff":"normal"},
-{"genre":"table","title":"puzzle BINGO","place":"C:/gcc-launcher-display/gcc-launcher-electron-2024/launcher-game/games/table/puzzle BINGO/hsptmp.exe","thumbnail":"C:/gcc-launcher-display/gcc-launcher-electron-2024/launcher-game/games/table/puzzle BINGO/thumbnail.png","readme":"puzzle BINGO!\r\nバージョン:1.0\r\n制作者:小島 遼護\r\n製作日:2019/9/10\r\n動作OS:windows\r\n\r\n\r\n\r\n[---------------このゲームについて---------------]\r\nこのゲームは、2019年輝玉祭で製作したものです。\r\nデータのコピーなどはご自由にどうぞ。(但し、商的使用は不可)\r\n\r\n\r\n\r\n[---------------ルール説明---------------]\r\n2人で遊ぶターン制のボードゲームです\r\n-ターンの流れ-\r\n・カーソルキーでプレイヤー(プレイヤー1(以下、P1)は緑、プレイヤー2(以下、P2)は青の四角)を動かす\r\n・カーソルキーで弾を撃ち、ブロック(茶色の四角)を壊す\r\n以上をP1,P2交互に繰り返す\r\n-ルール-\r\n・移動できるのは1ターンにつき1マスまで\r\n・ブロックやプレイヤーがあるマスには移動できない\r\n・弾を撃つとその方向のブロックが1つ壊れる\r\n・弾を撃てるのはブロックがある方向のみ\r\n・縦、横、斜めの列のブロックがすべて壊れると、その列のブロックが復活する\r\n・移動ができない場合は移動をせずに弾を撃つパートに移る\r\n・弾を撃てない場合は弾をうたずに相手のターンになる\r\n-勝敗-\r\n・プレイヤーのいるマスにブロックが復活すると、そのプレイヤーの負け\r\n・P1,P2のいるマス両方にブロックが復活した場合、弾を撃ったプレイヤーの勝ち\r\n\r\n\r\n\r\n[---------------操作説明---------------]\r\nEnterキー:ゲームスタート\r\nカーソルキー:その方向に移動、弾を撃つ\r\n\r\n\r\n\r\n[---------------難易度---------------]\r\n初心者でも楽しめるよう......にしたつもりです。\r\n「難しすぎる!」というクレームは受け付けません。\r\n\r\n\r\n\r\n----------------------------------------------------------------------------------------------------------------\r\n\r\n\r\n\r\nそれでは、どうぞお楽しみください！\r\n","project_type":"exe","diff":"normal"},
-{"genre":"table","title":"Sudden","place":"C:/gcc-launcher-display/gcc-launcher-electron-2024/launcher-game/games/table/Sudden/Sudden.exe","thumbnail":"C:/gcc-launcher-display/gcc-launcher-electron-2024/launcher-game/games/table/Sudden/thumbnail.png","readme":"Sudden\r\n\r\nサドンデスです。\r\n","project_type":"exe","diff":"easy"},
-{"genre":"table","title":"かずくらべ","place":"C:/gcc-launcher-display/gcc-launcher-electron-2024/launcher-game/games/table/かずくらべ/かずくらべ.exe","thumbnail":"C:/gcc-launcher-display/gcc-launcher-electron-2024/launcher-game/games/table/かずくらべ/thumbnail.png","readme":"かずくらべ\r\n\r\n属性を考えつつ、相手より強いカードを出すゲームです。\r\n","project_type":"exe","diff":"easy"},
-{"genre":"table","title":"神経衰弱","place":"C:/gcc-launcher-display/gcc-launcher-electron-2024/launcher-game/games/table/神経衰弱/神経衰弱.exe","thumbnail":"C:/gcc-launcher-display/gcc-launcher-electron-2024/launcher-game/games/table/神経衰弱/thumbnail.png","readme":"神経衰弱です\r\n左クリックでカードを選択できます\r\n同じ数字のカードを引き当ててください\r\nすべて引き当てたらクリアです\r\n制作：攻玉社コンピューター部、部員「酸素分子星人」\r\n使用ソフト：HSPスクリプトエディタ\r\n","project_type":"exe","diff":"easy"}
-]}
+{
+  "schemaVersion": 2,
+  "genres": [
+    "action",
+    "command",
+    "shooting",
+    "table",
+    "other"
+  ],
+  "action": [
+    {
+      "genre": "action",
+      "title": "Babadom",
+      "place": "launcher-game/games/action/Babadom/Babadom.exe",
+      "thumbnail": "launcher-game/games/action/Babadom/thumbnail.png",
+      "readme": "部に古くから伝わる名作です。",
+      "project_type": "exe",
+      "diff": "easy"
+    },
+    {
+      "genre": "action",
+      "title": "Block BINGO!",
+      "place": "launcher-game/games/action/Block BINGO!/hsptmp.exe",
+      "thumbnail": "launcher-game/games/action/Block BINGO!/thumbnail.png",
+      "readme": "Block BINGO!\nバージョン:1.1\n制作者:小島 遼護\n製作日:2018/7/19\n動作OS:windows\n\n\n\n[---------------このゲームについて---------------]\nこのゲームは、2018年輝玉祭で製作したものです。\nデータのコピーなどはご自由にどうぞ。(但し、商的使用は不可)\n\n\n\n[---------------ルール説明---------------]\n基本的なルールはブロック崩しと同じですが、縦、横、ななめ一列のブロックを全て崩すと、その列のブロックが復活します。\nブロックを1つ崩すと1ポイント、一列崩すと5ポイント加算されます。\n画面左上の白抜きの数字がスコアです。\nスペースキー+矢印キーでバーが超速移動します。\nボールが落ちそうになると、スローモーションになり、ボールが拾い易くなります。\nボールが落ちて画面外に出ると、ゲームオーバーです。\n\n\n\n[---------------操作説明---------------]\nEnterキー:ゲームスタート\nスペースキー:超速移動、ゲーム再開\n←キー:バーを左に移動\n→キー:バーを右に移動\nCtrlキー:ポーズ\nキー設定は出来ません。ご了承ください。\n\n\n\n[---------------「設定」について---------------]\nPCのスペック等の理由で、ボールやバーの動きが速すぎる、又は遅すぎるときに使ってください。\nタイトル画面から「設定」をクリックすると、ボール,バー速度の設定画面が出てきます。\n←キーを押すとボール,バー速度が遅くなり、→キーを押すと速くなります。\n尚、ボール,バーの個別の速度設定はできません。\nボール,バーの速度が丁度良くなったら、Enterキーを押してゲームスタートしてください。\n\n\n\n[---------------難易度---------------]\n初心者でも楽しめるよう......にしたつもりです。\n「難しすぎる!」というクレームは受け付けません。\n\n\n\n----------------------------------------------------------------------------------------------------------------\n\n\n\nそれでは、どうぞお楽しみください！",
+      "project_type": "exe",
+      "diff": "normal"
+    },
+    {
+      "genre": "action",
+      "title": "ブロック崩し",
+      "place": "launcher-game/games/action/block-kuzushi/2021234.exe",
+      "thumbnail": "launcher-game/games/action/block-kuzushi/thumbnail.png",
+      "readme": "玉は増えないし入り組んでもいない、なんのひねりもないシンプルなブロック崩し",
+      "project_type": "exe",
+      "diff": "easy"
+    },
+    {
+      "genre": "action",
+      "title": "フラクタルボックス",
+      "place": "launcher-game/games/action/fractal/game.html",
+      "thumbnail": "launcher-game/games/action/fractal/thumbnail.png",
+      "readme": "操作方法：Wでジャンプ、A、Dで左右移動\nSでスタート、上から無限に降ってくる箱をよける\nゲームオーバーまたはクリア後は、Rキーで再スタート（ゲーム実行中にはRキーは押さないでください）",
+      "project_type": "scratch",
+      "diff": "normal"
+    },
+    {
+      "genre": "action",
+      "title": "IW talk with the eilian",
+      "place": "launcher-game/games/action/i wanna be the engine konishi edition ver2.2/I wanna talk with the eilian.exe",
+      "thumbnail": "launcher-game/games/action/i wanna be the engine konishi edition ver2.2/thumbnail.png",
+      "readme": "Shiftキーを押すと、\nセーブデータ選択画面に行けます。\n好きなセーブデータを選び、\nShiftキーを押すと、難易度設定画面にいけます。\nNOR ノーマル\nHAR ハード\nVH ベリーハード\nIMP 不可能",
+      "project_type": "exe",
+      "diff": "hard"
+    },
+    {
+      "genre": "action",
+      "title": "I Wanna Be The COMB 2  Ver 1.00",
+      "place": "launcher-game/games/action/IWBTC2/IWBTC2.exe",
+      "thumbnail": "launcher-game/games/action/IWBTC2/thumbnail.png",
+      "readme": "I Wanna Be The COMB 2  Ver 1.00\n\n製作者：らゆ\n動作OS：WindowsXP以上 他は未確認\n動作環境：解像度800*608以上　表示色32bit\n使用ソフト：GameMaker 8.0 Pro + I Wanna Be The Engine YuutuEdition \n\n\n■はじめに\nこの度はこの作品のインストール誠に有難うございます。\nこのゲームは2016年輝玉祭でコンピュータ部が制作した、I wanna be the guyの派生作品となっております。\n尚、このソフトウェアを使用して発生した損害などについては\n作者は一切責任を負う事が出来ません。\nまた、このソフトウェアを無断で二次配布や販売をしないで下さい。\n\n\n■操作法\nShift・・ジャンプ\nZ・・ショット\nR・・リトライ\n←→・・左右移動\nF2・・タイトル画面に戻る\nF9・・スクリーンショット\n\n※Shift + Dを押しながらタイトルのSTART GAMEを右クリックすることでデータを初期化できます\n\n■難易度\nゲーム中の説明をご覧ください。\n\n■更新履歴\nVer.1.00　2016年9月14日",
+      "project_type": "exe",
+      "diff": "hard"
+    },
+    {
+      "genre": "action",
+      "title": "Live one minute",
+      "place": "launcher-game/games/action/Live One Minute/Live one minute.exe",
+      "thumbnail": "launcher-game/games/action/Live One Minute/thumbnail.png",
+      "readme": "注意：難易度激むず\n\nジャンプで飛び上がる！もう一回押すとちょっと浮きます。\n赤いブロックに当たるとゲームオーバーです！\n一分間生き残れ！",
+      "project_type": "exe",
+      "diff": "hard"
+    },
+    {
+      "genre": "action",
+      "title": "UnityMaker",
+      "place": "launcher-game/games/action/miyata/UnityMaker(1).exe",
+      "thumbnail": "launcher-game/games/action/miyata/thumbnail.png",
+      "readme": "ユニティちゃんを操作するアクションゲームです。ゴールのお城に触れるとクリア。\n左右矢印キーで移動、スペースキーでジャンプ\nｘキーで場面転換\nキャラクターはユニティちゃんのドットを参考に1から描きました。\n\nこのゲームは「ユニティちゃんライセンス」に基づいています。",
+      "project_type": "exe",
+      "diff": "normal"
+    },
+    {
+      "genre": "action",
+      "title": "Sheep",
+      "place": "launcher-game/games/action/Sheep/Sheep.exe",
+      "thumbnail": "launcher-game/games/action/Sheep/thumbnail.png",
+      "readme": "羊\n\n古くから伝わるアクションゲームです\nエンターキーで下降、スペースキーで上昇です",
+      "project_type": "exe",
+      "diff": "normal"
+    },
+    {
+      "genre": "action",
+      "title": "スパイダマ",
+      "place": "launcher-game/games/action/Spidama/Spidama.exe",
+      "thumbnail": "launcher-game/games/action/Spidama/thumbnail.png",
+      "readme": "Spidama スパイダマ\n\nいわゆるイライラ棒です。\n古くより伝わる作品。",
+      "project_type": "exe",
+      "diff": "hard"
+    },
+    {
+      "genre": "action",
+      "title": "ゴキ潰し",
+      "place": "launcher-game/games/action/ゴキ潰し/ゴキ潰し.exe",
+      "thumbnail": "launcher-game/games/action/ゴキ潰し/thumbnail.png",
+      "readme": "2022年作成のゲームです。\n矢印キーで操作し、スペースキーでジャンプします。\n自分のボールにゴキブリが触らないよう避けながらジャンプで潰しましょう",
+      "project_type": "exe",
+      "diff": "easy"
+    },
+    {
+      "genre": "action",
+      "title": "すすめロケット",
+      "place": "launcher-game/games/action/すすめロケット/hsptmp.exe",
+      "thumbnail": "launcher-game/games/action/すすめロケット/thumbnail.png",
+      "readme": "バージョン:1.0\n制作者:小島 遼護\n製作日:2019/9/10\n動作OS:windows\n\n\n\n[---------------このゲームについて---------------]\nこのゲームは、2019年輝玉祭で製作したものです。\nデータのコピーなどはご自由にどうぞ。(但し、商的使用は不可)\n\n\n\n[---------------ルール説明---------------]\nZキーでジェット噴射(加速)\nカーソルキーでロケットの向きを変える\n隕石に当たるか画面外まで落ちるとゲームオーバー\n\n\n\n[---------------難易度---------------]\n中、上級者向けです\n「難しすぎる!」というクレームは受け付けません。\n\n\n\n----------------------------------------------------------------------------------------------------------------\n\n\n\nそれでは、どうぞお楽しみください！",
+      "project_type": "exe",
+      "diff": "normal"
+    },
+    {
+      "genre": "action",
+      "title": "たぴたぴ棒",
+      "place": "launcher-game/games/action/たぴたぴ棒/たぴたぴ棒.exe",
+      "thumbnail": "launcher-game/games/action/たぴたぴ棒/thumbnail.png",
+      "readme": "当たったら負け The Final\n-たぴたぴ棒-\n\nそうさ：プレイ中に説明があります\n\nイライラ棒風アクションゲームの3作目かつ最終作。\n\n一昨年、去年に続き制作しました。\n\nぜひお楽しみください！\n\n制作:2019年度部長",
+      "project_type": "exe",
+      "diff": "hard"
+    },
+    {
+      "genre": "action",
+      "title": "ボールロール",
+      "place": "launcher-game/games/action/ボールロール/ball_roll.exe",
+      "thumbnail": "launcher-game/games/action/ボールロール/thumbnail.png",
+      "readme": "十字キーで操作しながら、\n黄色い立方体をすべて集めてください。",
+      "project_type": "exe",
+      "diff": "easy"
+    },
+    {
+      "genre": "action",
+      "title": "もぐらたたき",
+      "place": "launcher-game/games/action/もぐらたたき/hsptmp.exe",
+      "thumbnail": "launcher-game/games/action/もぐらたたき/thumbnail.png",
+      "readme": "もぐらたたき\n制作者:小島 遼護\n製作日:2018/10/27\n動作OS:windows\n\n\n\n\n[---------------ルール説明---------------]\n制限時間内に緑色の四角をクリックするとポイントが入り、四角が移動します。\n四角をクリックするまでの時間が短いほど多くのポイントが入ります。\n制限時間内に四角をクリック出来なかったり、四角以外をクリックしてしまうとゲームオーバーです。\n\n\n\n[---------------操作説明---------------]\n操作は全てクリックで行います。\n\n\n\n\n[---------------難易度---------------]\n人によって簡単にも難しくもなるゲームです。\n「難しすぎる!」というクレームは受け付けません。\n\n\n\n----------------------------------------------------------------------------------------------------------------\n\n\n\nそれでは、どうぞお楽しみください！",
+      "project_type": "exe",
+      "diff": "easy"
+    },
+    {
+      "genre": "action",
+      "title": "イライラ棒",
+      "place": "launcher-game/games/action/やはり当たったら負け/イライラ棒.exe",
+      "thumbnail": "launcher-game/games/action/やはり当たったら負け/thumbnail.png",
+      "readme": "昨年発表した、「触ったら負け」の続編です。\n\n赤のブロックを動かし、様々なギミックを乗り越えてゴールを目指すゲームです。",
+      "project_type": "exe",
+      "diff": "hard"
+    },
+    {
+      "genre": "action",
+      "title": "恐竜ゲーム",
+      "place": "launcher-game/games/action/恐竜ゲーム/恐竜ゲーム.html",
+      "thumbnail": "launcher-game/games/action/恐竜ゲーム/thumbnail.png",
+      "readme": "スペースキーでジャンプ\n↓キーでしゃがむ\n\nサボテン（大）：ジャンプで避けることができる\nサボテン（小）：サボテン（大）よりもよけやすいが出現頻度が高い\n鳥：しゃがむと避けることができる",
+      "project_type": "scratch",
+      "diff": "hard"
+    },
+    {
+      "genre": "action",
+      "title": "殺虫ゲーム",
+      "place": "launcher-game/games/action/殺虫ゲーム/殺虫ゲーム.exe",
+      "thumbnail": "launcher-game/games/action/殺虫ゲーム/thumbnail.png",
+      "readme": "殺虫ゲームです。あなたは業者になり、依頼をこなしてください。\n\n黒い点は殺すべき虫です。クリックすると、つぶすことができます。\n緑の点は小人です。小人は家の守り神なのでつぶしてはいけません。\n\nそのほかに突然変異を起こした虫なども出てきます。\n\n～注意事項～\n計算をするのが非常に重くなり、画面がちらついてしまいます。\n\nまた、お店を実装することができませんでした。\n来年、実装した状態で出したいと思います。",
+      "project_type": "exe",
+      "diff": "easy"
+    },
+    {
+      "genre": "action",
+      "title": "ケシピン",
+      "place": "launcher-game/games/action/消しゴム飛ばしゲーム/ケシピン.html",
+      "thumbnail": "launcher-game/games/action/消しゴム飛ばしゲーム/thumbnail.png",
+      "readme": "自分の消しゴムを飛ばしたい方向を決めてその位置から自分の消しゴムへクリックしながらドラッグし、離す。\n\n以下消しゴムの種類\n普通の消しゴム：すべてが平均的な消しゴム\n消しゴム（大）：移動速度と加速度が低い代わりに重さとパワーが高い\n長い消しゴム：スピードと加速度が早いが、パワーが低く、軽い\n消しゴム（小）：重さはないが、加速度が高く、使いやすい\n両消し：パワーが高い代わりに速度が低い",
+      "project_type": "scratch",
+      "diff": "normal"
+    },
+    {
+      "genre": "action",
+      "title": "触ったら負け",
+      "place": "launcher-game/games/action/触ったら負け/触ったら負け.exe",
+      "thumbnail": "launcher-game/games/action/触ったら負け/thumbnail.png",
+      "readme": "緑のブロックを動かし、様々なギミックを乗り越えてゴールを目指すゲームです。\n※いわゆるイライラ棒のようなものです\n初心者にも楽しめる難易度となっております！\n音が大きいため、家で遊ぶ際は音量を下げていただくと\n快適なプレイをお楽しみいただけます(^ω^)\n\n製作者：37R 柴田\n\n使わせていただいた音楽：http://amachamusic.chagasi.com/index.html\n　　　　　　　　　　　　http://maoudamashii.jokersounds.com/\n　　　　　　　　　　　　http://musmus.main.jp/se.html",
+      "project_type": "exe",
+      "diff": "hard"
+    },
+    {
+      "genre": "action",
+      "title": "的シューティング 2018",
+      "place": "launcher-game/games/action/的シューティング 2018/的シューティング　2018 完成2.exe",
+      "thumbnail": "launcher-game/games/action/的シューティング 2018/thumbnail.png",
+      "readme": "unityを使って作った的あてゲームです。\n\n三十秒間で何枚の的に当てられるかな？",
+      "project_type": "exe",
+      "diff": "normal"
+    },
+    {
+      "genre": "action",
+      "title": "筒走り",
+      "place": "launcher-game/games/action/筒走り/筒走り.exe",
+      "thumbnail": "launcher-game/games/action/筒走り/thumbnail.png",
+      "readme": "説明\n　～概要～\n筒を回転させて女の子をゴールまで導くゲームです☆\n筒から落ちたり、障害物に衝突しないようにしてあげましょう\n\n　～起動方法～\n・Game.exe\n上記のファイルを起動すると、ゲームが始まります\n\n　～操作方法～\n左右カーソルキーで筒を回転\n\n　～動作環境～\n不明、作成はcore-i3\n\n　～素材～\nHSPオフィシャル３Ｄ素材\"珠音\"\nhttp://hsp.tv/make/tamane3d.html\n\n　～一言～\nタイトルとゲームオーバー画面にまで手が回らなかったのは反省\n突貫作業は…やめようね！",
+      "project_type": "exe",
+      "diff": "hard"
+    },
+    {
+      "genre": "action",
+      "title": "棒人間ラン",
+      "place": "launcher-game/games/action/棒人間ラン/棒人間ラン.html",
+      "thumbnail": "launcher-game/games/action/棒人間ラン/thumbnail.png",
+      "readme": "操作方法\n\nスペースキーでジャンプ\n↓キーでスライディング\n\n障害物\n\nボックス：当たったら爆死、ジャンプで回避する\nアロー：当たったら爆死、スライディングで回避する\nトラップボックス：↑が書いてあるボックス、当たったら爆死、スライディングで回避する\n\n白ボックス：当たっても何も起こらない、ただのフェイク\n白アロー：当たっても何も起こらない、ただのフェイク",
+      "project_type": "scratch",
+      "diff": "hard"
+    }
+  ],
+  "command": [
+    {
+      "genre": "command",
+      "title": "RPS",
+      "place": "launcher-game/games/command/RPS/RPS.exe",
+      "thumbnail": "launcher-game/games/command/RPS/thumbnail.png",
+      "readme": "RPS ver.1.0\n\n  RPS　とは、\tRock　＝グー\n                Paper　＝パー\n                Scissors　＝チョキ\n                          の頭文字で、英語における\n　　”じゃんけん”の手を表しています。\n\n　仕様\n　　　　power : ステータスの初期値が高いですが強化で上がる量が少ないです。\n　　　　technique :　ステータスの初期値こそ低いものの強化で大きく上昇します。\n　　　　balance　: 文字通り上記２キャラの中間にあたります。\n\n　　　　攻撃強化　:　選んだ手（スキル選択時左上に書いてある手）のダメージ量を上げます。\n　　　　体力強化　：　キャラの体力を上げます。\n　　　　必殺強化　：キャラの必殺技（バトル画面で赤字で表示されるわざ）のダメージ量を上げます。\n　　　　回復　：　一定条件下で回復します。\n　　　　あいこ無効　：　一定条件をクリアするとそのバトル中あいこによるダメージを受けなくなります。\n\nver. 1.0 ここまで\n\n　　　　このたびは私の作ったゲームで遊んでいただきありがとうございます。\n　　　　ver. 1.0 はこのゲームの核の部分で遊べるようになっております。\n　　　　今後、コンピューター部のホームページ等でバージョンアップまたはその情報を\n　　　　お届けすることがあるかもしれません。ご覧になっていただければ幸いです。\n　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　\n　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　北村太一",
+      "project_type": "exe",
+      "diff": "normal"
+    },
+    {
+      "genre": "command",
+      "title": "VSタピオカミルクティー",
+      "place": "launcher-game/games/command/VSタピオカミルクティー/VSタピオカミルクティー.exe",
+      "thumbnail": "launcher-game/games/command/VSタピオカミルクティー/thumbnail.png",
+      "readme": "この度は、\nVSタピオカミルクティー\nをご利用いただきまして、誠に有難うございます(違う)\n\n[操作]\nクリックのみ。以上です。\n\n[概要]\nタピオカミルクティーを倒したら勝ちの\n\nクソゲー\n\nです。\n\n[詳しくは]\n「遊び方」を見てください。\n\n[スタッフロール的な何か]\n制作：天ぷらの天ぷら(I wanna be the COMB 2016!もどうぞ)\n\n※製作者以外1発でクリアしました(　；∀；)",
+      "project_type": "exe",
+      "diff": "normal"
+    },
+    {
+      "genre": "command",
+      "title": "バトル？",
+      "place": "launcher-game/games/command/バトル？/バトル？.exe",
+      "thumbnail": "launcher-game/games/command/バトル？/thumbnail.png",
+      "readme": "バトル？\n\nコマンド戦闘系です。",
+      "project_type": "exe",
+      "diff": "normal"
+    }
+  ],
+  "shooting": [
+    {
+      "genre": "shooting",
+      "title": "G-TYPE",
+      "place": "launcher-game/games/shooting/G-TYPE/G-TYPE.exe",
+      "thumbnail": "launcher-game/games/shooting/G-TYPE/thumbnail.png",
+      "readme": "G-TYPE\n\n古くから収録されているSTGです。",
+      "project_type": "exe",
+      "diff": "normal"
+    },
+    {
+      "genre": "shooting",
+      "title": "LastQuarter1.1",
+      "place": "launcher-game/games/shooting/LastQuarter1.1/lastquarter.exe",
+      "thumbnail": "launcher-game/games/shooting/LastQuarter1.1/thumbnail.png",
+      "readme": "///////////////////////////////////////////////\n\n ScoreAtacck STG\n LAST Quarter Ver.1.1\n 操作説明書\n\n【概要】\n\n この作品は2015年に発表したSTGのマイナーチェンジバージョンです。\n 遊びやすくなるようにいくつかの改良を施しています。\n\n【操作方法】\n\n ・十字キー \t自機の移動\n ・Zキー\t自機ショット(攻撃)\n ・Xキー\tシールド(使用回数に制限があります)\n\n【遊び方】\n\n ・タイトル画面でZキーを押すとゲーム開始です\n ・プレイヤー機が撃墜されないように、敵の弾を避け敵を倒しつつ先へ進んでください。\n ・危ないところでシールドをうまく使うことが、攻略のカギです。\n\n ・一度クリアができたら、ハイスコアを目指してみましょう。\n ・敵に近づいて撃破すると最大で3倍のスコアが入ります。積極的に近づいて倒しましょう。\n ・ゲーム中にはより多くのスコアを稼げるギミックがいくつか隠されています。探してみましょう。\n ・目指せ 40万点!!\n\n ・この説明書の一番下にスコア稼ぎのコツ(ネタバレ)が書いてあります。\n\n///////////////////////////////////////////////\n\n ScoreAtacck STG\n LAST Quarter Ver.1.1\n 説明書\n\n 【カテゴリ】\tスコアアタックシューティングゲーム\n 【動作環境】\tWindowsXP以降,DirectX9.0c以上\n\t　　 \t(必ずしも動作を保証するものではございません)\n\n 【開発環境】\tShooting Game Builder ver 0.99.77(β)\n\n 【スタッフ】  \tプログラマー:SPD\n\t\tグラフィック:NSB/AJI\n\t\tBGMは 魔王魂 さんからお借りしました。\n\n 【更新情報】\tVer1.0(2015/09/??) 完成版リリース\n\t\tVer1.1(2016/09/14) ゲーム性の微調整\n\n\n 【詳細な操作方法】\n\n ==タイトル画面==\n\n\t・Zキー \tゲーム開始\n\t・Cキー \tランキング表示画面へ\n\n ==ランキング表示画面==\n\n\t・Zキー \t選択中のデータのリプレイを再生\n\t・Cキー \tタイトル画面に戻る\n\n ==プレイ中==\n\n\t・十字キー \t自機の移動\n \t・Zキー\t\t自機ショット(攻撃)\n \t・Xキー\t\tシールド(使用回数に制限があります)\n\n ※常にEnterキーで全画面表示、ウィンドウ表示を切替可能です\n　 常にESCキーでゲームを終了できます。\n\n\n本ソフトはフリーウェアです。無断での二次配布はおやめください。\n\n\n\n\n【スコア稼ぎのコツ(ネタバレ)】\n\n・茶色の雑魚戦闘機の点数は意外と大きいです。しっかり近づいて3倍のスコアをゲットしましょう。\n・ミサイルを撃ってくる中型機は一定体力以下にしてしばらく待つと発狂モードになります。この時大量に発射されるミサイルを壊すことで得点アップを狙えます。\n・上の方で回転するように弾をばらまく中型機は普通に下から打ち込んでいると倒せません。スコアの大きい敵なので近づいてシールドを当てて倒しましょう。\n・上から下に勢いよく飛んで来て爆弾を残していく大型機は位置を覚えないと倒せません。全部倒すと大きなスコアになるので全機破壊しましょう。爆弾もたくさん壊すとよいです。\n・シールドで弾を消すと点数が入ります。弾が出る場所にシールドを設置して大量に弾を消すとスコアアップが狙えます。\n・真ラスボスにショットを撃ち込むと点数が入ります。シールド等を駆使して近づき、より多くのショットを打ち込みましょう。\n\n・ここまでのことをすべて実践すれば55万点くらいまでは行けると思います。",
+      "project_type": "exe",
+      "diff": "hard"
+    },
+    {
+      "genre": "shooting",
+      "title": "STG(仮)",
+      "place": "launcher-game/games/shooting/STG(仮)/STG(仮).exe",
+      "thumbnail": "launcher-game/games/shooting/STG(仮)/thumbnail.png",
+      "readme": "STG(仮)　Ver1.3\n\n 製作: SPD\n 旧作です。続編にLastQuarterがあります。\n\n Ver. 1.0   一応の完成\n Ver. 1.1   ショットの変更、自機スピードの変更、自機狙い弾の正確度上昇\n Ver. 1.2   ゲームスピードの調整、ショット威力の調整、敵弾速度の調整\n Ver. 1.2.1 編隊の追加。ゲームスピードの再調整\n Ver. 1.3   全画面表示、難易度の追加。",
+      "project_type": "exe",
+      "diff": "normal"
+    },
+    {
+      "genre": "shooting",
+      "title": "なんか丸いのタッチするやつ",
+      "place": "launcher-game/games/shooting/なんか丸いのタッチするやつ/index.html",
+      "thumbnail": "launcher-game/games/shooting/なんか丸いのタッチするやつ/thumbnail.png",
+      "readme": "・なんか丸いのをひたすらクリックするやつ\n　丸いやつをひたすらクリック\n　水色は2点\n　赤色は5点\n　何もないところは-1点\n　制限時間は60秒",
+      "project_type": "scratch",
+      "diff": "easy"
+    },
+    {
+      "genre": "shooting",
+      "title": "よけげ",
+      "place": "launcher-game/games/shooting/よけげ/hsptmp.exe",
+      "thumbnail": "launcher-game/games/shooting/よけげ/thumbnail.png",
+      "readme": "よけげ\nバージョン:1.0\n制作者:小島 遼護\n製作日:2019/9/10\n動作OS:windows\n\n\n\n[---------------このゲームについて---------------]\nこのゲームは、2019年輝玉祭で製作したものです。\nデータのコピーなどはご自由にどうぞ。(但し、商的使用は不可)\n\n\n\n[---------------ルール説明---------------]\n2人で遊ぶ対戦型シューティングゲームです\n-ルール-\n・移動ボタンとジャンプボタンでプレイヤー(プレイヤー1(以下、P1)は赤、プレイヤー2(以下、P2)は緑)を動かし、ショットボタンで弾を撃つ\n・画面上に出せる弾は各プレイヤー1つまで\n-勝敗-\n・相手の弾がプレイヤーに当たると、そのプレイヤーの負け\n\n\n\n[---------------操作説明---------------]\nEnterキー:ゲームスタート\n-P1の操作>\n移動ボタン:カーソルキーの←→\nジャンプボタン:カーソルキーの↑\nショットボタン:カーソルキーの↓\n-P2の操作-\n移動ボタン:J(左)、L(右)\nジャンプボタン:I\nショットボタン:K\n\n\n\n[---------------難易度---------------]\n中、上級者向けのゲームです\n「難しすぎる!」というクレームは受け付けません。\n\n\n\n----------------------------------------------------------------------------------------------------------------\n\n\n\nそれでは、どうぞお楽しみください！",
+      "project_type": "exe",
+      "diff": "normal"
+    },
+    {
+      "genre": "shooting",
+      "title": "よけげ2(バグ多め)",
+      "place": "launcher-game/games/shooting/よけげ2/hsptmp.exe",
+      "thumbnail": "launcher-game/games/shooting/よけげ2/thumbnail.png",
+      "readme": "よけげ2\nバージョン:1.0\n制作者:小島 遼護\n製作日:2019/9/10\n動作OS:windows\n\n\n\n[---------------このゲームについて---------------]\nこのゲームは、2019年輝玉祭で製作したものです。\nデータのコピーなどはご自由にどうぞ。(但し、商的使用は不可)\n\n\n\n[---------------ルール説明---------------]\n2人で遊ぶ対戦型シューティングゲームの第2弾です\n-ルール-\n・移動ボタンとジャンプボタンでプレイヤー(プレイヤー1(以下、P1)は橙、プレイヤー2(以下、P2)は青)を動かし、ショットボタンで弾を撃つ\n・しゃがみボタンでしゃがむ、空中だと急降下\n・ダッシュボタン+移動ボタン\n・画面上に出せる弾は各プレイヤー5つまで\n-勝敗-\n・相手の弾がプレイヤーに当たると、そのプレイヤーの負け\n\n\n\n[---------------操作説明---------------]\nEnterキー:ゲームスタート\n-P1の操作-\n移動ボタン:カーソルキーの←→\nジャンプボタン:カーソルキーの↑\nショットボタン:カーソルキーの↓\n-P2の操作-\n移動ボタン:J(左)、L(右)\nジャンプボタン:I\nショットボタン:K\n\n\n\n[---------------難易度---------------]\n中、上級者向けのゲームです\n「難しすぎる!」というクレームは受け付けません。\n\n\n\n----------------------------------------------------------------------------------------------------------------\n\n\n\nそれでは、どうぞお楽しみください！",
+      "project_type": "exe",
+      "diff": "normal"
+    },
+    {
+      "genre": "shooting",
+      "title": "星間戦争 Ver2.3",
+      "place": "launcher-game/games/shooting/星間戦争 Ver2.3/星間戦争 Ver2.3.exe",
+      "thumbnail": "launcher-game/games/shooting/星間戦争 Ver2.3/thumbnail.png",
+      "readme": "星間戦争 Ver2.3 (2016/08/30)\n\n\n　[ゲーム説明]\n\n\tこの作品は対戦シューティングゲームです。\n\tCPUと戦う一人用モード(1P PLAY)とプレイヤー同士で戦う二人用モード(2P PLAY)を実装しています。\n\n\t一人用モードのCPUには EASY(易しい)、NOMAL(普通)、HARD(難しい)の３つの強さが存在します。\n\tそれぞれの難易度に関して最速タイムが\"saves.dat\"に記録されます。\n\tタイトル画面で数字キー0とEnterキーを同時押しすることにより記録をリセットできます。(二度とデータは元に戻せないので注意!!)\n\n\t二人用モードには制限時間があり、制限時間が０になると強制的にゲームが終了します。\n\t制限時間が０になり終了したときは、体力のより多いほうが勝利となります。\n\n　[操作説明]\n\n\tWキー=プレイヤー１上移動\n\tSキー=プレイヤー１下移動\n\tZキー=プレイヤー１対地ショット\n\tXキー=プレイヤー１対人ショット\n\t↑キー=プレイヤー２上移動\n\t↓キー=プレイヤー２下移動\n\tNキー=プレイヤー２対地ショット\n\tMキー=プレイヤー２対人ショット\n\n　[ゲームルール説明]\n\n\tこのゲームは対戦シューティングゲームです。\n\tプレイヤーは互いに2種類の弾を撃ち合い、相手のHPを0にしたほうが勝ちです。\n\t対地ショット(赤)は相手の後ろ側(陣地)に打ち込むことで相手のHPを減らすことができます。\n\t相手の対地ショット(赤)は自機で受け止めることにより防ぐことができます。\n\t対人ショット(黒)は相手に直接当てることによりHPを減らすことができます\n\t対人ショット(黒)は陣地に当たってもHPが減ることはありません。\n\t対地で陣地を攻撃するとHP-1,対人で相手に攻撃するとHP-2です。\n\tアイテム(緑)を撃つとPowerが上がり、弾速が上昇します。Powerが8になると…?\n\n\t簡単に言えば、弾を撃ちながら赤弾を拾い、黒弾を避ければいいのです。\n\n　[更新履歴]\n\n\tVer1.0(2016/07/19)\tとりあえずの完成\n\tVer1.1(2016/07/19)\tゲームバランスの調整\n\n\tVer2.0(2016/07/21)\tCPUの追加、一部表記の修正\n\tVer2.1(2016/07/21)\tCPU難易度選択、1P PLAY撃破タイム記録、2P PLAY制限時間追加\n\tVer2.2(2016/08/29)\tアイテム・パワーシステム追加、セーブファイル自動生成機能追加\n\tVer2.3(2016/08/30)\t弾が貫通する不具合を修正、Power8以上の時の仕様を変更。CPU戦被ダメ時にペナルティ追加\n\t\t\t\tフルスクリーン機能追加、Windows10で終了時にエラーが出た不具合を修正\n\n　[ソフトウェア情報]\n\n\t本ソフトはフリーウェアです。無断での二次配布は禁じます。\n\n\tHSP for Windows 3.31 使用\n\n\t製作:SPD\n\tCOMBSOFT 2016",
+      "project_type": "exe",
+      "diff": "hard"
+    },
+    {
+      "genre": "shooting",
+      "title": "避けろ",
+      "place": "launcher-game/games/shooting/避けろ/避けろver3.exe",
+      "thumbnail": "launcher-game/games/shooting/避けろ/thumbnail.png",
+      "readme": "たまにぶつからないように上下左右キーで\n操作してください。",
+      "project_type": "exe",
+      "diff": "normal"
+    }
+  ],
+  "table": [
+    {
+      "genre": "table",
+      "title": "blackjack",
+      "place": "launcher-game/games/table/blackjack/blackjack.exe",
+      "thumbnail": "launcher-game/games/table/blackjack/thumbnail.png",
+      "readme": "blackjack\n\nブラックジャックです。",
+      "project_type": "exe",
+      "diff": "hard"
+    },
+    {
+      "genre": "table",
+      "title": "poker",
+      "place": "launcher-game/games/table/poker/poker.exe",
+      "thumbnail": "launcher-game/games/table/poker/thumbnail.png",
+      "readme": "Poker\n\nポーカーです。",
+      "project_type": "exe",
+      "diff": "normal"
+    },
+    {
+      "genre": "table",
+      "title": "puzzle BINGO",
+      "place": "launcher-game/games/table/puzzle BINGO/hsptmp.exe",
+      "thumbnail": "launcher-game/games/table/puzzle BINGO/thumbnail.png",
+      "readme": "puzzle BINGO!\nバージョン:1.0\n制作者:小島 遼護\n製作日:2019/9/10\n動作OS:windows\n\n\n\n[---------------このゲームについて---------------]\nこのゲームは、2019年輝玉祭で製作したものです。\nデータのコピーなどはご自由にどうぞ。(但し、商的使用は不可)\n\n\n\n[---------------ルール説明---------------]\n2人で遊ぶターン制のボードゲームです\n-ターンの流れ-\n・カーソルキーでプレイヤー(プレイヤー1(以下、P1)は緑、プレイヤー2(以下、P2)は青の四角)を動かす\n・カーソルキーで弾を撃ち、ブロック(茶色の四角)を壊す\n以上をP1,P2交互に繰り返す\n-ルール-\n・移動できるのは1ターンにつき1マスまで\n・ブロックやプレイヤーがあるマスには移動できない\n・弾を撃つとその方向のブロックが1つ壊れる\n・弾を撃てるのはブロックがある方向のみ\n・縦、横、斜めの列のブロックがすべて壊れると、その列のブロックが復活する\n・移動ができない場合は移動をせずに弾を撃つパートに移る\n・弾を撃てない場合は弾をうたずに相手のターンになる\n-勝敗-\n・プレイヤーのいるマスにブロックが復活すると、そのプレイヤーの負け\n・P1,P2のいるマス両方にブロックが復活した場合、弾を撃ったプレイヤーの勝ち\n\n\n\n[---------------操作説明---------------]\nEnterキー:ゲームスタート\nカーソルキー:その方向に移動、弾を撃つ\n\n\n\n[---------------難易度---------------]\n初心者でも楽しめるよう......にしたつもりです。\n「難しすぎる!」というクレームは受け付けません。\n\n\n\n----------------------------------------------------------------------------------------------------------------\n\n\n\nそれでは、どうぞお楽しみください！",
+      "project_type": "exe",
+      "diff": "normal"
+    },
+    {
+      "genre": "table",
+      "title": "Sudden",
+      "place": "launcher-game/games/table/Sudden/Sudden.exe",
+      "thumbnail": "launcher-game/games/table/Sudden/thumbnail.png",
+      "readme": "Sudden\n\nサドンデスです。",
+      "project_type": "exe",
+      "diff": "easy"
+    },
+    {
+      "genre": "table",
+      "title": "かずくらべ",
+      "place": "launcher-game/games/table/かずくらべ/かずくらべ.exe",
+      "thumbnail": "launcher-game/games/table/かずくらべ/thumbnail.png",
+      "readme": "かずくらべ\n\n属性を考えつつ、相手より強いカードを出すゲームです。",
+      "project_type": "exe",
+      "diff": "easy"
+    },
+    {
+      "genre": "table",
+      "title": "神経衰弱",
+      "place": "launcher-game/games/table/神経衰弱/神経衰弱.exe",
+      "thumbnail": "launcher-game/games/table/神経衰弱/thumbnail.png",
+      "readme": "神経衰弱です\n左クリックでカードを選択できます\n同じ数字のカードを引き当ててください\nすべて引き当てたらクリアです\n制作：攻玉社コンピューター部、部員「酸素分子星人」\n使用ソフト：HSPスクリプトエディタ",
+      "project_type": "exe",
+      "diff": "easy"
+    }
+  ],
+  "other": [
+    {
+      "genre": "other",
+      "title": "○○を言っちゃいけないゲーム",
+      "place": "launcher-game/games/other/○○を言っちゃいけないゲーム/○○を言っちゃいけないゲーム.exe",
+      "thumbnail": "launcher-game/games/other/○○を言っちゃいけないゲーム/thumbnail.png",
+      "readme": "ある数字を言ってはいけないという、私が小学生の時にはやったゲームです。\n\n～ルール～\n\nルールは単純です。\n0から順々に数を言っていきます。\n必ず1つは数えなくてはいけません。\n1ターンで数えられる数字は3つまでです。（例えば10で回ってきたら、13まで）\n言ってはいけない数字を相手に言わせたら勝ちです。\n\n～一人プレイ～\nCPと戦ってもらいます。\n1，2，3のどれかを足せます。\n21を言うと負けです。\n\n～二人以上のプレイ（作成検討中）～\nまず、参加する人数を入力してください。\n次に、言ってはいけない数を入力してください。\nあとは、一人の時と同じです。",
+      "project_type": "exe",
+      "diff": "normal"
+    },
+    {
+      "genre": "other",
+      "title": "2Dランダム生成迷路",
+      "place": "launcher-game/games/other/2Dランダム生成迷路/index.html",
+      "thumbnail": "launcher-game/games/other/2Dランダム生成迷路/thumbnail.png",
+      "readme": "・迷路\n　↑↓→←キーで操作\n　ゴールから100以上離れているとゴールの方向を指す矢印が出てきます",
+      "project_type": "scratch",
+      "diff": "easy"
+    },
+    {
+      "genre": "other",
+      "title": "animation",
+      "place": "launcher-game/games/other/animation/video.mp4",
+      "thumbnail": "launcher-game/games/other/animation/thumbnail.png",
+      "readme": "Scratchで作成したアニメーション作品です。\n旗押すだけ。\nフルHD24FPSで動画化したものもあります",
+      "project_type": "movie",
+      "diff": "easy"
+    },
+    {
+      "genre": "other",
+      "title": "ClickWars",
+      "place": "launcher-game/games/other/ClickWars/ClickWars.exe",
+      "thumbnail": "launcher-game/games/other/ClickWars/thumbnail.png",
+      "readme": "STARTと書いてあるスライム（？）をクリックでゲームスタートです。\nスタート後、スライムをたたくと攻撃出来ます。\n手抜きゲーなのでよろしく( ´∀｀ )\n\n制作者より",
+      "project_type": "exe",
+      "diff": "normal"
+    },
+    {
+      "genre": "other",
+      "title": "combOS",
+      "place": "launcher-game/games/other/combOS/combOS.exe",
+      "thumbnail": "launcher-game/games/other/combOS/thumbnail.png",
+      "readme": "HSPでOSもどきを作ってみました。\n\nゲームではありませんが、遊んでいってください",
+      "project_type": "exe",
+      "diff": "easy"
+    },
+    {
+      "genre": "other",
+      "title": "combOS2",
+      "place": "launcher-game/games/other/combOS_2.1.4.3/BIOS(これを起動してください).exe",
+      "thumbnail": "launcher-game/games/other/combOS_2.1.4.3/thumbnail.png",
+      "readme": "HSPで作られたOSもどきです。\nゲームではありませんが...自分で改造したいという方にお勧めです。\n\n改造方法につきましては別途改造方法.txtをご覧ください(このファイルと同じフォルダにあります)\n\n絶対パスを使用している場所があります。\n実行中にcombOSの含まれるフォルダ等を移動しないでください",
+      "project_type": "exe",
+      "diff": "easy"
+    },
+    {
+      "genre": "other",
+      "title": "THE SHOOT!!",
+      "place": "launcher-game/games/other/THE SHOOT!!/THE SHOOT!!.exe",
+      "thumbnail": "launcher-game/games/other/THE SHOOT!!/thumbnail.png",
+      "readme": "連打ゲーム　\nTHE SHOOT!!\n説明書\n\nルール\n\n・難易度...クリック上手い人は余裕かも\n　　　　　　でも、初心者にはつらい\n　　　　　　\n・制限時間...20秒\n\n・使うボタン...左クリックのみ\n\n・操作方法...画面内の\"押しまくれ！\"ボタンを左クリックでひたすら連打！\n　　　　　　　ボタンから外れた所で連打しても無駄なので気をつけてください。\n\n・ダンジョン内容\n　1F　スライム　Lv.1 (HP...50)\n　　　こいつは10秒ぐらいで倒さないと\n\n　2F　スケルトン　Lv.55 (HP...70)\n　　  こいつまでは余裕だと思います。\n\n　3F　ボス　Lv.99 (HP...100)\n      こいつは作った自分も難しいと思います。\n　　　クリアできたらすごいです！！\n\n作成者...25R 佐藤\n\n使ったソフト...HSP(ホットスーププロセッサー)\n\nプレイして頂いてありがとうございます。\n今はつまらないゲームですが、今後は難易度別にダンジョンを作るなど改良していきたいと思います！\nまた、違うジャンルのゲームなども作りたいと思っているので来年もよろしくお願いします！\n\n                                                                                                    以上",
+      "project_type": "exe",
+      "diff": "normal"
+    },
+    {
+      "genre": "other",
+      "title": "クリック連打",
+      "place": "launcher-game/games/other/クリック連打/クリック連打.exe",
+      "thumbnail": "launcher-game/games/other/クリック連打/thumbnail.png",
+      "readme": "//////////////////////////\nクリック連打\n\n【概要】クリック連打ゲームです。\n\n【製作】SPD",
+      "project_type": "exe",
+      "diff": "easy"
+    },
+    {
+      "genre": "other",
+      "title": "すばやく見分けろ",
+      "place": "launcher-game/games/other/すばやく見分けろ(2019展示）/すばやく見分けろ.exe",
+      "thumbnail": "launcher-game/games/other/すばやく見分けろ(2019展示）/thumbnail.png",
+      "readme": "説明はゲーム内に入っています",
+      "project_type": "exe",
+      "diff": "normal"
+    },
+    {
+      "genre": "other",
+      "title": "ヒラヒラ",
+      "place": "launcher-game/games/other/ヒラヒラ/index.html",
+      "thumbnail": "launcher-game/games/other/ヒラヒラ/thumbnail.png",
+      "readme": "scratchで作成したアニメーションです",
+      "project_type": "scratch",
+      "diff": "easy"
+    },
+    {
+      "genre": "other",
+      "title": "移動アニメーション",
+      "place": "launcher-game/games/other/移動アニメーション/index.html",
+      "thumbnail": "launcher-game/games/other/移動アニメーション/thumbnail.png",
+      "readme": "scratchで作成したアニメーションです",
+      "project_type": "scratch",
+      "diff": "easy"
+    },
+    {
+      "genre": "other",
+      "title": "間違い探し",
+      "place": "launcher-game/games/other/間違い探し/間違い探し.exe",
+      "thumbnail": "launcher-game/games/other/間違い探し/thumbnail.png",
+      "readme": "[操作]\nすべてクリック操作\n\n[ルール]\n画面に大量に表示される文字の中から\n1つだけ違う文字を探してね！\n\nゲームを終わるには、タイトル画面から「おわる」を\n選んでね！\n\n[難易度]\nEASY：時間制限20秒\nNORMAL：10秒\nHARD：5秒\n\n[制作]\n製作者：佐波・澤田",
+      "project_type": "exe",
+      "diff": "hard"
+    },
+    {
+      "genre": "other",
+      "title": "学校を作れ！鉱山経営ゲーム！",
+      "place": "launcher-game/games/other/経営ゲーム/kouzan.html",
+      "thumbnail": "launcher-game/games/other/経営ゲーム/thumbnail.png",
+      "readme": "手短に終わる経営ゲームです。\n\n鉱山をクリックで収入を得る。\n\n右上のボタンでアップグレード。\n\n会社を作れば収入自体を増やすことが出来ます。\n\n忌まわしき攻玉社を作れ！",
+      "project_type": "scratch",
+      "diff": "easy"
+    },
+    {
+      "genre": "other",
+      "title": "攻玉社からの脱出",
+      "place": "launcher-game/games/other/攻玉社からの脱出/hsptmp.exe",
+      "thumbnail": "launcher-game/games/other/攻玉社からの脱出/thumbnail.jpg",
+      "readme": "玉社型ノベルゲーム\n\nボタンが出てきたときにクリックで選択。\n選択によって結末が変わります。\nグッドエンドまで辿り着かせよう！",
+      "project_type": "exe",
+      "diff": "easy"
+    },
+    {
+      "genre": "other",
+      "title": "攻玉社ロゴ",
+      "place": "launcher-game/games/other/攻玉社ロゴ/index.html",
+      "thumbnail": "launcher-game/games/other/攻玉社ロゴ/thumbnail.png",
+      "readme": "・攻玉社ロゴ\n　↑↓→←キーで操作\n　右下にあるスライダーを動かすと前後に動く",
+      "project_type": "scratch",
+      "diff": "easy"
+    },
+    {
+      "genre": "other",
+      "title": "宝探し",
+      "place": "launcher-game/games/other/宝探し/宝探し.exe",
+      "thumbnail": "launcher-game/games/other/宝探し/thumbnail.png",
+      "readme": "あなたはトレジャーハンターです\n地面に埋まったお宝を掘り出しましょう\nクリア地点をクリックしたらクリアです。\n\n～注意事項～\n・レベルごとに設定された回数でクリアしてください\n・たまにダブルクリックがされた判定になることがあります\n　その場合、運が悪いと思ってください\n・クリックした場所からクリア地点までの距離によって\n　違う色の四角が表示されます\n\n制作：攻玉社コンピューター部、部員「酸素分子成人」\n使用ソフト：HSPスクリプトエディタ",
+      "project_type": "exe",
+      "diff": "normal"
+    }
+  ]
+}
