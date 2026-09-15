@@ -8,10 +8,12 @@ function CountVisitorMain() {
   const countVisitorProvider:any = useContext(CountVisitorContext)
   useEffect(()=>{
     if (aniFlg){
-      setTimeout(()=>{
+      const timer = setTimeout(()=>{
         countVisitorProvider.set({state:false})
       },1500)
+      return ()=>clearTimeout(timer)
     }
+    return undefined
   },[aniFlg])
   return (
     <div className={`CountVisitorMain ${aniFlg?"hidden":""}`}>

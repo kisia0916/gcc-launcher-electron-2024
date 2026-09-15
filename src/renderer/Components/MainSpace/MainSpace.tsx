@@ -23,17 +23,18 @@ function MainSpace() {
   const GameList = useContext<any>(GameListContext)
   const [genreList,setGenreList] = useState<any>([])
   useEffect(()=>{
-    window.electron.ipcRenderer.on("select-genre",(arg:any)=>{
+    const removeListener = window.electron.ipcRenderer.on("select-genre",(arg:any)=>{
       const scrollTarget = document.querySelector(`.${arg.genre}`)
       scrollTarget?.scrollIntoView({ behavior: 'smooth', block: 'start' });
     })
+    return removeListener
   },[])
   useEffect(()=>{
     if (GameList.games){
       const genreContentList:string[] = GameList.games.genres
       let gamesList:any[] = []
       window.electron.ipcRenderer.sendMessage("send-init-request",{genres:genreContentList})
-      window.electron.ipcRenderer.on("send-init-response",async(arg:any)=>{
+      const removeListener = window.electron.ipcRenderer.on("send-init-response",async(arg:any)=>{
         const mainTargetList = sortGame(GameList.games,genreContentList)
         console.log(mainTargetList)
         gamesList = genreContentList.map((i:any)=>{
@@ -82,7 +83,9 @@ function MainSpace() {
         })
         setGenreList(gamesList)
       })
+      return removeListener
     }
+    return undefined
   },[GameList.games])
   return (
     <div className='mainScreen'>
