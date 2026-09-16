@@ -1,4 +1,4 @@
-import React, { useContext, useDebugValue, useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import "./MainSpaceButtonMain.css"
 import icon2 from "../../../../../../assets/img/play_fill (1).svg"
 import icon3 from "../../../../../../assets/img/run_line.svg"
@@ -11,10 +11,18 @@ function MainSpaceButtonMain(props:{game_path:string,title:string,project_type:s
   const movieViewer:any = useContext(MovieViewerContext)
   const [buttonText,setButtonText] = useState<string>("Play")
   const [isRunning,setIsRunning] = useState<boolean>(false)
-  const [processId,setProcessId] = useState<string>("")
+  const [processId] = useState<string>(()=>uuidv4())
   useEffect(()=>{
-    setProcessId(uuidv4())
-  },[])
+    return window.electron.ipcRenderer.on("close-game-process",(arg:any)=>{
+      if (arg.project_type === "exe" && processId === arg.processId){
+        setIsRunning(false)
+        setButtonText("Play")
+      }else if (arg.project_type === "scratch" || arg.project_type === "movie"){
+        setIsRunning(false)
+        setButtonText("Play")
+      }
+    })
+  },[processId])
   const sendRunSig = (path:string,project_type:string)=>{
     if (!isRunning){
       console.log(project_type)
@@ -22,27 +30,12 @@ function MainSpaceButtonMain(props:{game_path:string,title:string,project_type:s
       setIsRunning(true)
       window.electron.ipcRenderer.sendMessage("add-view-counter-request",{title:props.title})
       if (project_type === "exe"){
-        window.electron.ipcRenderer.sendMessage("run_game",{game_path:path,processId:processId})
+        window.electron.ipcRenderer.sendMessage("run_game",{game_path:path,processId:processId,title:props.title})
       }else if (project_type === "scratch"){
         scratchRunner({state:true,path:props.game_path})
       }else if (project_type === "movie"){
         movieViewer({state:true,path:props.game_path})
       }
-      window.electron.ipcRenderer.on("close-game-process",(arg:any)=>{
-        console.log(arg)
-        if (arg.project_type === "exe"){
-          if (processId === arg.processId){
-            setIsRunning(false)
-            setButtonText("Play")
-          }
-        }else if (arg.project_type === "scratch"){
-          setIsRunning(false)
-          setButtonText("Play")
-        }else if (arg.project_type === "movie"){
-          setIsRunning(false)
-          setButtonText("Play")
-        }
-      })
     }
   }
   return (

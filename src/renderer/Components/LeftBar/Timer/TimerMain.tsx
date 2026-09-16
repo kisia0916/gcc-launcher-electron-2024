@@ -1,64 +1,56 @@
 import React, { useContext, useEffect, useState } from 'react'
-import "./TimerMain.css"
-import { CountVisitorContext, LoadingScreenContext } from '../../../Pages/main/MainPage'
 import { Navigate } from 'react-router-dom'
+import { CountVisitorContext, LoadingScreenContext } from '../../../Pages/main/MainPage'
+import './TimerMain.css'
 
 function TimerMain() {
   const loadingContext:any = useContext(LoadingScreenContext)
   const countVisitorProvider:any = useContext(CountVisitorContext)
-  const [nowTime,setNowTime] = useState<number|-1>(-1)
-  const [timerStartFlg,setTimerStartFlg] = useState<boolean>(false)
-  const [timerNums,setTimerNums] = useState<any>([0,0])
-  const [isEnd,setIsEnd] = useState<boolean>(false)
-  const startTimer = ()=>{
-    const mainLoop = setInterval(()=>{
-      if (nowTime !== -1){
-        if (nowTime > 0){
-          setNowTime((now)=>{
-            if (now > 0){
-              return now-1
-            }else{
-              clearInterval(mainLoop)
-              return now
-            }
-          })
-        }
-      }
-    },1000)
-  }
+  const [nowTime,setNowTime] = useState<number>(-1)
+  const [timerStarted,setTimerStarted] = useState(false)
+  const [isEnd,setIsEnd] = useState(false)
+  const isCounting = timerStarted && nowTime > 0
+
   useEffect(()=>{
-    window.electron.ipcRenderer.sendMessage("get-timer-info","")
-    window.electron.ipcRenderer.on("get-timer-info",(arg:any)=>{
-      setNowTime(arg as number)
+    return window.electron.ipcRenderer.on('set-visitor-response',(arg:any)=>{
+      if (Number.isInteger(arg?.durationSeconds) && arg.durationSeconds > 0) {
+        setNowTime(arg.durationSeconds)
+      }
     })
   },[])
+
   useEffect(()=>{
-    console.log(loadingContext.get)
-    console.log(countVisitorProvider.get)
-    if (!loadingContext.get && nowTime !== -1 && !timerStartFlg && !countVisitorProvider.get){
-      setTimerStartFlg(true)
-      startTimer()
-    }
-    setTimerNums(()=>{
-      const frist = Math.floor(nowTime/60)
-      let rast:string = Math.floor(nowTime%60).toString()
-      if (rast.length < 2){
-        rast = "0"+rast
-      }
-      return [frist,rast]
-    })
-    if (nowTime <= 0 && nowTime !== -1){
-      setIsEnd(true)
+    if (!loadingContext.get && nowTime !== -1 && !countVisitorProvider.get) {
+      setTimerStarted(true)
     }
   },[loadingContext.get,nowTime,countVisitorProvider.get])
 
+  useEffect(()=>{
+    if (!isCounting) return undefined
+    const timer = setInterval(()=>setNowTime((time)=>Math.max(0,time-1)),1000)
+    return ()=>clearInterval(timer)
+  },[isCounting])
+
+  useEffect(()=>{
+    if (nowTime >= 0) {
+      window.electron.ipcRenderer.sendMessage('session-timer-update',{remainingSeconds:nowTime})
+    }
+    if (nowTime === 0 && !isEnd) {
+      window.electron.ipcRenderer.sendMessage('session-expired','')
+      setIsEnd(true)
+    }
+  },[nowTime,isEnd])
+
+  const minutes = nowTime < 0 ? 0 : Math.floor(nowTime/60)
+  const seconds = nowTime < 0 ? '00' : String(nowTime%60).padStart(2,'0')
+
   return (
     <div className="leftBarBottomIcons">
-    <div className="topBarTimer">
-        <span className="topBarTimerText">{timerNums[0]}:{timerNums[1]}</span>
+      <div className="topBarTimer">
+        <span className="topBarTimerText">{minutes}:{seconds}</span>
+      </div>
+      {isEnd?<Navigate to="/end"/>:<></>}
     </div>
-    {isEnd?<Navigate to="/end"/>:<></>}
-</div>
   )
 }
 
