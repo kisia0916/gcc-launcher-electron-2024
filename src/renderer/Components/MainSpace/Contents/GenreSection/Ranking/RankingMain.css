@@ -46,6 +46,9 @@
 .rank3{
     border: solid 1px rgb(51, 253, 51);
 }
+.pickup{
+    border: solid 1px #2ac670;
+}
 .promRankIcon{
     width: 30px;
     height: 30px;

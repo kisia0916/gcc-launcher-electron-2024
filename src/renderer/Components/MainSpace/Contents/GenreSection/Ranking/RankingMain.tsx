@@ -1,37 +1,67 @@
-import React, { useContext, useEffect, useState } from 'react'
-import "./RankingMain.css"
+import React from 'react';
+import './RankingMain.css';
 
-import img1 from "../../../../../../../assets/games/15br-bplaunch-egs-s3-2560x1440-2560x1440-687570387.jpg"
-import img2 from "../../../../../../../assets/games/valorant-agents-maps-weapons-beta.jpg"
-import img3 from "../../../../../../../assets/games/2214258.jpg"
+import icon1 from '../../../../../../../assets/img/bling_fill.svg';
+import icon4 from '../../../../../../../assets/img/bling_fill (2).svg';
+import icon5 from '../../../../../../../assets/img/bling_fill (3).svg';
+import OtherRankingMain from './Other/OtherRankingMain';
+import Rank1Main from './Rank1/Rank1Main';
 
-import icon1 from "../../../../../../../assets/img/bling_fill.svg"
-import icon2 from "../../../../../../../assets/img/play_fill.svg"
-import icon3 from "../../../../../../../assets/img/XRP_line (1).svg"
-import icon4 from "../../../../../../../assets/img/bling_fill (2).svg"
-import icon5 from "../../../../../../../assets/img/bling_fill (3).svg"
-import MainSpaceButtonMain from '../../Buttons/MainSpaceButtonMain'
-import DifficultMain from '../../Difficult/DifficultMain'
-import { HopUpContext } from '../../../../../Pages/main/MainPage'
-import { GameListContext } from '../../../../../App'
-import OtherRankingMain from './Other/OtherRankingMain'
-import Rank1Main from './Rank1/Rank1Main'
+function RankingMain(props: { games: any[]; pickup: any | null }) {
+  const { games, pickup } = props;
+  const rank1 = games[0];
+  const rank2 = games[1];
 
+  if (!rank1 && !rank2 && !pickup) {
+    return null;
+  }
 
-function RankingMain(props:{games:[rank1:any,rank2:any,rank3:any]}) {
-  const setHopUpWindow:any = useContext(HopUpContext)
-  useEffect(()=>{
-    console.log(props.games)
-  },[props.games])
   return (
-    props.games.length>0?<div className="prmoMainContents">
-        <Rank1Main img1={props.games[0].thumbnail} icon1={icon1} title={props.games[0].title} profile={props.games[0].readme} place={props.games[0].place} view={props.games[0].view} project_type={props.games[0].project_type} diff={props.games[0].diff}/>
-        <div className="prmoRankings">
-            <OtherRankingMain img1={props.games[1].thumbnail} icon1={icon4} icon2={props.games[1].icon2} title={props.games[1].title} profile={props.games[1].readme} rank={2} place={props.games[1].place} view={props.games[1].view} project_type={props.games[1].project_type} diff={props.games[1].diff}/>
-            <OtherRankingMain img1={props.games[2].thumbnail} icon1={icon5} icon2={props.games[2].icon2} title={props.games[2].title} profile={props.games[2].readme} rank={3} place={props.games[2].place} view={props.games[2].view} project_type={props.games[2].project_type}  diff={props.games[2].diff}/>
-        </div>
-    </div>:<></>
-  )
+    <div className="prmoMainContents">
+      {rank1 ? (
+        <Rank1Main
+          img1={rank1.thumbnail}
+          icon1={icon1}
+          title={rank1.title}
+          profile={rank1.readme}
+          place={rank1.place}
+          view={rank1.view}
+          project_type={rank1.project_type}
+          diff={rank1.diff}
+        />
+      ) : null}
+      <div className="prmoRankings">
+        {rank2 ? (
+          <OtherRankingMain
+            img1={rank2.thumbnail}
+            icon1={icon4}
+            title={rank2.title}
+            profile={rank2.readme}
+            label="人気No.2"
+            badgeClass="rank2"
+            place={rank2.place}
+            view={rank2.view}
+            project_type={rank2.project_type}
+            diff={rank2.diff}
+          />
+        ) : null}
+        {pickup ? (
+          <OtherRankingMain
+            img1={pickup.thumbnail}
+            icon1={icon5}
+            title={pickup.title}
+            profile={pickup.readme}
+            label="PICK UP"
+            badgeClass="pickup"
+            place={pickup.place}
+            view={pickup.view}
+            project_type={pickup.project_type}
+            diff={pickup.diff}
+          />
+        ) : null}
+      </div>
+    </div>
+  );
 }
 
-export default RankingMain
+export default RankingMain;
