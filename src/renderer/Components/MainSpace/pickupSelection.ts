@@ -2,13 +2,23 @@ type PickupCandidate = {
   view?: number;
 };
 
-export const getPickupWeight = (view: number | undefined): number => {
-  // 1 / sqrt(0) is infinite, so an unviewed game receives the maximum
-  // finite weight by treating zero as one.
-  const normalizedView =
-    typeof view === 'number' && Number.isFinite(view) ? Math.max(view, 1) : 1;
+export const PICKUP_HALF_LIFE = 100;
 
-  return 1 / Math.sqrt(normalizedView);
+const normalizeView = (view: number | undefined): number =>
+  typeof view === 'number' && Number.isFinite(view) ? Math.max(view, 0) : 0;
+
+export const getPickupWeight = (
+  view: number | undefined,
+  minimumView: number,
+  halfLife: number = PICKUP_HALF_LIFE,
+): number => {
+  if (!Number.isFinite(halfLife) || halfLife <= 0) {
+    throw new RangeError('halfLife must be a positive finite number');
+  }
+
+  const viewDifference = Math.max(normalizeView(view) - minimumView, 0);
+
+  return 2 ** (-viewDifference / halfLife);
 };
 
 export const selectPickupGame = <T extends PickupCandidate>(
@@ -19,9 +29,13 @@ export const selectPickupGame = <T extends PickupCandidate>(
     return undefined;
   }
 
+  const minimumView = candidates.reduce(
+    (minimum, candidate) => Math.min(minimum, normalizeView(candidate.view)),
+    Infinity,
+  );
   const weightedCandidates = candidates.map((candidate) => ({
     candidate,
-    weight: getPickupWeight(candidate.view),
+    weight: getPickupWeight(candidate.view, minimumView),
   }));
   const totalWeight = weightedCandidates.reduce(
     (total, candidate) => total + candidate.weight,
