@@ -226,6 +226,12 @@
     "extraResources": [
       "./assets/**"
     ],
+    "extraFiles": [
+      {
+        "from": "launcher-settings.json",
+        "to": "launcher-settings.json"
+      }
+    ],
     "publish": {
       "provider": "github",
       "owner": "electron-react-boilerplate",
