@@ -1,29 +1,14 @@
-import {
-  getPickupWeight,
-  selectPickupGame,
-} from '../renderer/Components/MainSpace/pickupSelection';
+import selectPickupGame from '../renderer/Components/MainSpace/pickupSelection';
 
 describe('pickup selection', () => {
   const candidates = [
-    { title: 'A', view: 1000 },
-    { title: 'B', view: 1100 },
-    { title: 'C', view: 1200 },
+    { title: 'A', view: 120 },
+    { title: 'B', view: 90 },
+    { title: 'C', view: 100 },
   ];
 
-  it('halves the weight for every 100 views above the minimum', () => {
-    expect(getPickupWeight(1000, 1000)).toBe(1);
-    expect(getPickupWeight(1100, 1000)).toBe(0.5);
-    expect(getPickupWeight(1200, 1000)).toBe(0.25);
-  });
-
-  it('uses the same curve even when all view counts are large', () => {
-    expect(getPickupWeight(10000, 10000)).toBe(1);
-    expect(getPickupWeight(10100, 10000)).toBe(0.5);
-  });
-
-  it('selects from cumulative weights without sorting candidates', () => {
-    const totalWeight = 1 + 0.5 + 0.25;
-    const selected = selectPickupGame(candidates, () => 1.2 / totalWeight);
+  it('selects the game with the lowest view count without sorting', () => {
+    const selected = selectPickupGame(candidates);
 
     expect(selected?.title).toBe('B');
     expect(candidates.map((candidate) => candidate.title)).toEqual([
@@ -31,5 +16,19 @@ describe('pickup selection', () => {
       'B',
       'C',
     ]);
+  });
+
+  it('selects the first game when the lowest view count is tied', () => {
+    const selected = selectPickupGame([
+      { title: 'A', view: 50 },
+      { title: 'B', view: 50 },
+      { title: 'C', view: 80 },
+    ]);
+
+    expect(selected?.title).toBe('A');
+  });
+
+  it('returns undefined when there are no candidates', () => {
+    expect(selectPickupGame([])).toBeUndefined();
   });
 });

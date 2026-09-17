@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from 'react';
 import './MainSpace.css';
 import GenreSectionMain from './Contents/GenreSection/GenreSectionMain';
 import { GameListContext } from '../../App';
-import { selectPickupGame } from './pickupSelection';
+import selectPickupGame from './pickupSelection';
 
 const sortGame = (list: any, target: any) => {
   const returnData = target.map(() => {
